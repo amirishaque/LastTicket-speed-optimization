@@ -1,0 +1,30 @@
+.custom-tabs {
+    max-width: 1320px;
+    margin: 0 auto;
+  
+    .tab-list {
+      display: flex;
+      margin-bottom: 32px;
+      overflow: auto;
+    }
+  
+    .tab {
+      padding: 10px 20px;
+      cursor: pointer;
+      border: 0px solid #ccc;
+      border-bottom: none;
+      color: #121212;
+      transition: 0.4s;
+      font-weight: 600;
+  
+      &.active {
+        color: #0dccd7;
+        border-bottom: 1px solid #0dccd7;
+      }
+    }
+  
+    .tab-content {
+      
+    }
+  }
+  

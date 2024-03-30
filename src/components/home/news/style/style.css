@@ -1,0 +1,96 @@
+@media screen and (min-width: 360px) {
+  .news-wrapper {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto 72px auto;
+    overflow: hidden;
+  }
+  .news-wrapper h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    padding-bottom: 40px;
+    position: relative;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .news-wrapper h2::after {
+    width: 165px;
+    height: 26px;
+    position: absolute;
+    content: "";
+    right: auto;
+    bottom: auto;
+    background: url("../../../../assets/images/heading-shape.webp") no-repeat;
+    z-index: 2;
+    margin: 33px 0px 0px -100px;
+  }
+  .news-wrapper p {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .news-wrapper .email-wrapper {
+    max-width: 550px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .news-wrapper .email-wrapper a {
+    max-width: 115px;
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    background-color: #0dccd7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    text-decoration: none;
+    font-size: 16px;
+    position: absolute;
+    border: 0px;
+    right: 0;
+    top: 1px;
+  }
+  .news-wrapper .email-wrapper input {
+    border: 1px solid #0dccd7;
+    transition: 0.4s;
+    border-radius: 35px;
+    padding: 5px 73px 5px 15px;
+    width: 100%;
+    font-size: 16px;
+    position: relative;
+    height: 60px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .news-wrapper .email-wrapper input:focus {
+    border: 1.5px solid #0dccd7;
+  }
+  .news-wrapper .email-wrapper input:focus-visible {
+    border: 0px solid #0dccd7;
+  }
+}
+@media screen and (min-width: 767px) {
+  .news-wrapper {
+    margin-bottom: 120px;
+  }
+  .news-wrapper h2 {
+    max-width: 737px;
+  }
+  .news-wrapper .email-wrapper input {
+    max-width: unset;
+    width: 100%;
+  }
+  .news-wrapper .email-wrapper a {
+    max-width: 150px;
+  }
+}/*# sourceMappingURL=style.css.map */

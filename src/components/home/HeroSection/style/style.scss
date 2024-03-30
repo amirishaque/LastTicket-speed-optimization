@@ -1,0 +1,105 @@
+@media screen and (min-width: 360px) {
+  .header-banner-wrapper {
+    position: relative;
+    background-color: #121212;
+    z-index: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url(../../../../assets/images/grid.webp) no-repeat center center;
+      background-size: 100% 100%;
+      opacity: 0.01;
+      z-index: -1;
+    }
+
+    .banner-wrapper {
+      marquee {
+        background: #22b3c1;
+        color: #ffff;
+        font-size: 16px;
+        padding: 3px 0px 3px 0px;
+      }
+
+      .banner-wrapper-inner {
+        min-height: 440px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        padding: 0px 15px 72px 15px;
+
+        h2 {
+          color: #0dccd7;
+          font-size: 16px;
+          font-weight: 400;
+          padding: 0px;
+          margin: 0px;
+          text-transform: uppercase;
+        }
+
+        h1 {
+          color: #fff;
+          font-size: 36px;
+          padding: 0px;
+          margin: 0px;
+          font-weight: 600;
+          max-width: 800px;
+          width: 100%;
+        }
+
+        p {
+          font-size: 18px;
+          font-weight: 400;
+          color: #fff;
+          max-width: 550px;
+          width: 100%;
+        }
+
+        form {
+          position: relative;
+
+          input {
+            padding: 16px;
+            border: 0px;
+            border-radius: 35px;
+            max-width: 500px;
+            width: 319px;
+          }
+
+          button {
+            position: absolute;
+            right: 25px;
+            top: 12px;
+            border: 0px;
+            background: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 767px) {
+  .header-banner-wrapper {
+    .banner-wrapper {
+      .banner-wrapper-inner {
+        padding: 0px;
+        h1 {
+          font-size: 60px;
+        }
+
+        form {
+          input {
+            width: 500px;
+          }
+        }
+      }
+    }
+  }
+}

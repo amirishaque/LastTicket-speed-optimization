@@ -1,0 +1,127 @@
+@media screen and (min-width: 360px) {
+  .feature-events-wrapper {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto 72px auto;
+  }
+  .feature-events-wrapper .feature-events-wrapper-inner h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    padding-bottom: 55px;
+    position: relative;
+    max-width: 390px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .feature-events-wrapper .feature-events-wrapper-inner h2::after {
+    width: 165px;
+    height: 26px;
+    position: absolute;
+    content: "";
+    right: auto;
+    bottom: auto;
+    background: url("../../../../assets/images/heading-shape.webp") no-repeat;
+    z-index: 2;
+    margin: 33px 0px 0px -100px;
+  }
+  .feature-events-wrapper .feature-events-wrapper-inner .filter-wrapper {
+    padding: 0px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1320px;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .feature-events-wrapper .feature-events-wrapper-inner .filter-wrapper .filter-left-fragment {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .feature-events-wrapper .feature-events-wrapper-inner .filter-wrapper .filter-left-fragment strong {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .feature-events-wrapper .feature-events-wrapper-inner .filter-wrapper .filter-left-fragment .filter-tabs-wrapper {
+    max-width: 500px;
+    width: 100%;
+  }
+  .feature-events-wrapper .feature-events-wrapper-inner .feature-events-card-wrapper {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .feature-events-wrapper .feature-events-wrapper-inner .feature-events-card-wrapper .feature-events-card-wrapper-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .feature-events-wrapper .feature-events-wrapper-inner .feature-events-card-wrapper .feature-events-card-wrapper-inner .card-wrapper {
+    transition: all 0.2s ease;
+    box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff;
+    border-radius: 10px;
+  }
+  .feature-events-wrapper .feature-events-wrapper-inner .feature-events-card-wrapper .feature-events-card-wrapper-inner .card-wrapper figure img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    transition: 0.4s;
+  }
+  .feature-events-wrapper .feature-events-wrapper-inner .feature-events-card-wrapper .feature-events-card-wrapper-inner .card-wrapper figure img:hover {
+    transition: 0.4s;
+  }
+  .feature-events-wrapper .feature-events-wrapper-inner .feature-events-card-wrapper .feature-events-card-wrapper-inner .card-wrapper h3 {
+    font-size: 20px;
+    padding-bottom: 8px;
+    margin: 0px;
+    text-align: center;
+  }
+  .feature-events-wrapper .feature-events-wrapper-inner .feature-events-card-wrapper .feature-events-card-wrapper-inner .card-wrapper .location {
+    margin-bottom: 8px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+  }
+  .feature-events-wrapper .feature-events-wrapper-inner .feature-events-card-wrapper .feature-events-card-wrapper-inner .card-wrapper .location figure img {
+    width: 25px;
+    height: auto;
+    margin: 0px;
+  }
+  .feature-events-wrapper .feature-events-wrapper-inner .feature-events-card-wrapper .feature-events-card-wrapper-inner .card-wrapper .price {
+    text-align: center;
+    display: block;
+  }
+  .feature-events-wrapper .feature-events-wrapper-inner .feature-events-card-wrapper .feature-events-card-wrapper-inner .card-wrapper:hover img {
+    transform: scale(1.05);
+  }
+}
+@media screen and (min-width: 767px) {
+  .feature-events-wrapper {
+    margin-bottom: 120px;
+  }
+  .feature-events-wrapper .feature-events-wrapper-inner h2 {
+    max-width: 737px;
+  }
+  .feature-events-wrapper .feature-events-wrapper-inner .filter-wrapper {
+    flex-direction: row;
+  }
+  .feature-events-wrapper .feature-events-wrapper-inner .card-wrapper {
+    max-width: 353px;
+    width: 100%;
+    padding: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */

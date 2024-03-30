@@ -1,0 +1,129 @@
+@import "../../index.css";
+
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
+$dark-color: #121212;
+
+.header-wrapper {
+  width: 100%;
+  background-color: $dark-color;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  .header-wrapper-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    height: 80px;
+    .header-left-fragment {
+      display: flex;
+      align-items: center;
+  
+      .logo-wrapper {
+        margin-right: 0px;
+      }
+    }
+    .header-right-fragment {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .menu-wrapper {
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          gap: 25px;
+          li {
+            margin-right: 0px;
+            cursor: pointer;
+            color: #fff;
+            padding: 0px 20px;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 500;
+            &:last-child {
+              margin-right: 0;
+            }
+            &:hover{
+              color: #0dccd7;
+              transition: 0.4s;
+            }
+          }
+        }
+      }
+  
+      .detail-wrapper {
+        display: flex;
+        align-items: center;
+        .followers {
+          margin-right: 10px;
+          color: #fff;
+          text-decoration: underline;
+          font-size: 13px;
+          font-weight: 600;
+          text-transform: uppercase;
+          background: #0dccd7;
+          border-radius: 6px;
+          text-decoration: none;
+          height: 25px;
+        }
+  
+        .phone-number-wrapper {
+          border: 1px solid #0DCCD7;
+          border-radius: 7px;
+          padding: 10px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          color: #fff;
+          height: 25px;
+        }
+  
+        span {
+          cursor: pointer;
+          border-radius: 6px;
+          color: #fff !important;
+          padding: 7px 20px;
+          background: #0dccd7;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 25px;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+//For Mobile View
+.nav-opener {
+  position: absolute;
+  color: #fff;
+  border: none;
+  right: 15px;
+  top: 15px;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  background: none;
+  display: block;
+  span{
+    width: 100%;
+    margin: 10px 0;
+    display: block;
+    border-bottom: 1px solid #fff;
+  }
+}

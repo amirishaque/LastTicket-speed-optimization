@@ -1,0 +1,57 @@
+[
+    {
+      "name": "+1234567890",
+      "code": "US",
+      "dialCode": "+1",
+      "flag": "https://www.svgrepo.com/show/508668/flag-us.svg"
+    },
+    {
+      "name": "+4455667788",
+      "code": "GB",
+      "dialCode": "+44",
+      "flag": "https://www.svgrepo.com/show/508668/flag-us.svg"
+    },
+    {
+      "name": "+1234567890",
+      "code": "CA",
+      "dialCode": "+1",
+      "flag": "https://www.svgrepo.com/show/508668/flag-us.svg"
+    },
+    {
+      "name": "+6123456789",
+      "code": "AU",
+      "dialCode": "+61",
+      "flag": "https://www.svgrepo.com/show/508668/flag-us.svg"
+    },
+    {
+      "name": "+1234567890",
+      "code": "CA",
+      "dialCode": "+1",
+      "flag": "https://www.svgrepo.com/show/508668/flag-us.svg"
+    },
+    {
+      "name": "+1234567890",
+      "code": "CA",
+      "dialCode": "+1",
+      "flag": "https://www.svgrepo.com/show/508668/flag-us.svg"
+    },
+    {
+      "name": "+1234567890",
+      "code": "CA",
+      "dialCode": "+1",
+      "flag": "https://www.svgrepo.com/show/508668/flag-us.svg"
+    },
+    {
+      "name": "+1234567890",
+      "code": "CA",
+      "dialCode": "+1",
+      "flag": "https://www.svgrepo.com/show/508668/flag-us.svg"
+    },
+    {
+      "name": "+1234567890",
+      "code": "CA",
+      "dialCode": "+1",
+      "flag": "https://www.svgrepo.com/show/508668/flag-us.svg"
+    }
+  ]
+  

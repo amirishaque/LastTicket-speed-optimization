@@ -1,0 +1,34 @@
+
+
+.slider-wrapper * {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+  }
+  .slider-wrapper{
+    background: #0DCCD7;
+    height: auto;
+    cursor: grab; /* Shows a grab hand to indicate draggability */
+    overflow: hidden;
+    .marquee {
+      white-space: nowrap;
+      overflow: hidden;
+      display: block;
+      cursor: grab;
+      animation: marquee 50s linear infinite;
+      background: #0DCCD7;
+      color: #fff;
+      padding: 2px 0px;
+      // max-width: 638px;
+    }
+    
+    .marquee.paused {
+      animation-play-state: paused;
+    }
+  }
+  @keyframes marquee {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+  }
+  

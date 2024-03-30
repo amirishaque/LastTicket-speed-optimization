@@ -1,0 +1,105 @@
+@media screen and (min-width: 360px) {
+    .reviews-wrapper-outer {
+        .reviews-wrapper {
+          max-width: 1320px;
+          width: 100%;
+          margin: 0 auto;
+          padding: 0px;
+          h2 {
+            font-weight: 600;
+            font-size: 60px;
+            text-align: center;
+            padding-bottom: 10px;
+            position: relative;
+          }
+          .main-review {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+      
+            .star {
+              background-color: #00b67a;
+              padding: 4px;
+            }
+          }
+          .quantity-reviews {
+            font-size: 24px;
+            padding: 16px 0px;
+            margin-bottom: 8px;
+            text-align: center;
+          }
+          .trust-pilot-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            h3 {
+              font-size: 28px;
+            }
+          }
+        }
+      }
+      .d-flex {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding-bottom: 10px;
+        .star {
+          background-color: #00b67a;
+          padding: 4px;
+        }
+      }
+      .slide-item-heading {
+        h2 {
+          font-size: 19px !important;
+          text-align: left !important;
+        }
+        p {
+          font-size: 16px !important;
+          text-align: left;
+        }
+      }
+      
+      .swiper-button-prev,
+      .swiper-button-next{
+          right: 65px;
+          width: 48px;
+          height: 48px;
+          background: url('../../assets/images/left-arrow.webp') no-repeat;
+          background-size: 100% 100%;
+          z-index: 1;
+          position: absolute;
+          top: 3px;
+          display: none;
+      }
+      .swiper-horizontal{padding-top:70px !important;}
+      .swiper-button-next{
+          right:0;
+          background: url('../../assets/images/right-arrow.webp') no-repeat;
+          background-size: 100% 100%;
+          
+      }
+      .swiper, .swiper-container {
+          margin-left: auto;
+          margin-right: auto;
+          position: relative;
+          overflow: hidden;
+          list-style: none;
+          padding: 0;
+          z-index: 1;
+          display: block;
+          padding-top: 80px;
+      }
+}
+
+@media screen and (min-width: 767px) {
+    .reviews-wrapper-outer{
+        padding: 60px 0px;
+    }
+}
+
+//For Common
+.swiper-slide.swiper-slide{
+  padding: 0px 15px;
+}
