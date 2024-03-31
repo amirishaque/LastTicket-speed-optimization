@@ -10,33 +10,35 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const measureLoadingTime = () => {
-      const { domContentLoadedEventEnd, loadEventEnd } = window.performance.timing;
-      const loadingTime = loadEventEnd - domContentLoadedEventEnd; // Calculate loading time
-      console.log("time:", loadingTime)
-      // Set the loading time as the timeout duration
-      setTimeout(() => {
-        setLoading(false);
-      }, loadingTime);
-    };
+    setLoading(false);
+    // const measureLoadingTime = () => {
+    //   const { domContentLoadedEventEnd, loadEventEnd } = window.performance.timing;
+    //   const loadingTime = loadEventEnd - domContentLoadedEventEnd; // Calculate loading time
+    //   console.log("time:", loadingTime)
+    //   // Set the loading time as the timeout duration
+    //   setTimeout(() => {
+    //     setLoading(false);
+    //   }, loadingTime);
+    // };
 
     // Check if the performance timing information is available
-    if (window.performance && window.performance.timing) {
-      measureLoadingTime();
-    } else {
-      // Fallback to a default loading time if performance timing information is not available
-      setTimeout(() => {
-        setLoading(false);
-      }, 5000); // Default loading time: 5 seconds
-    }
+    // if (window.performance && window.performance.timing) {
+    //   measureLoadingTime();
+    // } else {
+    //   // Fallback to a default loading time if performance timing information is not available
+    //   setTimeout(() => {
+    //     setLoading(false);
+    //   }, 5000); // Default loading time: 5 seconds
+    // }
   }, []);
 
-  if (loading) {
-    return <Loader />; // Display the Loader component while loading
-  }
+  // if (loading) {
+  //   return <Loader />; // Display the Loader component while loading
+  // }
 
   return (
     <>
+    {loading &&  <Loader />}
       <Index />
       <TopEvents />
       <FeatureEvents />
