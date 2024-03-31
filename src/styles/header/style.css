@@ -1,4 +1,4 @@
-@import "../../index.css";
+@import '../../index.css';
 .header-wrapper {
   width: 100%;
   background-color: #121212;
@@ -106,4 +106,20 @@
   margin: 10px 0;
   display: block;
   border-bottom: 1px solid #fff;
+}
+
+.header-right {
+  border-bottom: 0px solid rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 767px) {
+  .header-right.active {
+    background: transparent !important;
+    -webkit-backdrop-filter: blur(13.5914px) !important;
+            backdrop-filter: blur(13.5914px) !important;
+  }
+  .header-right.active ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0px 0px 20px 0px !important;
+  }
 }/*# sourceMappingURL=style.css.map */

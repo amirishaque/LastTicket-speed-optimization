@@ -46,9 +46,9 @@ export default function FeatureEventsData() {
     {
       id: 5,
       image: images[1], // Associate the second image with the second event
-      name: "Event 2 Name",
-      location: "Location 2",
-      price: "Price 2",
+      name: "Billy Joel & Stevie Nicks",
+      location: "New York, United States",
+      price: "From $80",
     },
     {
       id: 6,

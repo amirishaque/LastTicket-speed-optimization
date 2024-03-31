@@ -1,4 +1,4 @@
-@import "../../index.css";
+@import '../../index.css';
 
 $primary-color: var(--primary-color);
 $secondary-color: var(--secondary-color);
@@ -102,12 +102,6 @@ $dark-color: #121212;
 }
 
 
-
-
-
-
-
-
 //For Mobile View
 .nav-opener {
   position: absolute;
@@ -125,5 +119,22 @@ $dark-color: #121212;
     margin: 10px 0;
     display: block;
     border-bottom: 1px solid #fff;
+  }
+}
+
+
+.header-right{
+  border-bottom: 0px solid rgba(255, 255, 255, 0.2);
+}
+@media screen and (max-width: 767px) {
+  .header-right.active{
+    background: transparent !important;
+    backdrop-filter: blur(13.5914px) !important;
+    ul{
+      li{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 0px 0px 20px 0px !important;
+      }
+    }
   }
 }
