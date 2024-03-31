@@ -10,7 +10,10 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(false);
+    setTimeout(() => {
+          setLoading(false);
+        }, 3000);
+   
     // const measureLoadingTime = () => {
     //   const { domContentLoadedEventEnd, loadEventEnd } = window.performance.timing;
     //   const loadingTime = loadEventEnd - domContentLoadedEventEnd; // Calculate loading time
