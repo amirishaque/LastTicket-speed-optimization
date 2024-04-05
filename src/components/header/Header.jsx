@@ -38,7 +38,7 @@ const Header = () => {
             <nav id="nav">
               <ul className="list-none flex v-center">
                 <li>
-                  <a href="#">
+                  <a href="/ticket">
                   Sell Tickets
                   </a>
                
