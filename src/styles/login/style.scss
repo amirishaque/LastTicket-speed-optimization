@@ -1,0 +1,113 @@
+.login-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 120px;
+    position: relative;
+    padding: 0px 15px;
+
+    .background-img {
+        position: absolute;
+        top: 50%;
+
+        figure {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+
+            img {
+                display: inline-block;
+            }
+        }
+    }
+
+    .login-inner-wrapper {
+        max-width: 385px;
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        background-color: #ffffff;
+        box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+        padding: 35px 45px;
+        transition: all 0.4s ease;
+        position: relative;
+
+        figure {
+            position: absolute;
+            width: 50%;
+            top: -63px;
+            left: 38%;
+
+            svg {
+                display: inline-block;
+                width: 54px;
+                height: 54px;
+                border-radius: 85px;
+                background-color: #4A77F7;
+                padding: 20px;
+            }
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            padding-bottom: 30px;
+            text-align: center;
+        }
+
+        form {
+            input {
+                // width: 385px;
+                border: 2px solid #dce1e4;
+                width: 351px;
+                height: 46px;
+                padding: 0px 15px;
+                border-radius: 6px;
+                transition: 0.4s;
+                font-size: 16px;
+                margin-bottom: 20px;
+
+                &:focus {
+                    border-color: rgba(34, 179, 191, 0.5);
+                }
+            }
+
+            button {
+                background: #22B3C1;
+                border: 0px;
+                border-radius: 20px;
+                color: #fff;
+                height: 44px;
+                font-size: 16px;
+                margin: 0 auto;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    .login-wrapper {
+        margin-bottom: 72px;
+
+        .background-img {
+            position: absolute;
+            top: 50%;
+
+            figure {
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+
+                img {
+                    display: inline-block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

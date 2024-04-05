@@ -1,0 +1,180 @@
+.contact-us-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto 120px auto;
+  gap: 40px;
+  padding: 15px;
+}
+.contact-us-wrapper .left-contact-us-fragment {
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+  max-width: 442px;
+  width: 100%;
+  height: 696px;
+  border-radius: 20px;
+  padding: 30px;
+}
+.contact-us-wrapper .left-contact-us-fragment figure img {
+  margin-bottom: 28px;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+.contact-us-wrapper .left-contact-us-fragment .detail {
+  font-size: 29px;
+  padding-bottom: 9px;
+}
+.contact-us-wrapper .left-contact-us-fragment .detail span {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+.contact-us-wrapper .left-contact-us-fragment .detail p {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.contact-us-wrapper .left-contact-us-fragment .detail .contact-detail {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-us-wrapper .left-contact-us-fragment .detail .contact-detail .contact-detail-inner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: capitalize;
+}
+.contact-us-wrapper .left-contact-us-fragment .detail .contact-detail .contact-detail-inner span {
+  color: #210c0a;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0px !important;
+}
+.contact-us-wrapper .left-contact-us-fragment .detail .contact-detail .contact-detail-inner .email-wrapper span {
+  height: 24px;
+}
+.contact-us-wrapper .left-contact-us-fragment .detail .contact-detail .contact-detail-inner .email-wrapper a {
+  font-weight: 400;
+}
+.contact-us-wrapper .left-contact-us-fragment .detail .contact-detail .contact-detail-inner .email-wrapper .detail-email .email {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.contact-us-wrapper .left-contact-us-fragment .detail .contact-detail .contact-detail-inner .email-wrapper .detail-email .email span svg {
+  width: 25px;
+  height: 25px;
+}
+.contact-us-wrapper .left-contact-us-fragment .detail .contact-detail a {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #210c0a !important;
+}
+.contact-us-wrapper .right-contact-us-fragment {
+  max-width: 817px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+  padding: 30px;
+}
+.contact-us-wrapper .right-contact-us-fragment form .input-wrapper {
+  flex: 1;
+}
+.contact-us-wrapper .right-contact-us-fragment form .input-wrapper .name-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contact-us-wrapper .right-contact-us-fragment form .input-wrapper .name-wrapper .label-wrapper {
+  max-width: 363px;
+  width: 100%;
+}
+.contact-us-wrapper .right-contact-us-fragment form .input-wrapper .label-wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.contact-us-wrapper .right-contact-us-fragment form .input-wrapper .label-wrapper textarea {
+  width: 100%;
+  height: 216px;
+  padding: 15px;
+  border: 0px;
+  border: 2px solid #dce1e4;
+  border-radius: 20px;
+  resize: none;
+}
+.contact-us-wrapper .right-contact-us-fragment form .input-wrapper .label-wrapper textarea:focus {
+  border-color: rgba(34, 179, 191, 0.5);
+}
+.contact-us-wrapper .right-contact-us-fragment form .input-wrapper .label-wrapper label {
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+.contact-us-wrapper .right-contact-us-fragment form .input-wrapper .label-wrapper input {
+  border: 2px solid #dce1e4;
+  width: 100%;
+  height: 54px;
+  padding: 0px 15px;
+  border-radius: 6px;
+  transition: 0.4s;
+  font-size: 16px;
+}
+.contact-us-wrapper .right-contact-us-fragment form .input-wrapper .label-wrapper input:focus {
+  border: 1px solid #0DCCD7;
+  outline: unset;
+}
+.contact-us-wrapper .right-contact-us-fragment form button {
+  background: rgba(34, 179, 191, 0.5);
+  border: 0px;
+  border-radius: 6px;
+  color: #fff;
+  height: 44px;
+  font-size: 16px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+}
+
+@media screen and (min-width: 360px) and (max-width: 991px) {
+  .contact-us-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-contact-us-fragment {
+    max-width: none !important;
+    height: auto !important;
+  }
+  .left-contact-us-fragment figure img {
+    width: 100%;
+    height: auto;
+  }
+  .contact-us-wrapper {
+    margin-bottom: 72px;
+  }
+}
+input, textarea {
+  font-family: poppins;
+}
+input:focus, textarea:focus {
+  border: 1px solid #0DCCD7;
+  outline: unset;
+}
+input:focus-visible, textarea:focus-visible {
+  outline: unset;
+}/*# sourceMappingURL=style.css.map */

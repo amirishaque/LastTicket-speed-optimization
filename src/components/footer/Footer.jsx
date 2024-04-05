@@ -69,7 +69,7 @@ const Footer = () => {
         </div>
         <div className="footer-bottom">
           <div className="detail-footer">
-            <span>Rameo Template Kit Created By Moitalk Studio</span>
+            <span>Copyright © 2025 LastChanceTicket - All rights reserved</span>
           </div>
           <div className="social-links">
             <ul>

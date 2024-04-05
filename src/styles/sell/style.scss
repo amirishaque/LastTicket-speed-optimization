@@ -1,0 +1,48 @@
+.box-list {
+    padding: 0px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.box-list li {
+    /* border-bottom: 1px solid #22b3c1;
+    padding: 10px 0; */
+    border-bottom: none;
+    padding: 5px 0;
+    text-decoration: none;
+}
+.box-list li a{
+    text-decoration: none;
+}
+.boxes.add .box .ico-holder {
+    width: 60px;
+    height: 60px;
+    background: none;
+    font-size: 40px;
+}
+.boxes.add .box .ico-holder svg{
+    fill: #22b3c1;
+    width: 60px;
+    height: 60px;
+}
+
+@media(max-width:999px){
+    .boxes.add .box {
+        width: 30%;
+        flex: auto;
+    }
+}
+@media(max-width:767px){
+    .boxes.add .box {
+        width: 48%;
+    }
+}
+@media(max-width:600px){
+    .boxes.add .box {
+        width: 100%;
+    }
+}

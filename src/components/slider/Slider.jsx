@@ -46,9 +46,7 @@ const Slider = ({ text }) => {
           onMouseDown={handleMouseDown}
         >
           {/* {loopedText} */}
-          Prepare for an unforgettable night, With tickets in hand, your next
-          adventure takes flight. An amazing experience awaits, don't miss the
-          sight. Prepare for an unforgettable night, With tickets in hand.
+          Hurray! You are in the right place *  100K+ social media followers  *   We value every customer *  100% customer satisfaction   * We guarantee your entry *  SSL certificate website *  Secured payout  *  24/7 Customer Support* If you are not 100% satisfied, we will refund you 100% 
         </div>
       </div>
     </>

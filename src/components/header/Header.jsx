@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import DropDown from './DropDown/DropDown';
 import LogoMain from '../../assets/images/logoMain.webp';
 import './style/style.css'
+
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
@@ -26,46 +27,47 @@ const Header = () => {
 
   return (
     <>
+      <div className="header-placement"></div>
       <header id="header">
         <div className="header-wrapper">
-          
+          <Link to='/'>
             <img src={LogoMain} alt="logo" width={231} height={48} />
-   
+          </Link>
           <div className={`header-right ${isActive ? "active" : ""}`}>
             <figure>
-              <img src={LogoMain} alt="logo" width={231} height={48} />
+              <Link to='/'>
+                <img src={LogoMain} alt="logo" width={231} height={48} />
+              </Link>
             </figure>
             <nav id="nav">
               <ul className="list-none flex v-center">
                 <li>
-                  <a href="/ticket">
-                  Sell Tickets
-                  </a>
-               
+                  <Link to="/Ticket">Ticket</Link>
+
                 </li>
                 <li>
-                <a href="#">
-                  Request Event
-                  </a>
+                  <Link to="/SellTicket">Sell Ticket</Link>
+
                 </li>
                 <li>
-                <a href="#">
-                 Contact Us
-                 </a>
+                  <Link to="/RequestEvent">Request Event</Link>
+                </li>
+                <li>
+                    <Link to="/ContactUs">Contact us</Link>
                 </li>
               </ul>
             </nav>
             <div className="header-right-wrapper">
               <span className="review-more">
-                {" "}
-                100k+ Social Media Followers{" "}
+                100k+ Social Media Followers
               </span>
               <DropDown />
               <ul className="list-none flex ml-auto mr-auto v-center header-ul">
                 <li className="login-btn">
-                <a href="#" className="btn-primary text-decoration-none">
+                  {/* <a href="#" className="btn-primary text-decoration-none">
                     Login
-              </a>
+                  </a> */}
+                  <Link to="/Login" className="btn-primary text-decoration-none">Login</Link>
                 </li>
               </ul>
             </div>

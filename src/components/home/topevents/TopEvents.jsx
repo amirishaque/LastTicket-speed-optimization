@@ -1,7 +1,8 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Image from '../../../assets/images/img1.webp';
 import "./style/style.css";
+import Ticket from "../../../pages/tickets/Ticket";
 
 export default function TopEvents() {
   // Array of image sources
@@ -21,7 +22,9 @@ export default function TopEvents() {
           {images.map((image, index) => (
             <div className="image-box" key={index}>
               <figure>
+                <Link to="/Ticket">
                 <img src={image} alt="#" width={450} height={327} />
+                </Link>
               </figure>
             </div>
           ))}

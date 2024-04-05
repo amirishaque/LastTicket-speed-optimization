@@ -23,6 +23,8 @@ body{
   padding: 0px;
   margin: 0px;
   font-family: 'Poppins';
+  background-color: transparent;
+  /* background: #121212; */
 }
 ul{
   padding: 0px;
@@ -38,5 +40,11 @@ h1,h2,h3,h4,h5,h6,p{
   margin: 0px;
   padding: 0px;
 }
-
+.header-placement {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #121212;
+  height: 89px;
+}
 /* Rest of your existing styles */

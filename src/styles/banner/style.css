@@ -1,0 +1,55 @@
+.small-banner {
+  height: 400px;
+  margin: 0 0 80px;
+  text-align: center;
+  background: url("../../assets/images/small-banner.webp") no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 120px;
+  margin-top: -10px;
+}
+
+.small-banner p {
+  margin: 0 0 40px;
+  line-height: 25px;
+  color: #fff;
+}
+
+.small-banner .container {
+  max-width: 1040px;
+}
+
+.small-banner .search-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.small-banner h1 {
+  margin: 0 0 10px;
+  color: #fff;
+  font-size: 45px;
+  line-height: 50px;
+}
+
+@media (max-width: 767px) {
+  .small-banner h1 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .small-banner {
+    margin-bottom: 72px;
+  }
+}
+@media (max-width: 480px) {
+  .small-banner {
+    height: 107vw;
+  }
+}
+.login-page {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */

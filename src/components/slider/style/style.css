@@ -6,13 +6,13 @@
 
 .slider-wrapper {
   background: #0DCCD7;
-  height: auto;
+  min-height: 38px;
   cursor: grab; /* Shows a grab hand to indicate draggability */
   overflow: hidden;
+  margin-top: -1px;
 }
 .slider-wrapper .marquee {
   white-space: nowrap;
-  overflow: hidden;
   display: block;
   cursor: grab;
   animation: marquee 50s linear infinite;
