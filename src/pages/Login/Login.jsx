@@ -1,36 +1,51 @@
-import React from 'react';
-import Slider from '../../components/slider/Slider';
-import Banner from '../../components/banner/Banner';
-import '../../styles/login/style.css'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link for navigation
+import '../../styles/login/style.css';
+import Registration from '../../components/registration/Registration';
+import ForgotPassword from '../../components/forgotpassword/ForgotPassword'
 
 export default function Login() {
+    const [isLogin, setIsLogin] = useState(true); // State to manage login or registration form
+    const [isForgotPassword, setIsForgotPassword] = useState(false); // State to manage whether forgot password form is displayed
+
+    const toggleForm = () => {
+        setIsLogin(!isLogin); // Toggle between login and registration forms
+    };
+
+    const toggleForgotPassword = () => {
+        setIsForgotPassword(!isForgotPassword); // Toggle whether forgot password form is displayed
+    };
+
     return (
         <>
-            <Slider />
-            <Banner />
-            <section className="login-wrapper">
-                <div className="background-img">
-                    <figure>
-                        <img src="https://brandio.io/envato/iofrm/html/images/graphic8.svg" alt="background image" width={534} height={442} />
-                    </figure>
-                </div>
-                <div className="login-inner-wrapper">
-                    <figure>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="58" viewBox="0 0 60 58">
-                            <g id="chat_2_" data-name="chat (2)" transform="translate(0 -1)">
-                                <path id="Path_1123" data-name="Path 1123" d="M54.07,1H15.93A5.936,5.936,0,0,0,10,6.93V13H44.07A7.939,7.939,0,0,1,52,20.929V34h2.07A5.936,5.936,0,0,0,60,28.07V6.93A5.936,5.936,0,0,0,54.07,1Z" fill="#fff" opacity="0.446" />
-                                <path id="Path_1124" data-name="Path 1124" d="M44.07,15H5.93A5.936,5.936,0,0,0,0,20.929V42.07A5.936,5.936,0,0,0,5.93,48H12V58a1,1,0,0,0,1.74.673L23.442,48H44.07A5.936,5.936,0,0,0,50,42.07V20.929A5.936,5.936,0,0,0,44.07,15ZM12,25.015H26a1,1,0,0,1,0,2H12a1,1,0,1,1,0-2Zm27,14H12a1,1,0,0,1,0-2H39a1,1,0,0,1,0,2Zm0-6H12a1,1,0,0,1,0-2H39a1,1,0,1,1,0,2Z" fill="#fff" />
-                            </g>
-                        </svg>
-                    </figure>
-                    <h1>Sign up / Login</h1>
-                    <form>
-                        <input type="text" placeholder="User Name or Email"  style={{maxWidth:'385px'}}/>
-                        <input type="password" placeholder="Password" style={{maxWidth:'385px'}}/>
-                        <button type="submit">Submit</button>
-                    </form>
+            <section className='login-wrapper-outer'>
+                <div className='login-wrapper-inner'>
+                    <div className='left-fragment'></div>
+                    <div className="login-wrapper">
+                        <div className="login-inner-wrapper">
+                            {/* Conditional rendering based on login or registration form */}
+                            {isForgotPassword ? (
+                                <ForgotPassword />
+                            ) : (
+                                <>
+                                    <h1>{isLogin ? 'Login' : 'Sign up'}</h1> {/* Conditional title based on form type */}
+                                    <form>
+                                        <input type="text" placeholder="User Name or Email" style={{ maxWidth: '385px' }} />
+                                        <input type="password" placeholder="Password" style={{ maxWidth: '385px' }} />
+                                        {/* Show forgot password only in login form */}
+                                        {isLogin && <p><button onClick={toggleForgotPassword}>Forgot Password?</button></p>}
+                                        <button type="submit">{isLogin ? 'Login' : 'Sign up'}</button> {/* Conditional button text */}
+                                    </form>
+                                    <p>
+                                        {isLogin ? "Don't have an account?" : "Already have an account?"}
+                                        <button onClick={toggleForm}>{isLogin ? 'Sign up here' : 'Login here'}</button> {/* Toggle button text */}
+                                    </p>
+                                </>
+                            )}
+                        </div>
+                    </div>
                 </div>
             </section>
         </>
-    )
+    );
 }

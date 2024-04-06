@@ -7,9 +7,6 @@ import FeatureEvents from "../../components/home/feature/FeatureEvents";
 import Loader from "../../components/loader/Loader";
 
 export default function Home() {
-
-  // 
-
   return (
     <>
       <Index />
