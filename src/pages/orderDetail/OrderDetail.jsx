@@ -4,6 +4,7 @@ import Slider from '../../components/slider/Slider';
 import '../../styles/orderDetail/style.css';
 import logos from '../../assets/images/logoMain.webp';
 import Guard from '../../assets/images/guard.jpeg';
+import { Link } from 'react-router-dom';
 
 export default function OrderDetail() {
     return (
@@ -96,7 +97,7 @@ export default function OrderDetail() {
                     {/* <p>Great! You are logged in successfully. Please proceed to checkout.</p> */}
                <p>You will get an email with instructions on how to download your tickets to your phone.</p>
                 </div>
-                <button>Proceed to checkout</button>
+                <Link to='/Checkout'>Proceed to checkout</Link>
             </section>
         </>
     )

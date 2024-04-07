@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import '../../styles/modal/style.css'
+import '../../styles/modal/style.css';
+import { Link } from 'react-router-dom';
 
 const Modal = ({ isOpen, closeModal }) => {
     const handleOutsideClick = (e) => {
@@ -27,7 +28,7 @@ const Modal = ({ isOpen, closeModal }) => {
                 <option>5</option>
                 <option>6</option>
                </select>
-               <button>Submit</button>
+               <Link to='/OrderDetail'>Submit</Link>
               </div>
             </div>
           </div>

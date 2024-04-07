@@ -41,10 +41,10 @@ const Header = () => {
             </figure>
             <nav id="nav">
               <ul className="list-none flex v-center">
-                <li>
+                {/* <li>
                   <Link to="/Ticket">Ticket</Link>
 
-                </li>
+                </li> */}
                 <li>
                   <Link to="/SellTicket">Sell Ticket</Link>
 

@@ -10,6 +10,7 @@ import ETicket from '../../components/ticket/ETicket';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Modal from '../../components/modal/Modal';
+import { Link } from 'react-router-dom';
 
 
 export default function Ticket() {
@@ -105,6 +106,7 @@ export default function Ticket() {
                   <div className="contact-cols login-cols">
                         <div className="container">
                             <div className="filters-holder">
+                                <Link to='/'>Home</Link>
                                 <strong>Last Chance Ticket</strong>
                                 <div className="seat-ico flex v-center">
                                     <img src={seatIcon} alt="#" />

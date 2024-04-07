@@ -8,7 +8,7 @@ function RequestEvent() {
   return (
         <>
       <Slider/>
-      <Banner />
+      {/* <Banner /> */}
       <div className="event-box-wrapper text-holder">
         <div className="boxes-holder">
           <h2>Get in <span>Touch</span> With <span>Us</span></h2>

@@ -8,7 +8,7 @@ export default function ContactUs() {
   return (
    <>
    <Slider/>
-   <Banner/>
+   {/* <Banner/> */}
        <section className="contact-us-wrapper">
         <div className="left-contact-us-fragment">
             <figure>

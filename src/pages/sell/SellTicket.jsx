@@ -7,7 +7,7 @@ export default function SellTicket() {
   return (
     <>
     <Slider/>
-    <Banner/>
+    {/* <Banner/> */}
     		<div className="event-box-wrapper text-holder">
 						<div className="boxes-holder">
 							<h2>SELL YOUR TICKETS ON <span>LAST CHANCE TICKET</span></h2>
