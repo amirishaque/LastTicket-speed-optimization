@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../../styles/ticket/style.css';
 import Modal from '../modal/Modal';
+import TicketIcon from '../../assets/images/ticketIcon.webp'
 
 export default function ETicket() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,7 +29,9 @@ export default function ETicket() {
                 {tickets.map((ticket, index) => (
                     <div className='eticket-box' key={index}>
                         <div className='left-fragment'>
-                            <h3>Mobile Ticket</h3>
+                            <h3>Mobile Ticket
+                                {/* <img src={TicketIcon} width={25} style={{marginLeft:'5', marginRight:'5'}}/> */}
+                            </h3>
                             <ul>
                                 <li>
                                     <strong>Category</strong>

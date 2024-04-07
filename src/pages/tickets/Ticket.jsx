@@ -11,6 +11,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Modal from '../../components/modal/Modal';
 import { Link } from 'react-router-dom';
+import Flag from '../../assets/images/flag.svg';
 
 
 export default function Ticket() {
@@ -54,9 +55,11 @@ export default function Ticket() {
         <p>
         Welcome to the ticket page!
         <br />
-        Bouth 2 tickets from (Flag) for this event.
+        Bouth 2 tickets from 
+        <img src={Flag} width={20} alt='flag' style={{ marginRight: '5px', marginLeft: '5px' }} />
+         for this event.
         <br />
-        (10 to 50) minutes ago.
+         10 minutes ago.
         </p>
       </div>,
       {
