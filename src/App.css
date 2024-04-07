@@ -1,1 +1,14 @@
 @import 'fonts.css';
+
+
+
+.Toastify__toast-container--top-center {
+    /* top: var(--toastify-toast-top); */
+    transform: unset !important;
+    right: 0 !important;
+    top: 117px !important;
+    left: unset !important;
+}
+.Toastify__toast-icon.Toastify--animate-icon.Toastify__zoom-enter {
+    display: none;
+}

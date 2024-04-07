@@ -52,7 +52,7 @@
 .radios label {
   display: inline-block;
   vertical-align: top;
-  padding: 8px 19px;
+  padding: 0px;
   font-weight: 600;
   font-size: 13px;
   border-radius: 30px;
@@ -155,6 +155,7 @@
   border: transparent;
   border-radius: 4px;
   cursor: pointer;
+  transition: 0.4s;
 }
 
 .counters button.active,

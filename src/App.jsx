@@ -12,6 +12,8 @@ import ContactUs from "./pages/contact/ContactUs";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import TicketDetail from "./components/ticketDetail/TicketDetail";
 import Login from "./pages/Login/Login";
+import OrderDetail from "./pages/orderDetail/OrderDetail";
+import Checkout from "./pages/checkout/Checkout";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -70,6 +72,8 @@ function App() {
           <Route path="/RequestEvent" element={<RequestEvent />} />
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/Login" element={<Login />} />
+          <Route path="/OrderDetail" element={<OrderDetail />} />
+          <Route path="/Checkout" element={<Checkout />} />
         </Routes>
         <Footer />
         <ScrollToTopButton />

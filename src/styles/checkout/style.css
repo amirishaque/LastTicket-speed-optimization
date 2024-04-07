@@ -1,0 +1,167 @@
+.checkout-page-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 50px;
+  background: #fff;
+  border-radius: 5px;
+  margin: 0 0 35px;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff;
+  gap: 70px;
+  max-width: 1320px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.checkout-page-wrapper .left-fragment {
+  max-width: 764px;
+  width: 100%;
+}
+.checkout-page-wrapper .left-fragment h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px !important;
+}
+.checkout-page-wrapper .left-fragment .box-payment {
+  border: 1px solid #0dccd7;
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.checkout-page-wrapper .left-fragment .box-payment span {
+  position: absolute;
+  top: -13px;
+  left: 38%;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0px 10px;
+}
+.checkout-page-wrapper .left-fragment .or-div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.checkout-page-wrapper .left-fragment .or-div::before, .checkout-page-wrapper .left-fragment .or-div::after {
+  content: "";
+  flex: 1;
+  border-top: 2px solid #0dccd7;
+  margin: 0 10px;
+}
+.checkout-page-wrapper .left-fragment .or-div span {
+  padding: 0 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.checkout-page-wrapper .left-fragment .contact-info {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.checkout-page-wrapper .left-fragment .contact-info .detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.checkout-page-wrapper .left-fragment .contact-info .detail span {
+  font-size: 16px;
+  font-weight: 600;
+}
+.checkout-page-wrapper .left-fragment .contact-info .form-wrapper input {
+  border: 1px solid #0dccd7;
+  padding: 0px 15px;
+  width: 100%;
+  border-radius: 5px;
+  height: 38px;
+  padding: 0px 15px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.checkout-page-wrapper .left-fragment .contact-info .form-wrapper input:focus {
+  outline: unset;
+}
+.checkout-page-wrapper .left-fragment .contact-info .form-wrapper .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+.checkout-page-wrapper .left-fragment .contact-info .form-wrapper .checkbox input {
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+}
+.checkout-page-wrapper .left-fragment .contact-info .form-wrapper button {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px;
+  background: #0DCCD7;
+  border-radius: 5px;
+  border: 1px solid #0DCCD7;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out 0s;
+  margin: 0 auto;
+  height: 48px;
+  cursor: pointer;
+  width: 100%;
+}
+.checkout-page-wrapper .left-fragment .contact-info .form-wrapper button:hover {
+  color: #0DCCD7;
+  background: #fff;
+}
+.checkout-page-wrapper .left-fragment .contact-info .form-wrapper .cvc-wrapper {
+  display: flex;
+  gap: 20px;
+}
+.checkout-page-wrapper .left-fragment .contact-info .form-wrapper .cvc-wrapper input {
+  width: 282px;
+}
+.checkout-page-wrapper .right-fragment {
+  max-width: 523px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff;
+  width: 50%;
+}
+.checkout-page-wrapper .right-fragment h2 {
+  position: relative;
+  margin-bottom: 20px !important;
+  font-size: 30px;
+}
+.checkout-page-wrapper .right-fragment h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin-top: 5px;
+}
+.checkout-page-wrapper .right-fragment .order-detail-b ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #d1d9e6;
+  padding-bottom: 21px;
+}
+.timer-wrapper {
+  margin: 20px 0px;
+  text-align: center;
+}
+.timer-wrapper span {
+  font-size: 35px;
+  font-weight: 600;
+}/*# sourceMappingURL=style.css.map */

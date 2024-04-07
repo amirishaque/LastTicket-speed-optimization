@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // Import Link for navigation
 import '../../styles/login/style.css';
-import Registration from '../../components/registration/Registration';
+// import Registration from '../../components/registration/Registration';
 import ForgotPassword from '../../components/forgotpassword/ForgotPassword'
+import Registration from '../../components/registration/Registration'
 
 export default function Login() {
     const [isLogin, setIsLogin] = useState(true); // State to manage login or registration form
@@ -28,18 +29,22 @@ export default function Login() {
                                 <ForgotPassword />
                             ) : (
                                 <>
-                                    <h1>{isLogin ? 'Login' : 'Sign up'}</h1> {/* Conditional title based on form type */}
-                                    <form>
-                                        <input type="text" placeholder="User Name or Email" style={{ maxWidth: '385px' }} />
-                                        <input type="password" placeholder="Password" style={{ maxWidth: '385px' }} />
-                                        {/* Show forgot password only in login form */}
-                                        {isLogin && <p><button onClick={toggleForgotPassword}>Forgot Password?</button></p>}
-                                        <button type="submit">{isLogin ? 'Login' : 'Sign up'}</button> {/* Conditional button text */}
-                                    </form>
-                                    <p>
-                                        {isLogin ? "Don't have an account?" : "Already have an account?"}
-                                        <button onClick={toggleForm}>{isLogin ? 'Sign up here' : 'Login here'}</button> {/* Toggle button text */}
-                                    </p>
+                                    {isLogin ? (
+                                        <>
+                                            <h1>Login</h1>
+                                            <form style={{maxWidth:'358px', margin:'0 auto', padding:'30px'}}>
+                                                <input type="text" placeholder="User Name or Email" style={{ maxWidth: '385px' }} />
+                                                <input type="password" placeholder="Password" style={{ maxWidth: '385px' }} />
+                                                {/* Show forgot password only in login form */}
+                                                <p><button onClick={toggleForgotPassword}>Forgot Password?</button></p>
+                                                <button type="submit" style={{width:'384px'}}>Login</button>
+                                                <p><span>Don't have an account?</span> <button onClick={toggleForm}>Sign up here</button></p>
+                                            </form>
+                                           
+                                        </>
+                                    ) : (
+                                        <Registration />
+                                    )}
                                 </>
                             )}
                         </div>

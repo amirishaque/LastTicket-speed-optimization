@@ -5,8 +5,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(https://storage.googleapis.com/theme-vessel-items/checking-sites/oddo-2-html/HTML/main/assets/img/img-19.jpg) top left repeat;
-  background-size: cover;
 }
 .login-wrapper-outer .login-wrapper-inner {
   background: #fff;
@@ -17,6 +15,7 @@
   justify-content: space-between;
   overflow: hidden;
   border-radius: 10px;
+  height: 700px;
 }
 .login-wrapper-outer .login-wrapper-inner .left-fragment {
   background: url(https://lastchanceticket.com/public/assets/images/LoginGirl.jpg) top left repeat;
@@ -27,20 +26,19 @@
   z-index: 999;
   position: relative;
   display: flex;
-  height: 548px;
-  width: 663px;
+  height: 700px;
+  width: 741px;
 }
 .login-wrapper-outer .login-wrapper-inner .login-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  max-width: 548px;
+  max-width: 800px;
   width: 100%;
   overflow: hidden;
 }
 .login-wrapper-outer .login-wrapper-inner .login-wrapper .login-inner-wrapper {
-  max-width: 385px;
   width: 100%;
   height: auto;
   background-color: #ffffff;
@@ -85,8 +83,19 @@
   color: #535353;
   margin-top: -15px !important;
   margin-bottom: 20px !important;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
-.login-wrapper-outer .login-wrapper-inner .login-wrapper .login-inner-wrapper form p:hover {
+.login-wrapper-outer .login-wrapper-inner .login-wrapper .login-inner-wrapper form p span {
+  width: 100%;
+}
+.login-wrapper-outer .login-wrapper-inner .login-wrapper .login-inner-wrapper form p button {
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+}
+.login-wrapper-outer .login-wrapper-inner .login-wrapper .login-inner-wrapper form p button:hover {
   color: #0DCCD7;
   cursor: pointer;
 }

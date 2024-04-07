@@ -5,11 +5,12 @@ export default function ForgotPassword({ toggleForm }) {
         <>
             <div className="login-inner-wrapper">
                 <h1>Forgot Password</h1>
-                <form>
+                <form style={{maxWidth:'358px', margin:'0 auto', padding:'30px'}}>
                     <input type="text" placeholder="User Name or Email" style={{ maxWidth: '385px' }} />
-                    <button type="submit">Reset Password</button>
+                    <button type="submit" style={{width:'384px'}}>Reset Password</button>
+                    <p><span>Remember your password?</span> <button onClick={toggleForm}>Login here</button></p>
                 </form>
-                <p>Remember your password? <button onClick={toggleForm}>Login here</button></p>
+                {/* <p>Remember your password? <button onClick={toggleForm}>Login here</button></p> */}
             </div>
         </>
     );

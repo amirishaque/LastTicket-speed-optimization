@@ -6,8 +6,8 @@
     justify-content: center;
     align-items: center;
     // padding: 30px 0;
-    background: url(https://storage.googleapis.com/theme-vessel-items/checking-sites/oddo-2-html/HTML/main/assets/img/img-19.jpg) top left repeat;
-    background-size: cover;
+    // background: url(https://storage.googleapis.com/theme-vessel-items/checking-sites/oddo-2-html/HTML/main/assets/img/img-19.jpg) top left repeat;
+    // background-size: cover;
 
     .login-wrapper-inner{
         background: #fff;
@@ -18,6 +18,7 @@
         justify-content: space-between;
         overflow: hidden;
         border-radius: 10px;
+        height: 700px;
     
 
     .left-fragment{
@@ -29,8 +30,8 @@
         z-index: 999;
         position: relative;
         display: flex;
-        height: 548px;
-        width: 663px;
+        height: 700px;
+        width: 741px;
     }
     .login-wrapper {
         display: flex;
@@ -40,7 +41,7 @@
         // margin-top:120px;
         position: relative;
         // padding: 0px 15px;
-        max-width: 548px;
+        max-width: 800px;
         width: 100%;
         overflow: hidden;
     
@@ -60,7 +61,7 @@
         // }
     
         .login-inner-wrapper {
-            max-width: 385px;
+            // max-width: 385px;
             width: 100%;
             height: auto;
             // border-radius: 20px;
@@ -115,10 +116,22 @@
     color: #535353;
     margin-top: -15px !important;
     margin-bottom: 20px !important;
-    &:hover{
-        color:#0DCCD7;
-        cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    span{
+        width: 100%;
     }
+    button{
+        margin: 0px;
+        padding: 0px;
+        text-align: right;
+        &:hover{
+            color:#0DCCD7;
+            cursor: pointer;
+        }
+    }
+ 
  
                 }
                 button {
