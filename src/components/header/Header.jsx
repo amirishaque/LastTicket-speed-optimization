@@ -32,7 +32,7 @@ const Header = () => {
         <div className="header-wrapper">
           <Link to='/'>
             <img src={LogoMain} alt="logo" width={231} height={48} />
-            <img className="mobile" src="https://lastchanceticket.com/public/assets/images/100k.png" alt="logo" width={48} height={70}/>
+            {/* <img className="mobile" src="https://lastchanceticket.com/public/assets/images/100k.png" alt="logo" width={48} height={70}/> */}
           </Link>
           <div className={`header-right ${isActive ? "active" : ""}`}>
             <figure>
