@@ -73,10 +73,10 @@
     padding-bottom: 0px;
   }
   .news-wrapper .email-wrapper input:focus {
-    border: 1.5px solid #0dccd7;
+    border: 1px solid #0dccd7;
   }
   .news-wrapper .email-wrapper input:focus-visible {
-    border: 0px solid #0dccd7;
+    border: 1px solid #0dccd7;
   }
 }
 @media screen and (min-width: 767px) {

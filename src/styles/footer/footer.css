@@ -17,6 +17,7 @@ h1, h2, p, figure {
     border-bottom: 1px solid #54595F;
     padding-bottom: 20px;
     margin-bottom: 20px;
+    gap: 30px;
   }
   .footer-wrapper .footer-wrapper-inner .about {
     max-width: 528px;

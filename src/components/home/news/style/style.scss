@@ -76,10 +76,10 @@
         padding-bottom: 0px;
 
         &:focus {
-          border: 1.5px solid #0dccd7;
+          border: 1px solid #0dccd7;
         }
         &:focus-visible {
-          border: 0px solid #0dccd7;
+          border: 1px solid #0dccd7;
         }
       }
     }

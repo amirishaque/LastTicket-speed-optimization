@@ -35,35 +35,54 @@ const Footer = () => {
             </ul>
           </div>
           <div className="detail">
-            <h2>Company</h2>
+            <h2>Company Info</h2>
             <ul>
-              <li>About Us</li>
-              <li>Services</li>
-              <li>Work</li>
-              <li>Information</li>
+              <li>About us</li>
+              <li>Contact us</li>
+              <li>Contect</li>
+              {/* <li>Information</li> */}
             </ul>
           </div>
           <div className="detail">
-            <h2>INFORMATION</h2>
+            <h2>Safe and Secure</h2>
             <ul>
-              <li>Blog</li>
-              <li>Contact Us</li>
-              <li>Career</li>
-              <li>Testimonials</li>
+              <li>Buy 100% safe and secure</li>
+              <li>Best Customer service before and after Purchase.</li>
+              <li>100% Secure Payment System</li>
+              {/* <li>Testimonials</li> */}
             </ul>
           </div>
           <div className="detail">
-            <h2>ADDRESS</h2>
+            <h2>POPULAR EVENTS</h2>
             <ul>
               <li>
-                <span></span>hello@rameo.website
+                Concert
               </li>
               <li>
-                <span></span>(02) 6441 6721
+              Formula 1
               </li>
               <li>
-                <span></span>12/56 Grand Avenue, Sydney, Australia
+                UFC
               </li>
+            </ul>
+          </div>
+          <div className="detail">
+            <h2>HOT TICKETS
+</h2>
+            <ul>
+              <li>
+              India Vs Pakistan - T20 World Cup 2024
+
+              </li>
+              <li>
+              Semi Final 1 - T20 Cricket World Cup
+              </li>
+              <li>
+              Semi Final 2 - T20 Cricket World Cup
+
+              </li>
+              <li>Final - T20 Cricket World Cup
+</li>
             </ul>
           </div>
         </div>

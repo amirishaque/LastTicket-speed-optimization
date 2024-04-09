@@ -40,11 +40,10 @@ export default function Index() {
           <Slider />
           <div className="banner-wrapper-inner">
             <h2>WELCOME TO Last Chance Ticket</h2>
-            <h1>Unlock Adventures, Seize Moments, Live Dreams</h1>
-            <p>
-              Last Chance Ticket is one of the world's leading secondary ticket
-              marketplaces. Prices may be above or below face value.
-            </p>
+            <h1>Last Chance Ticket is one of the world's leading secondary ticket marketplaces. Prices may be above or below face value.</h1>
+            {/* <p>
+            Last Chance Ticket is one of the world's leading secondary ticket marketplaces. Prices may be above or below face value.
+            </p> */}
             <form>
               <input
                 type="text"
