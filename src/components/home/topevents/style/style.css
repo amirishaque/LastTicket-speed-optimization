@@ -35,12 +35,34 @@
     gap: 20px;
   }
   .top-events-wrapper .image-wrapper .image-box {
+    overflow: hidden;
     cursor: pointer;
+    position: relative;
   }
   .top-events-wrapper .image-wrapper .image-box figure img {
     max-width: 150px;
     height: auto;
     border: 1px solid transparent;
+  }
+  .top-events-wrapper .image-wrapper .image-box figure img a {
+    position: absolute;
+  }
+  .top-events-wrapper .image-wrapper .image-box figure img a strong {
+    position: relative;
+  }
+  .top-events-wrapper .image-wrapper .image-box strong {
+    background: rgba(0, 0, 0, 0.6588235294);
+    position: absolute;
+    color: #fff;
+    z-index: 9999;
+    bottom: 0;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 9px;
+    max-width: 142px;
+    width: 100%;
   }
   .top-events-wrapper .white-overlay {
     background-color: #121212;
@@ -63,9 +85,18 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .top-events-wrapper .image-wrapper .image-box {
+    position: relative;
+  }
   .top-events-wrapper .image-wrapper .image-box figure img {
     max-width: 312px;
     height: 225px;
+  }
+  .top-events-wrapper .image-wrapper .image-box strong {
+    font-size: 14px !important;
+    left: 16px;
+    max-width: 271px !important;
+    width: 100%;
   }
   .top-events-wrapper .white-overlay {
     background-color: #fff;

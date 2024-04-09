@@ -22,16 +22,19 @@ export default function TopEvents() {
           {images.map((image, index) => (
             <div className="image-box" key={index}>
                <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
               <figure>
                 <Link to="/Ticket">
                 <img src={image} alt="#" width={450} height={327} />
+               
                 </Link>
               </figure>
+              <strong>India Vs Pakistan - T20 World Cup 2024</strong>
             </div>
           ))}
+         
         </div>
         <div className="white-overlay"></div>
       </section>

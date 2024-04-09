@@ -41,7 +41,9 @@
             .image-box {
                 // border-radius: 6px;
                 // transition: 0.5s all ease-in-out;
+                overflow: hidden;
                 cursor: pointer;
+                position: relative;
                 figure {
                     img {
 
@@ -54,11 +56,33 @@
                             // border: 1px solid #0DCCD7;
                             // transition: 0.4s;
                         }
+                        a{
+                            position: absolute;
+                            strong{
+                                position: relative;
+                                // width: 142px;
+                            }
+                        }
                     }
+             
                 }
                 // &:hover{
                 //     transform: scale(1.01);
                 // }
+                strong{
+                    background: #000000a8;
+                    position: absolute;
+                    color: #fff;
+                    z-index: 9999;
+                    bottom: 0;
+                    padding: 5px;
+                    text-align: center;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    font-size: 9px;
+                    max-width: 142px;
+                    width: 100%;
+                }
                 
             }
         }
@@ -92,11 +116,19 @@
             flex-direction: row;
             flex-wrap: wrap;
             .image-box {
+                position: relative;
                 figure {
                     img {
                         max-width: 312px;
                         height: 225px;
                     }
+                }
+                strong{
+                    font-size: 14px !important;
+                    left: 16px;
+                    max-width: 271px !important;
+                    width: 100%;
+                
                 }
             }
         }
