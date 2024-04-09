@@ -26,7 +26,7 @@
       }
 
       .banner-wrapper-inner {
-        min-height: 440px;
+        min-height: 309px;
         text-align: center;
         display: flex;
         align-items: center;
@@ -46,7 +46,7 @@
 
         h1 {
           color: #fff;
-          font-size: 24px;
+          font-size: 18px;
           padding: 0px;
           margin: 0px;
           font-weight: 600;
@@ -90,6 +90,7 @@
     .banner-wrapper {
       .banner-wrapper-inner {
         padding: 0px;
+        min-height: 440px;
         h1 {
           font-size: 32px;
         }
