@@ -17,6 +17,13 @@
   margin: 0 auto;
   gap: 20px;
 }
+.header-wrapper a {
+  display: flex;
+  align-items: flex-start;
+}
+.header-wrapper a img {
+  height: auto;
+}
 
 .header-right figure {
   display: none;
