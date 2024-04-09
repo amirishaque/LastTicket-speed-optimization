@@ -144,11 +144,15 @@
   height: 50px;
   font-size: 15px;
   cursor: pointer;
+  transition: 0.4s;
 }
 
 .formCol input:hover {
   border: 2px solid #22b3c1;
   transition: 0.04s;
+  color: #0DCCD7 !important;
+  background: #fff;
+  /* color: #0DCCD7; */
 }
 
 @media (max-width: 600px) {
