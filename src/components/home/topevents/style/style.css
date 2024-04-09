@@ -35,22 +35,12 @@
     gap: 20px;
   }
   .top-events-wrapper .image-wrapper .image-box {
-    border-radius: 6px;
-    transition: 0.5s all ease-in-out;
     cursor: pointer;
   }
   .top-events-wrapper .image-wrapper .image-box figure img {
     max-width: 150px;
     height: auto;
     border: 1px solid transparent;
-    border-radius: 15px;
-  }
-  .top-events-wrapper .image-wrapper .image-box figure img:hover {
-    border: 1px solid #0DCCD7;
-    transition: 0.4s;
-  }
-  .top-events-wrapper .image-wrapper .image-box:hover {
-    transform: scale(1.01);
   }
   .top-events-wrapper .white-overlay {
     background-color: #121212;

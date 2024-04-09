@@ -115,6 +115,9 @@ h1,h2,p, figure{
         }
       }
     }
+    .mobile{
+      display: block;
+    }
   }
   
   @media screen and (min-width: 767px) {
@@ -153,6 +156,9 @@ h1,h2,p, figure{
       .footer-bottom{
         flex-direction: row;
       }
+    }
+    .mobile{
+      display: none !important;
     }
   }
   

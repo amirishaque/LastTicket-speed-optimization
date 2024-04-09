@@ -10,6 +10,14 @@ $dark-color: #121212;
   position: sticky;
   top: 0;
   z-index: 999;
+  a{
+    display: flex;
+    .mobile{
+      img{
+        height: auto;
+      }
+    }
+  }
   .header-wrapper-inner{
     display: flex;
     align-items: center;
@@ -136,5 +144,11 @@ $dark-color: #121212;
         padding: 0px 0px 20px 0px !important;
       }
     }
+  }
+  .mobile{
+    display: none !important;
+  }
+  .login-btn a{
+    width: 90% !important;
   }
 }

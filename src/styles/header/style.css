@@ -6,6 +6,12 @@
   top: 0;
   z-index: 999;
 }
+.header-wrapper a {
+  display: flex;
+}
+.header-wrapper a .mobile img {
+  height: auto;
+}
 .header-wrapper .header-wrapper-inner {
   display: flex;
   align-items: center;
@@ -121,5 +127,11 @@
   .header-right.active ul li {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding: 0px 0px 20px 0px !important;
+  }
+  .mobile {
+    display: none !important;
+  }
+  .login-btn a {
+    width: 90% !important;
   }
 }/*# sourceMappingURL=style.css.map */

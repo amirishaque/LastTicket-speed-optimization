@@ -39,8 +39,8 @@
 
             // justify-content: center;
             .image-box {
-                border-radius: 6px;
-                transition: 0.5s all ease-in-out;
+                // border-radius: 6px;
+                // transition: 0.5s all ease-in-out;
                 cursor: pointer;
                 figure {
                     img {
@@ -48,18 +48,18 @@
                         max-width: 150px;
                         height: auto;
                         border: 1px solid transparent;
-                        border-radius: 15px;
+                        // border-radius: 15px;
                         
                         &:hover{
-                            border: 1px solid #0DCCD7;
-                            transition: 0.4s;
+                            // border: 1px solid #0DCCD7;
+                            // transition: 0.4s;
                         }
                     }
                 }
-                &:hover{
-                    transform: scale(1.01);
-                }
-          
+                // &:hover{
+                //     transform: scale(1.01);
+                // }
+                
             }
         }
 
@@ -106,6 +106,17 @@
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

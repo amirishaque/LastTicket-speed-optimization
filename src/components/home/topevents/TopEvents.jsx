@@ -21,6 +21,10 @@ export default function TopEvents() {
           {/* Mapping over the array of images */}
           {images.map((image, index) => (
             <div className="image-box" key={index}>
+               <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
               <figure>
                 <Link to="/Ticket">
                 <img src={image} alt="#" width={450} height={327} />
