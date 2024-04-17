@@ -35,7 +35,23 @@
 
 
 
-
+.chatwrapper{
+    position: fixed;
+    bottom: 20px;
+    right: 60px;
+    cursor: pointer;
+    background-color: #22b3c1;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+.chatwrapper svg{
+    fill: #fff;
+}
 @media screen and (max-width: 767px) {
     .chatwrapper{
         position: fixed;
