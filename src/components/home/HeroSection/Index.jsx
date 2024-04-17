@@ -97,7 +97,7 @@ export default function Index() {
               </div>
             </div>
             <div className="trust-pilot">
-              <p>Trust Polit Score 4.7</p>
+              <p>Trust Polit Score 5.0</p>
               <div className="img-wrapper">
                 <div className="img-boxes">
                   <div className="img-box">
