@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 // import  from 'react';
 import '../../styles/checkout/style.css'
 // import '../../styles/checkout'
-import payPal from '../../assets/images/paypal.svg';
+// import payPal from '../../assets/images/paypal.svg';
 import Strip from '../../assets/images/stripe.svg';
 import MasterCard from '../../assets/images/master-card.svg';
 import ApplePay from '../../assets/images/apple-pay.svg';
@@ -35,11 +35,11 @@ An Unforgettable experience is just 1 click away</h2>
 <span> {minutes < 10 ? '0' : ''}{minutes} : {remainingSeconds < 10 ? '0' : ''}{remainingSeconds}</span>
 </div>
             <div className='box-payment'>
-                <div className='box-p'>
+                {/* <div className='box-p'>
                    <figure>
                     <img src={payPal} alt='paypal' width={100} height={100}/>
                     </figure> 
-                </div>
+                </div> */}
                 <div className='box-p'>
                 <figure>
                     <img src={Strip} alt='paypal' width={100} height={100}/>
