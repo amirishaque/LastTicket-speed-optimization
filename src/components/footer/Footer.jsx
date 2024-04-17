@@ -3,7 +3,7 @@ import "../../styles/footer/footer.css";
 import ApplyPay from '../../assets/images/applepay.svg';
 import GooglePay from '../../assets/images/googlepay.svg';
 import SamsungPay from '../../assets/images/samsungpay.svg';
-import PayPal from '../../assets/images/paypal.svg';
+// import PayPal from '../../assets/images/paypal.svg';
 import VisaCard from '../../assets/images/visacard.svg';
 import MasterCard from '../../assets/images/mastercard.svg'
 
@@ -35,9 +35,9 @@ const Footer = () => {
               <li>
                 <img src={SamsungPay} alt="icon" width={25} height={25} title="Samsung Payment" style={{height:'25px'}}/>
               </li>
-              <li>
+              {/* <li>
                 <img src={PayPal} alt="icon" width={25} height={25} title="PayPal" style={{height:'25px'}}/>
-              </li>
+              </li> */}
               <li>
                 <img src={VisaCard} alt="icon" width={25} height={30} title="Visa Card Paymeny" />
               </li>
