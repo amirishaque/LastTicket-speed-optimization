@@ -136,7 +136,7 @@ $dark-color: #121212;
 }
 @media screen and (max-width: 767px) {
   .header-right.active{
-    background: transparent !important;
+    background: rgba(0, 0, 0, 0.5) !important;
     backdrop-filter: blur(13.5914px) !important;
     ul{
       li{

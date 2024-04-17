@@ -14,6 +14,10 @@ import TicketDetail from "./components/ticketDetail/TicketDetail";
 import Login from "./pages/Login/Login";
 import OrderDetail from "./pages/orderDetail/OrderDetail";
 import Checkout from "./pages/checkout/Checkout";
+import ChatIcon from "./components/chat/ChatIcon";
+// import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
+// import TawkMessenger from "@tawk.to/tawk-messenger-react";
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -63,6 +67,7 @@ function App() {
 
 <Router>
       <div>
+        
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -77,8 +82,12 @@ function App() {
         </Routes>
         <Footer />
         <ScrollToTopButton />
+        <ChatIcon/>
       </div>
     </Router>
+    {/* <TawkMessengerReact
+                propertyId="property_id"
+                widgetId="default"/> */}
     </>
   )
 }

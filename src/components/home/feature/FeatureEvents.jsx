@@ -16,17 +16,23 @@ const FeatureEvents = () => {
         <h2>Featured Events On Sale Today</h2>
         
         <div className="custom-tabs">
-          <div className="tab-list">
-            {/* Map through tab items */}
-            {tabs.map((tab, index) => (
-              <div
-                key={index}
-                className={`tab ${activeTab === index ? "active" : ""}`}
-                onClick={() => handleTabChange(index)}
-              >
-                {tab.title}
-              </div>
-            ))}
+          <div className="tabs-list-wrapper">
+            <div className="tab-list">
+              {tabs.map((tab, index) => (
+                <div
+                  key={index}
+                  className={`tab ${activeTab === index ? "active" : ""}`}
+                  onClick={() => handleTabChange(index)}
+                >
+                  {tab.title}
+                </div>
+              ))}
+            </div>
+            <select>
+              <option>All Events</option>
+              <option>ICC T20 Cricket World Cup 2024</option>
+              
+            </select>
           </div>
           {/* Display content based on active tab */}
           <div className="tab-content">{tabs[activeTab].content}</div>

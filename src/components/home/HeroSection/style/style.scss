@@ -26,19 +26,19 @@
       }
 
       .banner-wrapper-inner {
-        min-height: 210px;
+        min-height: 270px;
         text-align: center;
         display: flex;
         align-items: center;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         gap: 10px;
         padding: 0px 15px 72px 15px;
 
         h2 {
           color: #0dccd7;
-          font-size: 12px;
-          font-weight: 400;
+          font-size: 16px;
+          font-weight: 700;
           padding: 0px;
           margin: 0px;
           text-transform: uppercase;
@@ -84,6 +84,66 @@
       }
     }
   }
+  .top-wrapper-polit-followers{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+
+    .followers-wrapper{
+      margin-bottom: 10px;
+      p{
+        font-size: 12px !important;
+      }
+      .icons-wrapper{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        justify-content: flex-end;
+        margin-top: 3px;
+      }
+    }
+    .trust-pilot{
+      // margin-left: 0;
+      // display: block;
+      // width: 100%;
+      // text-align: left;
+      p{
+        font-size: 12px !important;
+        text-align: left;
+      }
+      .img-wrapper{
+        .img-boxes{
+          .img-box{
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            .star {
+              background: green;
+              width: 10px;
+              height: 10px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 2px;
+              padding: 5px;
+              &:last-child{
+                background: transparent;
+              }
+              span{
+                color: #fff;
+                margin-left: 34px;
+                font-size: 12px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
 @media screen and (min-width: 767px) {
   .header-banner-wrapper {
@@ -91,8 +151,12 @@
       .banner-wrapper-inner {
         padding: 0px;
         min-height: 440px;
+        justify-content: center;
         h1 {
-          font-size: 32px;
+          font-size: 26px;
+        }
+        h2{
+          font-size: 22px;
         }
 
         form {
@@ -102,5 +166,6 @@
         }
       }
     }
+    
   }
 }

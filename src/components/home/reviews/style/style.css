@@ -17,6 +17,7 @@
     align-items: center;
     justify-content: center;
     gap: 4px;
+    margin-bottom: 15px;
   }
   .reviews-wrapper-outer .reviews-wrapper .main-review .star {
     background-color: #00b67a;

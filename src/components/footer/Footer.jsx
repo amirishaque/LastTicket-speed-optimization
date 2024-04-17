@@ -1,7 +1,11 @@
 import GuaranteeImage from "../../assets/images/ArtsDot-Footer-Payment-Guaranteed.webp";
-import PaymentImage from "../../assets/images/ArtsDot-Footer-Payment-1.webp";
-import PaymentImages from "../../assets/images/ArtsDot-Footer-Payment-2.webp";
 import "../../styles/footer/footer.css";
+import ApplyPay from '../../assets/images/applepay.svg';
+import GooglePay from '../../assets/images/googlepay.svg';
+import SamsungPay from '../../assets/images/samsungpay.svg';
+import PayPal from '../../assets/images/paypal.svg';
+import VisaCard from '../../assets/images/visacard.svg';
+import MasterCard from '../../assets/images/mastercard.svg'
 
 const Footer = () => {
   return (
@@ -21,7 +25,28 @@ const Footer = () => {
               <span>Our Warranty </span>If you are not 100% satisfied we will
               refund you 100% of your order.
             </p>
-            <ul>
+            <ul className="payments-methods">
+              <li>
+                <img src={ApplyPay} alt="icon" width={25} height={30} title="Apple Payment" />
+              </li>
+              <li>
+                <img src={GooglePay} alt="icon" width={25} height={30} title="Google Payment" />
+              </li>
+              <li>
+                <img src={SamsungPay} alt="icon" width={25} height={25} title="Samsung Payment" style={{height:'25px'}}/>
+              </li>
+              <li>
+                <img src={PayPal} alt="icon" width={25} height={25} title="PayPal" style={{height:'25px'}}/>
+              </li>
+              <li>
+                <img src={VisaCard} alt="icon" width={25} height={30} title="Visa Card Paymeny" />
+              </li>
+              <li>
+                <img src={MasterCard} alt="icon" width={25} height={30} title="Master Card Payment" />
+              </li>
+
+            </ul>
+            {/* <ul>
               <li>
                 <a href="#">
                   <img src={PaymentImage} alt="icons" width={36} height={22} />
@@ -32,24 +57,25 @@ const Footer = () => {
                   <img src={PaymentImages} alt="icons" width={36} height={22} />
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </div>
           <div className="detail">
-            <h2>Company Info</h2>
+            <h2>HOT TICKETS
+            </h2>
             <ul>
-              <li>About us</li>
-              <li>Contact us</li>
-              {/* <li>Contect</li> */}
-              {/* <li>Information</li> */}
-            </ul>
-          </div>
-          <div className="detail">
-            <h2>Safe and Secure</h2>
-            <ul>
-              <li>Buy 100% safe and secure</li>
-              <li>Best Customer service before and after Purchase.</li>
-              <li>100% Secure Payment System</li>
-              {/* <li>Testimonials</li> */}
+              <li>
+                India Vs Pakistan - T20 World Cup 2024
+
+              </li>
+              <li>
+                Semi Final 1 - T20 Cricket World Cup
+              </li>
+              <li>
+                Semi Final 2 - T20 Cricket World Cup
+
+              </li>
+              <li>Final - T20 Cricket World Cup
+              </li>
             </ul>
           </div>
           <div className="detail">
@@ -59,32 +85,33 @@ const Footer = () => {
                 Concert
               </li>
               <li>
-              Formula 1
+                Formula 1
               </li>
               <li>
                 UFC
               </li>
             </ul>
           </div>
+       
           <div className="detail">
-            <h2>HOT TICKETS
-</h2>
+            <h2>COMPANY INFO</h2>
             <ul>
-              <li>
-              India Vs Pakistan - T20 World Cup 2024
-
-              </li>
-              <li>
-              Semi Final 1 - T20 Cricket World Cup
-              </li>
-              <li>
-              Semi Final 2 - T20 Cricket World Cup
-
-              </li>
-              <li>Final - T20 Cricket World Cup
-</li>
+              <li>About us</li>
+              <li>Contact us</li>
+              {/* <li>Contect</li> */}
+              {/* <li>Information</li> */}
             </ul>
           </div>
+          <div className="detail">
+            <h2>SAFE AND SECURE</h2>
+            <ul>
+              <li>Buy 100% safe and secure</li>
+              <li>Best Customer service before and after Purchase.</li>
+              <li>100% Secure Payment System</li>
+              {/* <li>Testimonials</li> */}
+            </ul>
+          </div>
+    
         </div>
         <div className="footer-bottom">
           <div className="detail-footer">
@@ -155,7 +182,16 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+        <button className="whatsApp">
+
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="wa-messenger-svg-whatsapp wh-svg-icon"><path d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z" fill-rule="evenodd"></path></svg>
+
+        </button>
+
+
+
       </footer>
+      
     </>
   );
 };

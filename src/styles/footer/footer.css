@@ -44,6 +44,7 @@ h1, h2, p, figure {
   .footer-wrapper .footer-wrapper-inner .about ul {
     display: flex;
     align-items: center;
+    justify-self: center;
     gap: 15px;
     padding: 0px;
     margin: 0px;
@@ -109,6 +110,25 @@ h1, h2, p, figure {
   .mobile {
     display: block;
   }
+  .payments-methods {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .payments-methods li {
+    background: #fff;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  .payments-methods li img {
+    width: 50px;
+    height: 30px;
+    padding: 4px 0px 4px 0px;
+  }
 }
 @media screen and (min-width: 767px) {
   .footer-wrapper {
@@ -148,4 +168,41 @@ h1, h2, p, figure {
   .mobile {
     display: none !important;
   }
+  .payments-methods {
+    justify-content: flex-start;
+  }
+}
+.whatsApp {
+  margin: 0 0 25px 0 !important;
+  padding-left: 0px;
+  padding-right: 0px;
+  position: fixed !important;
+  z-index: 16000160 !important;
+  bottom: 0 !important;
+  text-align: center !important;
+  height: 50px;
+  min-width: 50px;
+  border-radius: 25px;
+  visibility: visible;
+  transition: none !important;
+  background-color: #22b3c1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  left: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 0px;
+  justify-content: center;
+}
+.whatsApp svg {
+  fill: white;
+  width: 41px;
+  height: 50px;
+  stroke: none;
+  pointer-events: none;
+}
+
+.whatsApp:hover {
+  opacity: 0.8; /* Reduce opacity on hover */
+  transform: scale(1.1); /* Scale up on hover */
 }/*# sourceMappingURL=footer.css.map */

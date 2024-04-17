@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import DropDown from './DropDown/DropDown';
-import LogoMain from '../../assets/images/logoMain.webp';
+import LogoMain from '../../assets/images/LCT-LOGO.png';
 import './style/style.css'
 
 

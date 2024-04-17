@@ -99,6 +99,7 @@ export default function FeatureEventsData() {
                 </div>
               ))}
             </div>
+            <span className="view-more">View More</span>
           </div>
     </>
   );

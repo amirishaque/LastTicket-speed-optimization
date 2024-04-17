@@ -20,9 +20,12 @@
 .header-wrapper a {
   display: flex;
   align-items: flex-start;
+  justify-content: unset;
 }
 .header-wrapper a img {
-  height: auto;
+  width: 300px;
+  height: 54px;
+  margin-right: 0px;
 }
 
 .header-right figure {
@@ -208,6 +211,12 @@
     margin: 10px 10px;
     font-size: 12px !important;
   }
+  .header-wrapper {
+    justify-content: center;
+  }
+  .header-wrapper a img {
+    margin-right: 35px;
+  }
 }
 /* Common css */
 .login-btn {
@@ -264,7 +273,7 @@
     align-items: flex-start !important;
   }
   .login-btn a {
-    width: 100%;
+    width: 90%;
   }
 }
 .header-right {
@@ -273,7 +282,7 @@
 
 @media screen and (max-width: 767px) {
   .header-right.active {
-    background: transparent !important;
+    background: rgba(0, 0, 0, 0.5) !important;
     -webkit-backdrop-filter: blur(13.5914px) !important;
             backdrop-filter: blur(13.5914px) !important;
   }

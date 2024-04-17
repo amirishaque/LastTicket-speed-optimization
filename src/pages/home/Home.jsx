@@ -13,7 +13,7 @@ export default function Home() {
       <TopEvents />
       <FeatureEvents />
       <Reviews />
-      <News />
+      {/* <News /> */}
     </>
   );
 }

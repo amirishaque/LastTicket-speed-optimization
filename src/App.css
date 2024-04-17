@@ -12,3 +12,46 @@
 .Toastify__toast-icon.Toastify--animate-icon.Toastify__zoom-enter {
     display: none;
 }
+
+
+
+.view-more{
+    border-radius: 6px;
+    color: #fff !important;
+    padding: 7px 20px;
+    background: #22B3C1;
+    font-weight: 600;
+    display: block;
+    height: 35px !important;
+    margin-top: 20px;
+    max-width: 85px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    .chatwrapper{
+        position: fixed;
+        bottom: 20px;
+        right: 60px;
+        cursor: pointer;
+        background-color: #22b3c1;
+        padding: 10px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+    }
+    .chatwrapper svg{
+        fill: #fff;
+    }
+}

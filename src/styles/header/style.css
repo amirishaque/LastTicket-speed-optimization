@@ -120,7 +120,7 @@
 
 @media screen and (max-width: 767px) {
   .header-right.active {
-    background: transparent !important;
+    background: rgba(0, 0, 0, 0.5) !important;
     -webkit-backdrop-filter: blur(13.5914px) !important;
             backdrop-filter: blur(13.5914px) !important;
   }

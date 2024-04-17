@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 // import  from 'react';
 import '../../styles/checkout/style.css'
 // import '../../styles/checkout'
-import payPal from '../../assets/images/Paypal.svg';
+import payPal from '../../assets/images/paypal.svg';
 import Strip from '../../assets/images/stripe.svg';
 import MasterCard from '../../assets/images/master-card.svg';
 import ApplePay from '../../assets/images/apple-pay.svg';
