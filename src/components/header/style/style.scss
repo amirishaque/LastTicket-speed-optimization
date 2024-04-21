@@ -98,6 +98,9 @@
 }
 
 @media(max-width:999px) {
+    #header{
+        height: 54px;
+    }
     .nav-opener {
         position: absolute;
         color: #fff;
@@ -128,7 +131,7 @@
     .header-right {
         display: block;
         position: fixed;
-        width: 310px;
+        width: 288px;
         background: #000;
         z-index: 5;
         top: 0;

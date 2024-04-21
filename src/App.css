@@ -97,3 +97,7 @@
     border: none !important;
 }
 
+
+.your-class a .main-image{
+    display: none;
+}

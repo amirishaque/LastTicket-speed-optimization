@@ -29,10 +29,9 @@ const Header = () => {
     <>
       <div className="header-placement"></div>
       <header id="header">
-        <div className="header-wrapper">
+        <div className={`header-wrapper ${isActive ? "your-class" : ""}`}>
           <Link to='/'>
-            <img src={LogoMain} alt="logo" width={231} height={48} />
-            {/* <img className="mobile" src="https://lastchanceticket.com/public/assets/images/100k.png" alt="logo" width={48} height={70}/> */}
+            <img src={LogoMain} alt="logo" width={231} height={48}  className="main-image"/>
           </Link>
           <div className={`header-right ${isActive ? "active" : ""}`}>
             <figure>
@@ -42,19 +41,14 @@ const Header = () => {
             </figure>
             <nav id="nav">
               <ul className="list-none flex v-center">
-                {/* <li>
-                  <Link to="/Ticket">Ticket</Link>
-
-                </li> */}
                 <li>
                   <Link to="/SellTicket">Sell Ticket</Link>
-
                 </li>
                 <li>
                   <Link to="/RequestEvent">Request Event</Link>
                 </li>
                 <li>
-                    <Link to="/ContactUs">Contact us</Link>
+                  <Link to="/ContactUs">Contact us</Link>
                 </li>
               </ul>
             </nav>
@@ -65,13 +59,13 @@ const Header = () => {
               <DropDown />
               <ul className="list-none flex ml-auto mr-auto v-center header-ul">
                 <li className="login-btn">
-                  {/* <a href="#" className="btn-primary text-decoration-none">
-                    Login
-                  </a> */}
                   <Link to="/Login" className="btn-primary text-decoration-none">Login</Link>
                 </li>
               </ul>
             </div>
+          </div>
+          <div className={`mobile ${isActive ? "your-class" : ""}`}>
+            {/* Content for mobile */}
           </div>
         </div>
         <div className={`nav-container ${isActive ? "active" : ""}`}>
