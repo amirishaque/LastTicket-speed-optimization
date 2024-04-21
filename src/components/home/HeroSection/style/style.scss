@@ -86,7 +86,6 @@
   }
   .top-wrapper-polit-followers{
     display: flex;
-    align-items: center;
     flex-direction: row-reverse;
     justify-content: space-between;
     width: 100%;
@@ -101,7 +100,7 @@
         display: flex;
         align-items: center;
         gap: 5px;
-        justify-content: flex-end;
+        justify-content: center;
         margin-top: 3px;
       }
     }
@@ -121,20 +120,20 @@
             align-items: center;
             gap: 2px;
             .star {
-              background: green;
-              width: 10px;
-              height: 10px;
+              background: #0dccd7;
+              width: 6px;
+              height: 6px;
               display: flex;
               align-items: center;
               justify-content: center;
               border-radius: 2px;
-              padding: 5px;
+              padding: 2px;
               &:last-child{
                 background: transparent;
               }
               span{
                 color: #fff;
-                margin-left: 34px;
+                margin-left: 45px;
                 font-size: 12px !important;
               }
             }
@@ -153,10 +152,10 @@
         min-height: 440px;
         justify-content: center;
         h1 {
-          font-size: 26px;
+          font-size: 18px;
         }
         h2{
-          font-size: 22px;
+          font-size: 24px;
         }
 
         form {

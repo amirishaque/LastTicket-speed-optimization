@@ -44,5 +44,7 @@
   .tabs-list-wrapper select {
     margin: 0 auto;
     height: 30px;
+    width: 92%;
+    max-width: unset;
   }
 }/*# sourceMappingURL=style.css.map */

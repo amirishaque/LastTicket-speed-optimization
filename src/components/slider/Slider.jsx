@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import './style/style.css'
+import "./style/style.css";
 
 const Slider = ({ text }) => {
   const [isPaused, setIsPaused] = useState(false);
@@ -11,6 +11,10 @@ const Slider = ({ text }) => {
   useEffect(() => {
     // Concatenate the text to itself to create a loop
     setLoopedText(text + " " + text);
+    
+    // Start the animation immediately when the component mounts
+    const marquee = marqueeRef.current;
+    marquee.classList.remove("paused");
   }, [text]);
 
   const handleMouseOver = () => setIsPaused(true);
