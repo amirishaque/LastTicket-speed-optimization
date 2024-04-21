@@ -38,6 +38,6 @@
 /* For mobile devices, double the speed */
 @media screen and (max-width: 768px) {
   .marquee {
-    animation-duration: 25s; /* Double the speed */
+    animation-duration: 15s; /* Double the speed */
   }
 }/*# sourceMappingURL=style.css.map */
