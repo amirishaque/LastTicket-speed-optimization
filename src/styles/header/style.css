@@ -134,4 +134,7 @@
   .login-btn a {
     width: 90% !important;
   }
+}
+li.login-btn {
+  border: none !important;
 }/*# sourceMappingURL=style.css.map */
