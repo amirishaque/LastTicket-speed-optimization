@@ -16,7 +16,7 @@ const Slider = () => {
     <>
       <div className='slider-wrapper'>
         <FastMarquee
-          style={{ width: '100%', height: '29px', backgroundColor: '#0dccd7', color: '#fff', padding: '2px 0', textShadow: '2px 2px 4px rgba(0,0,0,.5)' }}
+          style={{ width: '100%', height: '25px', backgroundColor: '#0dccd7', color: '#fff', padding: '2px 0', textShadow: '2px 2px 4px rgba(0,0,0,.5)', fontSize:'14px' }}
           pauseOnHover
           speed={150}
           gradientColor={[255, 255, 255]}

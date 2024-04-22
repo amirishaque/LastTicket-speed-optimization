@@ -133,3 +133,8 @@
         font-size: 42px;
     }
   }
+  @media screen and (min-width: 767px){
+    .header-wrapper a img{
+        min-height: auto;
+    }
+  }
