@@ -97,3 +97,10 @@
 .swiper-slide.swiper-slide {
   padding: 0px 5px;
 }/*# sourceMappingURL=style.css.map */
+
+
+@media screen and (max-width: 767px) {
+  .slide-item-heading p{
+    max-width: 270px;
+  }
+}
