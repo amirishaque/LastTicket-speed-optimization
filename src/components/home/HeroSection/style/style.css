@@ -101,17 +101,15 @@
   .top-wrapper-polit-followers .trust-pilot .img-wrapper .img-boxes .img-box {
     display: flex;
     align-items: center;
-    gap: 2px;
+    gap: 1px;
   }
   .top-wrapper-polit-followers .trust-pilot .img-wrapper .img-boxes .img-box .star {
-    background: #0dccd7;
-    width: 6px;
-    height: 6px;
+    background: rgb(0, 182, 122);
+    width: 11px;
+    height: 11px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 2px;
-    padding: 2px;
   }
   .top-wrapper-polit-followers .trust-pilot .img-wrapper .img-boxes .img-box .star:last-child {
     background: transparent;
@@ -125,7 +123,7 @@
 @media screen and (min-width: 767px) {
   .header-banner-wrapper .banner-wrapper .banner-wrapper-inner {
     padding: 0px;
-    min-height: 440px;
+    min-height: 288px;
     justify-content: center;
   }
   .header-banner-wrapper .banner-wrapper .banner-wrapper-inner h1 {

@@ -101,3 +101,28 @@
 .your-class a .main-image{
     display: none;
 }
+
+.clipped-image {
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0%, 66% 50%, 50% 100%, 0% 50%);
+    /* The polygon() function defines a shape that cuts the image */
+  }
+  .backLan{
+    background: #fff;
+    gap: 1px;
+  }
+  .image-container {
+    width: 59px; /* Adjust the width of the container */
+    height: auto; /* Adjust the height of the container */
+    overflow: hidden; /* Ensure the clipped part is not visible */
+    display: flex;
+    align-items: center;
+  }
+  
+  .clipped-image {
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0% 0%, 70% 0%, 70% 100%, 0% 100%); /* Define the shape to clip */
+  }
+  

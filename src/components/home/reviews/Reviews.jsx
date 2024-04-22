@@ -252,9 +252,9 @@ export default function Reviews() {
                   </div>
                 </div>
                 <div className="slide-item-heading">
-                  <h2>Ecellent service</h2>
+                  <h2>Excellent service</h2>
                   <p>
-                    Exellent service, trusted people, Sometimes fees are to
+                    Excellent service, trusted people, Sometimes fees are to
                     expensive but ok. William Castellanos, 3 days ago
                   </p>
                 </div>
@@ -356,9 +356,9 @@ export default function Reviews() {
                   </div>
                 </div>
                 <div className="slide-item-heading">
-                  <h2>Ecellent service</h2>
+                  <h2>Excellent service</h2>
                   <p>
-                    Exellent service, trusted people, Sometimes fees are to
+                    Excellent service, trusted people, Sometimes fees are to
                     expensive but ok. William Castellanos, 3 days ago
                   </p>
                 </div>
@@ -460,9 +460,9 @@ export default function Reviews() {
                   </div>
                 </div>
                 <div className="slide-item-heading">
-                  <h2>Ecellent service</h2>
+                  <h2>Excellent service</h2>
                   <p>
-                    Exellent service, trusted people, Sometimes fees are to
+                    Excellent service, trusted people, Sometimes fees are to
                     expensive but ok. William Castellanos, 3 days ago
                   </p>
                 </div>
@@ -564,9 +564,9 @@ export default function Reviews() {
                   </div>
                 </div>
                 <div className="slide-item-heading">
-                  <h2>Ecellent service</h2>
+                  <h2>Excellent service</h2>
                   <p>
-                    Exellent service, trusted people, Sometimes fees are to
+                    Excellent service, trusted people, Sometimes fees are to
                     expensive but ok. William Castellanos, 3 days ago
                   </p>
                 </div>
@@ -668,9 +668,9 @@ export default function Reviews() {
                   </div>
                 </div>
                 <div className="slide-item-heading">
-                  <h2>Ecellent service</h2>
+                  <h2>Excellent service</h2>
                   <p>
-                    Exellent service, trusted people, Sometimes fees are to
+                    Excellent service, trusted people, Sometimes fees are to
                     expensive but ok. William Castellanos, 3 days ago
                   </p>
                 </div>
@@ -772,9 +772,9 @@ export default function Reviews() {
                   </div>
                 </div>
                 <div className="slide-item-heading">
-                  <h2>Ecellent service</h2>
+                  <h2>Excellent service</h2>
                   <p>
-                    Exellent service, trusted people, Sometimes fees are to
+                    Excellent service, trusted people, Sometimes fees are to
                     expensive but ok. William Castellanos, 3 days ago
                   </p>
                 </div>

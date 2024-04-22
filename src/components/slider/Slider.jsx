@@ -1,41 +1,37 @@
-import React, { useState, useRef, useEffect } from "react";
-import "./style/style.css";
+import React, { useState } from 'react';
+import FastMarquee from 'react-fast-marquee';
 
-const Slider = ({ text }) => {
+const Slider = () => {
   const [isPaused, setIsPaused] = useState(false);
-  const marqueeRef = useRef(null);
-  const [loopedText, setLoopedText] = useState("");
 
-  useEffect(() => {
-    // Concatenate the text to itself to create a loop without any additional spaces
-    setLoopedText(text + text);
+  const handleMouseEnter = () => {
+    setIsPaused(true);
+  };
 
-    // Start the animation immediately when the component mounts
-    const marquee = marqueeRef.current;
-    marquee.classList.remove("paused");
-  }, [text]);
-
-  const handleMouseOver = () => setIsPaused(true);
-  const handleMouseOut = () => setIsPaused(false);
-
-  const handleAnimationEnd = () => {
-    // When animation ends, reset scroll position to seamlessly transition to the beginning of the loop
-    const marquee = marqueeRef.current;
-    marquee.scrollLeft = 0;
+  const handleMouseLeave = () => {
+    setIsPaused(false);
   };
 
   return (
-    <div className="slider-wrapper">
-      <div
-        ref={marqueeRef}
-        className={`marquee ${isPaused ? "paused" : ""}`}
-        onMouseOver={handleMouseOver}
-        onMouseOut={handleMouseOut}
-        onAnimationIteration={handleAnimationEnd}
-      >
-        Hurray! You are in the right place *  100K+ social media followers  *   We value every customer *  100% customer satisfaction   * We guarantee your entry *  SSL certificate website *  Secured payout  *  24/7 Customer Support* If you are not 100% satisfied, we will refund you 100% 
-      </div>
+    <>
+    <div className='slider-wrapper'>
+    <FastMarquee
+  style={{ width: '100%', height: '29px', backgroundColor: '#0dccd7', color: '#fff', padding: '2px 0', textShadow: '2px 2px 4px rgba(0,0,0,.5)' }}
+  pauseOnHover
+  speed={90}
+  gradientColor={[255, 255, 255]}
+  gradientWidth={30}
+  direction="left"
+  pause={isPaused}
+  onMouseEnter={handleMouseEnter}
+  onMouseLeave={handleMouseLeave}
+>
+      {/* Your content goes here */}
+      <div style={{ width: '35px' }}></div>
+      <div>Hurray! You are in the right place *  100K+ social media followers  *   We value every customer *  100% customer satisfaction   * We guarantee your entry *  SSL certificate website *  Secured payout  *  24/7 Customer Support* If you are not 100% satisfied, we will refund you 100%</div>
+    </FastMarquee>
     </div>
+    </>
   );
 };
 
