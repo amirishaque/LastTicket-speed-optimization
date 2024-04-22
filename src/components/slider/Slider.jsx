@@ -18,7 +18,7 @@ const Slider = () => {
         <FastMarquee
           style={{ width: '100%', height: '29px', backgroundColor: '#0dccd7', color: '#fff', padding: '2px 0', textShadow: '2px 2px 4px rgba(0,0,0,.5)' }}
           pauseOnHover
-          speed={90}
+          speed={150}
           gradientColor={[255, 255, 255]}
           gradientWidth={30}
           direction="left"

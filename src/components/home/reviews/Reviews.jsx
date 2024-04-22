@@ -6,7 +6,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import './style/style.css'
+import './style/style.css';
+import TrustPilot from '../../../assets/images/trustpilot.png'
+import TrustPilotSingle from '../../../assets/images/trustpilotSingle.svg'
 
 export default function Reviews() {
   return (
@@ -19,115 +21,25 @@ export default function Reviews() {
           <h2>Excellent</h2>
           <div className="main-review">
             <div className="star">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="35"
-                height="35"
-                fill="currentColor"
-                className="bi bi-star-fill"
-                viewBox="0 0 16 16"
-                id="IconChangeColor"
-              >
-                {" "}
-                <path
-                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                  id="mainIconPathAttribute"
-                  fill="#ffffff"
-                ></path>{" "}
-              </svg>
+              <img src={TrustPilot} alt="star" width={35} height={35}/>
             </div>
             <div className="star">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="35"
-                height="35"
-                fill="currentColor"
-                className="bi bi-star-fill"
-                viewBox="0 0 16 16"
-                id="IconChangeColor"
-              >
-                {" "}
-                <path
-                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                  id="mainIconPathAttribute"
-                  fill="#ffffff"
-                ></path>{" "}
-              </svg>
+            <img src={TrustPilot} alt="star" width={35} height={35}/>
             </div>
             <div className="star">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="35"
-                height="35"
-                fill="currentColor"
-                className="bi bi-star-fill"
-                viewBox="0 0 16 16"
-                id="IconChangeColor"
-              >
-                {" "}
-                <path
-                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                  id="mainIconPathAttribute"
-                  fill="#ffffff"
-                ></path>{" "}
-              </svg>
+            <img src={TrustPilot} alt="star" width={35} height={35}/>
             </div>
             <div className="star">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="35"
-                height="35"
-                fill="currentColor"
-                className="bi bi-star-fill"
-                viewBox="0 0 16 16"
-                id="IconChangeColor"
-              >
-                {" "}
-                <path
-                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                  id="mainIconPathAttribute"
-                  fill="#ffffff"
-                ></path>{" "}
-              </svg>
+            <img src={TrustPilot} alt="star" width={35} height={35}/>
             </div>
             <div className="star">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="35"
-                height="35"
-                fill="currentColor"
-                className="bi bi-star-fill"
-                viewBox="0 0 16 16"
-                id="IconChangeColor"
-              >
-                {" "}
-                <path
-                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                  id="mainIconPathAttribute"
-                  fill="#ffffff"
-                ></path>{" "}
-              </svg>
+            <img src={TrustPilot} alt="star" width={35} height={35}/>
             </div>
   
           </div>
           {/* <h4 className="quantity-reviews">Based on</h4> */}
           <div className="trust-pilot-wrapper">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="35"
-              height="35"
-              fill="currentColor"
-              className="bi bi-star-fill me-1"
-              viewBox="0 0 16 16"
-              id="IconChangeColor"
-            >
-              {" "}
-              <path
-                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                id="mainIconPathAttribute"
-                fill="#00b67a"
-              ></path>{" "}
-            </svg>
+           <img src={TrustPilotSingle} alt="start" width={35} height={35} />
             <h3>Trustpilot</h3>
           </div>
           <Swiper
@@ -160,95 +72,20 @@ export default function Reviews() {
               <div className="slide-item">
                 <div className="d-flex">
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
             
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                 </div>
                 <div className="slide-item-heading">
@@ -265,94 +102,19 @@ export default function Reviews() {
                 <div className="d-flex">
              
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                 </div>
                 <div className="slide-item-heading">
@@ -369,94 +131,19 @@ export default function Reviews() {
                 <div className="d-flex">
            
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                 </div>
                 <div className="slide-item-heading">
@@ -473,94 +160,19 @@ export default function Reviews() {
                 <div className="d-flex">
              
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                 </div>
                 <div className="slide-item-heading">
@@ -577,94 +189,19 @@ export default function Reviews() {
                 <div className="d-flex">
            
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                 </div>
                 <div className="slide-item-heading">
@@ -681,94 +218,19 @@ export default function Reviews() {
                 <div className="d-flex">
             
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                   <div className="star">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      className="bi bi-star-fill"
-                      viewBox="0 0 16 16"
-                      id="IconChangeColor"
-                    >
-                      {" "}
-                      <path
-                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
-                        id="mainIconPathAttribute"
-                        fill="#ffffff"
-                      ></path>{" "}
-                    </svg>
+                  <img src={TrustPilot} alt="star" width={25} height={25}/>
                   </div>
                 </div>
                 <div className="slide-item-heading">
