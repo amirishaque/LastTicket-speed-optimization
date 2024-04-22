@@ -55,6 +55,7 @@
   .slide-item-heading p {
     font-size: 16px !important;
     text-align: left;
+    max-width: 300px;
   }
   .swiper-button-prev,
   .swiper-button-next {
@@ -94,5 +95,5 @@
   }
 }
 .swiper-slide.swiper-slide {
-  padding: 0px 15px;
+  padding: 0px 5px;
 }/*# sourceMappingURL=style.css.map */
