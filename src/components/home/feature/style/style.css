@@ -13,6 +13,8 @@
     position: relative;
     max-width: 390px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .feature-events-wrapper .feature-events-wrapper-inner h2::after {
     content: "";

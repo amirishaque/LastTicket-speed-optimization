@@ -24,7 +24,7 @@
 }
 .header-wrapper a img {
   width: 300px;
-  height: auto;
+  height: 54px;
   margin-right: 0px;
 }
 
@@ -220,7 +220,6 @@
   }
   .header-wrapper a img {
     margin-right: 35px;
-    margin-top: 7px;
   }
 }
 /* Common css */

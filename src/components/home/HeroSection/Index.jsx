@@ -7,7 +7,7 @@ import HTrustImg from '../../../assets/images/trustpilothelf.png';
 export default function Index() {
   const [placeholder, setPlaceholder] = useState("");
   const originalPlaceholder = "Search for an event here";
-  const typingSpeed = 100; // Adjust typing speed as needed
+  const typingSpeed = 50; // Adjust typing speed as needed
   let currentIndex = 0;
   let isTypingForward = true;
 
