@@ -27,7 +27,7 @@ export default function TopEvents() {
               <span></span>
               <span></span>
               <figure>
-                <Link to="/Ticket">
+                <Link to="/ticket">
                 <img src={image} alt="#" width={450} height={327} />
                
                 </Link>
