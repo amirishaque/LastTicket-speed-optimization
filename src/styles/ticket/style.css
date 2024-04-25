@@ -35,9 +35,6 @@
   margin: 0 0 15px;
   border-bottom: 1px solid red;
 }
-.eticket-wrapper .eticket-box .left-fragment h3:nth-of-type(even) {
-  border-bottom: 1px solid yellow;
-}
 .eticket-wrapper .eticket-box .left-fragment ul {
   display: flex;
   align-items: start;
@@ -142,6 +139,9 @@
     padding: 6px 8px;
     width: 90px;
     font-size: 12px;
+  }
+  .eticket-wrapper .eticket-box:nth-of-type(1) .left-fragment h3 {
+    border-bottom: 1px solid yellow;
   }
   #content {
     padding-top: 20px;

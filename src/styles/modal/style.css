@@ -39,7 +39,9 @@
 .modal-content {
   transition: opacity 0.3s ease;
   position: relative;
-  width: 430px;
+  max-width: 430px;
+  width: 100%;
+  box-sizing: border-box;
   height: auto;
   padding: 30px;
 }
@@ -64,6 +66,7 @@
   font-weight: 400;
 }
 .modal-content-wrapper a {
+  box-sizing: border-box;
   display: block;
   text-align: center;
   color: #fff;
@@ -76,10 +79,46 @@
   transition: all 0.3s ease-in-out 0s;
   margin: 0 auto;
   cursor: pointer;
-  width: 415px !important;
-  max-width: 430px;
+  max-width: 415px !important;
+  width: 100%;
 }
 .modal-content-wrapper a:hover {
   color: #0DCCD7;
   background: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-content {
+    padding: 12px;
+    max-width: 95%;
+    width: 100%;
+  }
+  .modal-content .modal-content-wrapper h3 {
+    font-size: 14px;
+  }
+  .modal-content .modal-content-wrapper strong {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .modal-content .modal-content-wrapper select {
+    height: 25px;
+  }
+  .modal-content .close-button {
+    width: 13px;
+    height: 16px;
+    width: 13px;
+    height: 16px;
+    border-radius: 50%;
+    padding: 1px;
+    font-size: 15px;
+    background: transparent;
+    color: #000;
+  }
+  .modal-content a {
+    max-width: 415px !important;
+    width: 100% !important;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 6px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -142,8 +142,16 @@ export default function Ticket() {
                                             <option>No. of Tickets in Listing</option>
                                             <option>All Tickets</option>
                                         </select>
+                                        <select>
+                                            <option>Sort by</option>
+                                            <option>Low to Heigh</option>
+                                            <option>High to Low</option>
+                                            <option>Price High to Low</option>
+                                            <option>Best Value</option>
+                                            <option>Newest</option>
+                                        </select>
                                     </div>
-                                    <div className="sort-row flex v-center">
+                                    {/* <div className="sort-row flex v-center">
                                         <strong>Sort by:</strong>
                                         <div className="radios">
                                             <label htmlFor="all">ALL</label>
@@ -157,7 +165,7 @@ export default function Ticket() {
                                             <label htmlFor="newest">Newest</label>
                                             <input type="radio" id="newest" name="group1" />
                                         </div>
-                                    </div>
+                                    </div> */}
                             
                                 </form>
                             </div>
