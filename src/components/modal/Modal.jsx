@@ -28,7 +28,7 @@ const Modal = ({ isOpen, closeModal }) => {
                 <option>5</option>
                 <option>6</option>
                </select>
-               <Link to='/OrderDetail'>Submit</Link>
+               <Link to='/OrderDetail' onclick='return false;'>Submit</Link>
               </div>
             </div>
           </div>

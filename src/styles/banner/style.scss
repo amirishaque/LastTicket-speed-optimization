@@ -2,7 +2,7 @@
     height:400px;
     margin: 0 0 80px;
     text-align: center;
-    background:url("../../assets/images/small-banner.webp") no-repeat;
+    background:url("../../assets/images/small-banner.jpg") no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@
         line-height: 35px;
     }
     .small-banner{
-        margin-bottom: 72px;
+        margin-bottom: 40px;
     }
 }
 @media(max-width:480px){
