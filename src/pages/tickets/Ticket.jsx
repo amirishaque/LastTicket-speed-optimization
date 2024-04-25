@@ -6,7 +6,7 @@ import ticket from "../../assets/images/ticketIcon.webp";
 import Banner from '../../components/banner/Banner';
 import Slider from '../../components/slider/Slider';
 import ETicket from '../../components/ticket/ETicket';
-// import TicketDetail from '../../components/ticketDetail/TicketDetail';
+import TicketDetail from '../../components/ticketDetail/TicketDetail';
 // import { ToastContainer, toast } from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';
 import Modal from '../../components/modal/Modal';
@@ -105,7 +105,7 @@ export default function Ticket() {
             <Slider/>
             <Banner bannerHeading="India Vs Pakistan - T20 World Cup 2024" bannerText="New York Cricket Ground" />
               <div className="login-page">
-              <ToastContainer />
+              {/* <ToastContainer /> */}
                   <div className="contact-cols login-cols">
                         <div className="container">
                             <div className="filters-holder">
@@ -144,7 +144,7 @@ export default function Ticket() {
                                         </select>
                                     </div>
                                     <div className="sort-row flex v-center">
-                                        <strong>Sort By:</strong>
+                                        <strong>Sort by:</strong>
                                         <div className="radios">
                                             <label htmlFor="all">ALL</label>
                                             <input type="radio" id="all" name="group1" selected />

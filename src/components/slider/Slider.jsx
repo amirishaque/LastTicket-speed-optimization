@@ -16,7 +16,7 @@ const Slider = () => {
     <>
       <div className='slider-wrapper'>
         <FastMarquee
-          style={{ width: '100%', height: '25px', backgroundColor: '#0dccd7', color: '#fff', padding: '2px 0', textShadow: '2px 2px 4px rgba(0,0,0,.5)', fontSize:'13px' }}
+          style={{ width: '100%', height: '25px', backgroundColor: '#0dccd7', color: '#fff', padding: '2px 0', textShadow: '2px 2px 4px rgba(0,0,0,.5)', fontSize:'10px' }}
           pauseOnHover
           speed={100}
           gradientColor={[255, 255, 255]}
@@ -25,6 +25,7 @@ const Slider = () => {
           pause={isPaused}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
+          className='fast-marquee'
         >
           <div style={{ width: '35px' }}></div>
           <div>Hurray! You are in the right place *  100K+ social media followers  *   We value every customer *  100% customer satisfaction   * We guarantee your entry *  SSL certificate website *  Secured payout  *  24/7 Customer Support* If you are not 100% satisfied, we will refund you 100%</div>
