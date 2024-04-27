@@ -152,3 +152,96 @@
         font-size: 10px; /* Adjust font size for Safari */
     }
 }
+
+.ticket-page-loader{}
+.page-loader{
+
+}
+/* .hidden{
+    display: none;
+} */
+.ticket-page-loader {
+    position: absolute;
+    height: 100vh;
+    background: #000;
+    right: 0;
+    left: 0;
+}
+.date-wrapper-banner{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+    margin-top: 15px;
+}
+.date-wrapper-banner span{
+    margin-left: 10px;
+}
+
+.eticket-wrapper .eticket-box .left-fragment::after {
+    content: '';
+    position: absolute;
+    top: -25px;
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    /* background-color: red; */
+    border-left: 1px dotted red;
+    left: 105px;
+    height: 171px;
+  }
+
+  .eticket-box::after {
+    content: '';
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    border-left: 1px solid red;
+    bottom: 0;
+    left: 126px;
+    transform: translateX(-50%);
+    border-radius: 0 0 50% 50%;
+    border-bottom: 1px solid red;
+    border-right: 1px solid red;
+    top: -2px;
+    background: #fff;
+    overflow: visible;
+  }
+  .eticket-box::before {
+    content: '';
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    border-left: 1px solid red;
+    bottom: 0;
+    left: 113px;/* Apply skew transformation */
+    border-radius: 0 0 50% 50%;
+    border-bottom: 1px solid red;
+    border-right: 1px solid red;
+    top: auto;
+    bottom: -2px;
+    background: #fff;
+    overflow: visible;
+    transform: rotate(180deg);
+    z-index: 999;
+  }
+
+  .filter-holder-inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-holder-inner .image-container{
+    width: 138px;
+    gap: 3px !important;
+}
+.filter-holder-inner  .img-box {
+    display: flex;
+    gap: 10px;
+}
+.backLan.image-container .star img{
+    height: auto;
+}

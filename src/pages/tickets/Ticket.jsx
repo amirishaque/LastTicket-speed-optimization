@@ -12,10 +12,14 @@ import TicketDetail from '../../components/ticketDetail/TicketDetail';
 import Modal from '../../components/modal/Modal';
 import { Link } from 'react-router-dom';
 import Flag from '../../assets/images/flag.svg';
+import Loader from '../../components/loader/Loader';
+import TrustImg from '../../assets/images/trustpilot.png';
+import HTrustImg from '../../assets/images/trustpilothelf.png';
 
 
 export default function Ticket() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [showLoader, setShowLoader] = useState(true);
 
   const openPopup = () => {
 
@@ -73,11 +77,21 @@ export default function Ticket() {
 //     );
 //   }, []);
 
+useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShowLoader(false);
+    }, 1000000);
 
+    // Clear timeout if component unmounts or dependencies change
+    return () => clearTimeout(timeout);
+  }, []);
 
   return (
     <>
-
+    {/* <div className='ticket-page-loader'>
+  {showLoader && <Loader  />} 
+  </div> */}
+  <div className={`ticket-page-content ${showLoader ? 'hidden' : ''}`}>
            {isPopupOpen && (
                 <div className="popup ticket_booking_popup">
                     <div className="text-right"> <span className="close ticket_popup_close" onClick={closePopup}>&times;</span></div>
@@ -103,14 +117,50 @@ export default function Ticket() {
                 </div>
             )}
             <Slider/>
-            <Banner bannerHeading="India Vs Pakistan - T20 World Cup 2024" bannerText="New York Cricket Ground" />
+            <Banner bannerHeading="India Vs Pakistan - T20 World Cup 2024" bannerText="New York Cricket Ground"  className='ticket-banner'/>
               <div className="login-page">
               {/* <ToastContainer /> */}
                   <div className="contact-cols login-cols">
                         <div className="container">
                             <div className="filters-holder">
+                                <div className='filter-holder-inner'>
                                 <Link to='/'>Home</Link>
                                 <strong>Last Chance Ticket</strong>
+                                <div className="trust-pilot">
+                <p style={{ fontWeight: 'bold' }}>Trust Pilot Score 4.7</p>
+                <div className="img-wrapper">
+                  <div className="img-boxes">
+                    <div className="img-box">
+                      <div className="backLan image-container">
+                          <div className="star">
+                          <img src={TrustImg} alt="img" width={25} height={11}/>
+                          </div>
+                          <div className="star">
+                          <img src={TrustImg} alt="img" width={25} height={11}/>
+                          </div>
+                          <div className="star">
+                          <img src={TrustImg} alt="img" width={25} height={11}/>
+                          </div>
+                          <div className="star">
+                          <img src={TrustImg} alt="img" width={25} height={11}/>
+                          </div>
+                          <div className="star">
+                          <img src={TrustImg} alt="img" width={25} height={11}/>
+                          </div>
+                        </div>
+                        
+                    
+
+                  
+                      <div className="star">
+                        <span style={{ fontWeight: 'bold' }}>Excellent</span>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <span>Excellent</span> */}
+                </div>
+              </div>
+              </div>
                                 <div className="seat-ico flex v-center">
                                     <img src={seatIcon} alt="#" />
                                     <span>Select number of tickets and you will be seated together.</span>
@@ -142,7 +192,7 @@ export default function Ticket() {
                                             <option>No. of Tickets in Listing</option>
                                             <option>All Tickets</option>
                                         </select>
-                                        <select>
+                                        <select className='mobile'>
                                             <option>Sort by</option>
                                             <option>Low to Heigh</option>
                                             <option>High to Low</option>
@@ -151,7 +201,7 @@ export default function Ticket() {
                                             <option>Newest</option>
                                         </select>
                                     </div>
-                                    {/* <div className="sort-row flex v-center">
+                                    <div className="sort-row flex v-center desktop">
                                         <strong>Sort by:</strong>
                                         <div className="radios">
                                             <label htmlFor="all">ALL</label>
@@ -165,7 +215,7 @@ export default function Ticket() {
                                             <label htmlFor="newest">Newest</label>
                                             <input type="radio" id="newest" name="group1" />
                                         </div>
-                                    </div> */}
+                                    </div>
                             
                                 </form>
                             </div>
@@ -206,6 +256,7 @@ export default function Ticket() {
                                 </div>
                             </div>
                         </div>
+                    </div>
                     </div>
                     </div>
 

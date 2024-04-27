@@ -6,6 +6,7 @@
   margin: 0 auto;
 }
 .eticket-wrapper .eticket-box {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,19 +14,35 @@
   background: #fff;
   border-radius: 5px;
   margin: 0 0 35px;
-  overflow: hidden;
   gap: 20px;
-  border: 1px solid #0dccd7;
+  border: 1px solid red;
   transition: 0.4s;
+}
+.eticket-wrapper .eticket-box:nth-of-type(1) {
+  border: 1px solid yellow;
+}
+.eticket-wrapper .eticket-box:nth-of-type(1) .left-fragment h3 {
+  border-bottom: 1px solid yellow;
 }
 .eticket-wrapper .eticket-box:hover {
   box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff;
   cursor: pointer;
 }
 .eticket-wrapper .eticket-box .left-fragment {
-  padding-left: 15px;
-  padding-right: 15px;
+  position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
   max-width: 550px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.eticket-wrapper .eticket-box .left-fragment figure img {
+  width: 100px;
+  margin-left: -5px;
+}
+.eticket-wrapper .eticket-box .left-fragment .d-wrapper-eticket {
   width: 100%;
 }
 .eticket-wrapper .eticket-box .left-fragment h3 {
@@ -92,6 +109,15 @@
 .eticket-wrapper .eticket-box .right-fragment button:hover {
   color: #0DCCD7; /* Switched */
   background: #fff; /* Switched */
+}
+.eticket-wrapper .eticket-box:nth-of-type(1) .left-fragment::after {
+  border-color: yellow;
+}
+.eticket-wrapper .eticket-box:nth-of-type(1)::after {
+  border-color: yellow !important;
+}
+.eticket-wrapper .eticket-box:nth-of-type(1)::before {
+  border-color: yellow !important;
 }
 
 @media screen and (max-width: 767px) {

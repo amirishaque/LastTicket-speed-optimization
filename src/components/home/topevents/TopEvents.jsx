@@ -1,10 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import Image from '../../../assets/images/img1.webp';
 import "./style/style.css";
 import Ticket from "../../../pages/tickets/Ticket";
+import Modal from  '../../../components/modal/Modal'
 
 export default function TopEvents() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   // Array of image sources
   const images = [
     Image,
@@ -13,6 +15,14 @@ export default function TopEvents() {
     Image
   ];
 
+
+  const openModal = () => {
+    setIsModalOpen(true);
+};
+
+const closeModal = () => {
+    setIsModalOpen(false);
+};
   return (
     <>
       <section className="top-events-wrapper">
@@ -21,16 +31,15 @@ export default function TopEvents() {
           {/* Mapping over the array of images */}
          
           {images.map((image, index) => (
-            <div className="image-box" key={index}>
+            <div className="image-box" key={index} onClick={openModal}>
                <span></span>
               <span></span>
               <span></span>
               <span></span>
               <figure>
-                <Link to="/ticket">
-                <img src={image} alt="#" width={450} height={327} />
                
-                </Link>
+                <img src={image} alt="#" width={450} height={327} />
+              
               </figure>
               <strong>India Vs Pakistan - T20 World Cup 2024</strong>
             </div>
@@ -40,6 +49,8 @@ export default function TopEvents() {
         </div>
         <div className="white-overlay"></div>
       </section>
+
+      <Modal isOpen={isModalOpen} closeModal={closeModal} />
     </>
   );
 }

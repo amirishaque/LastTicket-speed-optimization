@@ -15,13 +15,13 @@ export default function ETicket() {
         // Add more ticket data as needed
     ];
 
-    const openModal = () => {
-        setIsModalOpen(true);
-    };
+    // const openModal = () => {
+    //     setIsModalOpen(true);
+    // };
 
-    const closeModal = () => {
-        setIsModalOpen(false);
-    };
+    // const closeModal = () => {
+    //     setIsModalOpen(false);
+    // };
 
     return (
         <>
@@ -29,6 +29,10 @@ export default function ETicket() {
                 {tickets.map((ticket, index) => (
                     <div className='eticket-box' key={index}>
                         <div className='left-fragment'>
+                            <figure>
+                                <img src='https://lastchanceticket.com/public/assets/images/t1.webp' alt='ticket' width={180}/>
+                            </figure>
+                            <div className='d-wrapper-eticket'>
                             <h3>Mobile Ticket
                                 {/* <img src={TicketIcon} width={25} style={{marginLeft:'5', marginRight:'5'}}/> */}
                             </h3>
@@ -46,17 +50,18 @@ export default function ETicket() {
                                     <span>{ticket.numberOfTickets}</span>
                                 </li>
                             </ul>
+                            </div>
                         </div>
                         <div className='right-fragment'>
                             <strong>No Restrictions</strong>
                             <span>${ticket.price}</span>
-                            <button onClick={openModal}>Buy Now</button>
+                            <button>Buy Now</button>
                         </div>
                     </div>
                 ))}
             </div>
             {/* <button onClick={openModal}>Buy Now</button> */}
-            <Modal isOpen={isModalOpen} closeModal={closeModal} />
+            {/* <Modal isOpen={isModalOpen} closeModal={closeModal} /> */}
         </>
     );
 }
