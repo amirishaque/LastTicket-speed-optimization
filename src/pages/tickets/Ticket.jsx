@@ -133,19 +133,19 @@ useEffect(() => {
                     <div className="img-box">
                       <div className="backLan image-container">
                           <div className="star">
-                          <img src={TrustImg} alt="img" width={25} height={11}/>
+                          <img src={TrustImg} alt="img" width={25} height={11} className='st-img'/>
                           </div>
                           <div className="star">
-                          <img src={TrustImg} alt="img" width={25} height={11}/>
+                          <img src={TrustImg} alt="img" width={25} height={11} className='st-img'/>
                           </div>
                           <div className="star">
-                          <img src={TrustImg} alt="img" width={25} height={11}/>
+                          <img src={TrustImg} alt="img" width={25} height={11} className='st-img'/>
                           </div>
                           <div className="star">
-                          <img src={TrustImg} alt="img" width={25} height={11}/>
+                          <img src={TrustImg} alt="img" width={25} height={11} className='st-img'/>
                           </div>
                           <div className="star">
-                          <img src={TrustImg} alt="img" width={25} height={11}/>
+                          <img src={HTrustImg} alt="img" width={25} height={11} className='st-img st-half'/>
                           </div>
                         </div>
                         

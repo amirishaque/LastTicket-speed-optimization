@@ -127,9 +127,18 @@
     align-items: center;
     gap: 10px;
   }
+  .eticket-wrapper .eticket-box::after {
+    display: none;
+  }
+  .eticket-wrapper .eticket-box::before {
+    display: none;
+  }
   .eticket-wrapper .eticket-box .left-fragment {
     padding-left: 0px;
     padding-right: 0px;
+  }
+  .eticket-wrapper .eticket-box .left-fragment figure {
+    display: none;
   }
   .eticket-wrapper .eticket-box .left-fragment h3 {
     padding: 0 0 10px;
@@ -147,6 +156,12 @@
   .eticket-wrapper .eticket-box .left-fragment ul li strong {
     font-size: 10px;
     margin: 0 0 5px;
+  }
+  .eticket-wrapper .eticket-box .left-fragment::after {
+    display: none;
+  }
+  .eticket-wrapper .eticket-box .left-fragment::before {
+    display: none;
   }
   .eticket-wrapper .eticket-box .right-fragment {
     max-width: 100px;
@@ -199,5 +214,8 @@
   }
   .view-area {
     margin-bottom: 72px;
+  }
+  .date-wrapper-banner {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=style.css.map */

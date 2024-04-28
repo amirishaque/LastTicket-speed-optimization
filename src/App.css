@@ -91,6 +91,20 @@
     .chatwrapper svg{
         fill: #fff;
     }
+    .sort-row.flex.v-center.desktop {
+        display: none !important;
+    }
+    .filter-holder-inner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 15px;
+        align-content: center;
+        margin-bottom: 15px;
+    }
+    .date-wrapper-banner span{
+        margin-left: 0px !important;
+    }
 }
 
 
@@ -242,6 +256,11 @@
     display: flex;
     gap: 10px;
 }
-.backLan.image-container .star img{
-    height: auto;
+.st-img{
+height: auto;
+width: 26px;
+}
+.st-half {
+    height: 26px;
+    width: 20px;
 }
