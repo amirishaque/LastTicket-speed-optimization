@@ -302,3 +302,6 @@ width: 26px;
 .sort-row.flex.v-center.desktop label{
     padding: 5px 10px;
 }
+.filters-holder a{
+    top: 49px;
+}
