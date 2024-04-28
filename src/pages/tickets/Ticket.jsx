@@ -15,6 +15,7 @@ import Flag from '../../assets/images/flag.svg';
 import Loader from '../../components/loader/Loader';
 import TrustImg from '../../assets/images/trustpilot.png';
 import HTrustImg from '../../assets/images/trustpilothelf.png';
+import USAImg from '../../assets/images/USAFlag.png';
 
 
 export default function Ticket() {
@@ -57,10 +58,8 @@ export default function Ticket() {
 	          </g>
 	        </svg>
 	        <p>
-	        Welcome to the ticket page!
-	        <br />
-	        Bouth 2 tickets from 
-	        <img src={Flag} width={20} alt='flag' style={{ marginRight: '5px', marginLeft: '5px' }} />
+	        Bought 2 tickets from 
+	        <img src={USAImg} width={20} alt='flag' style={{ marginRight: '5px', marginLeft: '5px' }} />
 	         for this event.
 	        <br />
 	         10 minutes ago.
