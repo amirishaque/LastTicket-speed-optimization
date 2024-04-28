@@ -85,10 +85,10 @@
   gap: 20px;
 }
 
-.radios input[type=radio]:checked + label {
+/* .radios input[type=radio]:checked + label {
   background: #22B3C1;
   color: #fff;
-}
+} */
 
 .sort-row {
   margin: 15px 0 0;
@@ -155,10 +155,10 @@
   gap: 20px;
 }
 
-.radios input[type=radio]:checked + label {
+/* .radios input[type=radio]:checked + label {
   background: #22B3C1;
   color: #fff;
-}
+} */
 
 .sort-row {
   margin: 15px 0 0;

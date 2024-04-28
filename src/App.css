@@ -264,3 +264,41 @@ width: 26px;
     height: 26px;
     width: 20px;
 }
+
+/* .sort-row.flex.v-center.desktop .radios label{
+
+} */
+/* .radios input[type=radio]:checked + label {
+    background: #22B3C1;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.radios input[type=radio]:checked + label {
+    background: #22B3C1;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.radios label {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0px;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 30px;
+}
+
+
+.radios input[type="radio"] {
+    display: none;
+} */
+.radios label.checked {
+    background-color: #22B3C1; /* Add your desired background color */
+    color: #fff; /* Add your desired text color */
+    padding: 5px 10px; /* Add your desired padding */
+}
+
+.sort-row.flex.v-center.desktop label{
+    padding: 5px 10px;
+}

@@ -86,6 +86,24 @@ useEffect(() => {
     return () => clearTimeout(timeout);
   }, []);
 
+
+
+
+
+
+
+
+
+
+
+  const [selectedOption, setSelectedOption] = useState('all'); // State to keep track of the selected option
+
+  const handleOptionChange = (e) => {
+      setSelectedOption(e.target.value); // Update the state with the value of the selected radio button
+  };
+
+  console.log('selected option:',selectedOption)
+
   return (
     <>
     {/* <div className='ticket-page-loader'>
@@ -202,20 +220,60 @@ useEffect(() => {
                                         </select>
                                     </div>
                                     <div className="sort-row flex v-center desktop">
-                                        <strong>Sort by:</strong>
-                                        <div className="radios">
-                                            <label htmlFor="all">ALL</label>
-                                            <input type="radio" id="all" name="group1" selected />
-                                            <label htmlFor="low-to-high">PRICE: Low to High</label>
-                                            <input type="radio" id="low-to-high" name="group1" />
-                                            <label htmlFor="high-to-low">PRICE High to Low</label>
-                                            <input type="radio" id="high-to-low" name="group1" />
-                                            <label htmlFor="best-value">Best Value</label>
-                                            <input type="radio" id="best-value" name="group1" />
-                                            <label htmlFor="newest">Newest</label>
-                                            <input type="radio" id="newest" name="group1" />
-                                        </div>
-                                    </div>
+            <strong>Sort by:</strong>
+            <div className="radios">
+                <label htmlFor="all" className={selectedOption === 'all' ? 'checked' : ''}>
+                    <input
+                        type="radio"
+                        id="all"
+                        name="group1"
+                        value="all"
+                        checked={selectedOption === 'all'}
+                        onChange={handleOptionChange}
+                    /> ALL
+                </label>
+                <label htmlFor="low-to-high" className={selectedOption === 'low-to-high' ? 'checked' : ''}>
+                    <input
+                        type="radio"
+                        id="low-to-high"
+                        name="group1"
+                        value="low-to-high"
+                        checked={selectedOption === 'low-to-high'}
+                        onChange={handleOptionChange}
+                    /> PRICE: Low to High
+                </label>
+                <label htmlFor="high-to-low" className={selectedOption === 'high-to-low' ? 'checked' : ''}>
+                    <input
+                        type="radio"
+                        id="high-to-low"
+                        name="group1"
+                        value="high-to-low"
+                        checked={selectedOption === 'high-to-low'}
+                        onChange={handleOptionChange}
+                    /> PRICE High to Low
+                </label>
+                <label htmlFor="best-value" className={selectedOption === 'best-value' ? 'checked' : ''}>
+                    <input
+                        type="radio"
+                        id="best-value"
+                        name="group1"
+                        value="best-value"
+                        checked={selectedOption === 'best-value'}
+                        onChange={handleOptionChange}
+                    /> Best Value
+                </label>
+                <label htmlFor="newest" className={selectedOption === 'newest' ? 'checked' : ''}>
+                    <input
+                        type="radio"
+                        id="newest"
+                        name="group1"
+                        value="newest"
+                        checked={selectedOption === 'newest'}
+                        onChange={handleOptionChange}
+                    /> Newest
+                </label>
+            </div>
+        </div>
                             
                                 </form>
                             </div>
