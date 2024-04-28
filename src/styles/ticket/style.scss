@@ -19,6 +19,18 @@
         gap: 20px;
         border: 1px solid red;
         transition: 0.4s;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            background-color: #22B3C1;
+            bottom: -25px;
+            right: -50px;
+            border-radius: 50px 50px 0 0;
+            transform: rotate(-45deg);
+          }
+        
         &:nth-of-type(1){
             border: 1px solid yellow;
             .left-fragment {
