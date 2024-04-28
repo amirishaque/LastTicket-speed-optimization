@@ -305,3 +305,6 @@ width: 26px;
 .filters-holder a{
     top: 49px;
 }
+.sort-row.flex.v-center.desktop strong {
+    margin-top: 0px !important;
+}
