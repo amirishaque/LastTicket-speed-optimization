@@ -177,7 +177,7 @@
 .ticket-page-loader {
     position: absolute;
     height: 100vh;
-    background: #000;
+    /* background: #000; */
     right: 0;
     left: 0;
 }
@@ -302,9 +302,152 @@ width: 26px;
 .sort-row.flex.v-center.desktop label{
     padding: 5px 10px;
 }
+.sort-row.flex.v-center.desktop label:hover{
+    cursor: pointer;
+}
 .filters-holder a{
-    top: 49px;
+    top: 35px;
 }
 .sort-row.flex.v-center.desktop strong {
     margin-top: 0px !important;
+}
+
+
+.ticket-page-loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
+}
+
+
+
+/* AnimatedText.css */
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  
+  .animated-text-container {
+    overflow: hidden;
+  }
+  
+  .animated-text-container p {
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow */
+    border-right: 2px solid #ffffff; /* Cursor effect */
+    animation: typing 5s steps(30, end) infinite;
+  }
+section.your-section-class{
+    height: 10px;
+}  
+  
+.possession-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 7px 0px;
+   
+}
+.possession-wrapper span{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* common */
+.ribbon {
+    /* overflow: hidden;
+    position: absolute; */
+  }
+  .ribbon::before,
+  .ribbon::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+    border: 5px solid #0DCCD7;
+  }
+  .ribbon .ri {
+    position: absolute;
+    display: block;
+    width: 210px;
+    padding: 12px 0;
+    background-color: #0DCCD7;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    color: #fff;
+    font: 600 10px / 1 'Lato', sans-serif;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  /* top left*/
+  .ribbon-top-left {
+    top: 0;
+    left: 0;
+  }
+  .ribbon-top-left::before,
+  .ribbon-top-left::after {
+    border-top-color: transparent;
+    border-left-color: transparent;
+  }
+  .ribbon-top-left::before {
+    top: 0;
+    right: 0;
+  }
+  .ribbon-top-left::after {
+    bottom: 0;
+    left: 0;
+    /* display: none; */
+  }
+  .ribbon-top-left .ri {
+    right: 0;
+    transform: rotate(0deg);
+    left: -1px;
+    z-index: 99;
+    top: -7px;
+    border-radius: 5px 0px 0px 5px;
+    padding-top: 15px;
+  }
+  
+.ee{
+    width: 90%;
+    overflow: hidden;
+}  
+
+
+.ee {
+    /* Other styles for your image box */
+    transition: transform 0.4s; /* Apply transition property */
+}
+
+.ee:hover {
+    transform: scale(1.2); /* Zoom in effect on hover */
+    z-index: 999;
 }

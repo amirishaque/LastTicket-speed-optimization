@@ -2,7 +2,7 @@ import React from 'react';
 import { ThreeDots } from 'react-loader-spinner';
 import './style/style.css'
 
-const Loader = () => (
+const TicketLoader = () => (
   <>
    <div className="page-loader">
    <ThreeDots
@@ -23,4 +23,4 @@ const Loader = () => (
   </>
 );
 
-export default Loader;
+export default TicketLoader;
