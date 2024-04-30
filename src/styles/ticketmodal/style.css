@@ -1,0 +1,60 @@
+.modal-content.ticket-modal-content {
+  max-width: 700px !important;
+  width: 100%;
+  z-index: 999;
+}
+.modal-content.ticket-modal-content h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px !important;
+}
+.modal-content.ticket-modal-content .eup-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 38px;
+}
+.modal-content.ticket-modal-content .eup-wrapper svg {
+  width: 75px !important;
+  height: 75px !important;
+}
+.modal-content.ticket-modal-content .eup-wrapper img {
+  width: 75px !important;
+  height: 75px !important;
+}
+.modal-content.ticket-modal-content .eup-wrapper p {
+  text-align: center;
+  font-size: 13px;
+  color: red;
+}
+.modal-content.ticket-modal-content .loader-wrapper-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.modal-content.ticket-modal-content .loader-wrapper-bar .loader-bar-wrapper {
+  position: relative; /* Make the wrapper a positioned parent for the percentage */
+  width: 100%;
+  height: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.modal-content.ticket-modal-content .loader-wrapper-bar .loader-bar {
+  width: 0; /* Initial width of the loader bar */
+  height: 100%;
+  border-radius: 5px;
+  background-color: #0DCCD7; /* Color of the loader bar */
+  transition: width 3s ease; /* Transition animation for loader bar width */
+}
+.modal-content.ticket-modal-content .loader-wrapper-bar .loading-percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the percentage horizontally and vertically */
+  font-size: 12px;
+  color: #333;
+}/*# sourceMappingURL=style.css.map */

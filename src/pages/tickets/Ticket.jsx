@@ -18,10 +18,12 @@ import HTrustImg from '../../assets/images/trustpilothelf.png';
 import USAImg from '../../assets/images/USAFlag.png';
 import TicketLoader from '../../components/loader copy/TicketLoader';
 import { TypeAnimation } from 'react-type-animation';
+import TicketModal from '../../components/TicketModal/TicketModal';
 
 export default function Ticket() {
 	const [isPopupOpen, setIsPopupOpen] = useState(false);
 	const [showLoader, setShowLoader] = useState(true);
+	const [showTicketModal, setShowTicketModal] = useState(false);
 
 	const openPopup = () => {
 
@@ -86,19 +88,22 @@ export default function Ticket() {
 	console.log('selected option:', selectedOption)
 
 	useEffect(() => {
-		// Simulating data loading delay for 3 seconds
-		setTimeout(() => {
-				setShowLoader(false); // Hide the loader after 3 seconds
-		}, 7000);
-}, []);
+		const loaderTimeout = setTimeout(() => {
+		  setShowLoader(false);
+		  setShowTicketModal(true);
+		}, 3000);
+	
+		return () => clearTimeout(loaderTimeout);
+	  }, []);
 
 	return (
 		<>
 
 			<div className='ticket-page-loader'>
 				{showLoader && <TicketLoader />}
+				
 				</div>
-
+				{showTicketModal && <TicketModal />}
 			<div className={`ticket-page-content ${showLoader ? 'hidden' : ''}`}>
 				{isPopupOpen && (
 					<div className="popup ticket_booking_popup">
@@ -307,7 +312,8 @@ export default function Ticket() {
 					</div>
 				</div>
 			</div>
-		
+			{showTicketModal && <TicketModal isOpen={true} closeModal={() => setShowTicketModal(false)} />}
+
 
 		</>
 	)

@@ -442,12 +442,126 @@ section.your-section-class{
 }  
 
 
-.ee {
-    /* Other styles for your image box */
-    transition: transform 0.4s; /* Apply transition property */
+ 
+/* For Ribbon  */
+.ribbon-2 {
+    --f: 10px; /* control the folded part */
+    --r: 15px; /* control the ribbon shape */
+    --t: -4px; /* the top offset */
+    
+    position: absolute;
+    inset: var(--t) auto auto calc(-1*var(--f)); /* adjust inset for left side */
+    padding: 0 calc(10px + var(--r)) var(--f) 10px; /* adjust padding for left side */
+    clip-path: 
+      polygon(100% 0,0 0,0 calc(100% - var(--f)),var(--f) 100%,
+        var(--f) calc(100% - var(--f)),100% calc(100% - var(--f)),
+        calc(100% - var(--r)) calc(50% - var(--f)/2)); /* adjust clip-path for left side */
+    background: #0DCCD7;
+    /* box-shadow: calc(-1*var(--f)) 0 0 inset #0005; */
+    z-index: 99;
+    color: #fff;
+    padding-top: 4px;
+    padding-bottom: 6px;
+    height: 33px;
+  }
+  
+
+.eticket-box-wrapper {
+  position:relative;
 }
 
-.ee:hover {
-    transform: scale(1.2); /* Zoom in effect on hover */
+.blur-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('your-background-image.jpg'); /* Replace with actual background image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* Initial blur effect */
+    z-index: 0; /* Ensure the background is behind other content */
+    opacity: 0.7; /* Semi-transparent black overlay */
+    background-color: rgba(0, 0, 0, 0.7); /* Black overlay with 70% opacity */
+    transition: opacity 0.3s ease; /* Smooth transition effect */
+  }
+.e-c{
+    position: relative;
+  width: 100vw; /* Make container cover the entire viewport width */
+  height: 100vh; /* Make container cover the entire viewport height */
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+.hovered{
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+.eticket-box-wrapper.hovered{
     z-index: 999;
 }
+.eticket-box-wrapper:hover{
+    z-index: 9999;
+}
+
+
+.overlay.show {
+    transition: 0.7s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0000002f;
+    z-index: 999;
+  }
+
+
+
+
+
+
+  .wrapper-l {
+    /* border: 3px solid #0dccd7; */
+  }
+  
+  .containe-lr {
+    /* background-color: pink; */
+  }
+  
+  .barCompleted-l {
+    background-color: lightblue;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+
+  }
+  
+  .label-l {
+    font-size: 20px;
+    color: #0dccd7;
+    top: 10px;
+    right: 0;
+    position: absolute;
+  }
+  .eu-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+   
+}
+.eu-wrapper:nth-of-type(2){
+      gap: 0px;
+}
+
