@@ -143,6 +143,14 @@ export default function Ticket() {
     };
 
 
+	useEffect(() => {
+        if (showLoader) {
+            document.body.classList.add('modal-content-open');
+        } else {
+            document.body.classList.remove('modal-content-open');
+        }
+    }, [showLoader]);
+
 	return (
 		<>
 

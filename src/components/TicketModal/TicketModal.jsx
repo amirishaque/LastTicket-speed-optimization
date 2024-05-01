@@ -76,7 +76,7 @@ const TicketModal = ({ isOpen, closeModal }) => {
                 <div className='eu-wrapper'>
 
                   <span>
-<img src={SeatSa} alt='' width={50} height={50} />
+                      <img src={SeatSa} alt='' width={50} height={50} />
                   </span>
                   <p>This event may sell out.</p>
                 </div>

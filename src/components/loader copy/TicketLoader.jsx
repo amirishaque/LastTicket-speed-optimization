@@ -30,7 +30,7 @@ const TicketLoader = () => {
 
 
   return (
-    <div className='ticket-page-loader-wrapper'>
+    <div className='ticket-page-loader-wrapper modal-content-open'>
     <div className="page-loader">
       <ThreeDots
         visible={true}
