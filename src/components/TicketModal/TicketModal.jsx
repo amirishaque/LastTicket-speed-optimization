@@ -71,20 +71,20 @@ const TicketModal = ({ isOpen, closeModal }) => {
                   <span>
                     <img src={SeatImge} alt='' height={50} width={50}/>
                   </span>
-                  <p>10 tickets are remaining for this event on our site.</p>
+                  <p>Only 10 tickets left online.</p>
                 </div>
                 <div className='eu-wrapper'>
 
                   <span>
 <img src={SeatSa} alt='' width={50} height={50} />
                   </span>
-                  <p>This event is likely to sell out within 7 days on our site.</p>
+                  <p>This event may sell out.</p>
                 </div>
                 <div className='eu-wrapper'>
                   <span>
                     <img src={SeatSu} alt='' width={50}  height={50}/>
                   </span>
-                  <p>Less than the total tickets in the venue currently available.</p>
+                  <p>Venue tickets nearing capacity.</p>
                 </div>
               </div>
               <div className='loader-wrapper-bar'>
