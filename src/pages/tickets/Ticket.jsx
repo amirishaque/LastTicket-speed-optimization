@@ -19,6 +19,8 @@ import USAImg from '../../assets/images/USAFlag.png';
 import TicketLoader from '../../components/loader copy/TicketLoader';
 import { TypeAnimation } from 'react-type-animation';
 import TicketModal from '../../components/TicketModal/TicketModal';
+import { animateScroll as scroll } from 'react-scroll';
+
 
 export default function Ticket() {
 	const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -32,8 +34,13 @@ export default function Ticket() {
 
 	const closePopup = () => {
 		setIsPopupOpen(false);
+		document.body.classList.remove('modal-content-open');
 	};
 
+	const closeModal = () => {
+		setShowTicketModal(false);
+		document.body.classList.remove('modal-content-open');
+	};
 	useEffect(() => {
 
 		toast.info(
@@ -95,6 +102,46 @@ export default function Ticket() {
 	
 		return () => clearTimeout(loaderTimeout);
 	  }, []);
+	  
+
+
+
+
+
+
+
+
+
+
+
+    const smoothScrollToSection = (id, duration) => {
+        const element = document.getElementById(id);
+        if (!element) return;
+
+        const targetPosition = element.getBoundingClientRect().top + window.pageYOffset;
+        const startPosition = window.pageYOffset;
+        const distance = targetPosition - startPosition;
+        let startTime = null;
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const scrollProgress = Math.min(timeElapsed / duration, 1);
+            const ease = easeInOutQuad(scrollProgress);
+            window.scrollTo(0, startPosition + distance * ease);
+
+            if (timeElapsed < duration) {
+                requestAnimationFrame(animation);
+            }
+        }
+
+        function easeInOutQuad(t) {
+            return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+        }
+
+        requestAnimationFrame(animation);
+    };
+
 
 	return (
 		<>
@@ -139,7 +186,7 @@ export default function Ticket() {
 								<div className='filter-holder-inner'>
 									<Link to='/'>Home</Link>
 									<strong>Last Chance Ticket</strong>
-									<div className="trust-pilot">
+									<div className="trust-pilot desktop">
 										<p style={{ fontWeight: 'bold' }}>Trust Pilot Score 4.7</p>
 										<div className="img-wrapper">
 											<div className="img-boxes">
@@ -179,7 +226,7 @@ export default function Ticket() {
 									<span>Select number of tickets and you will be seated together.</span>
 								</div>
 								<div className="counters flex">
-									<button type="button" className="active">1</button>
+									<button type="button" className="active" onClick={() => smoothScrollToSection('targetedSection', 2000)}>1</button>
 									<button type="button">2</button>
 									<button type="button">3</button>
 									<button type="button">4</button>
@@ -287,7 +334,7 @@ export default function Ticket() {
 										</div>
 									</div>
 								</header>
-								<div id="content" className="flex">
+								<div id="content" className="flex page-wrapper-tickets">
 									<aside id="sidebar">
 										<div className="map-holder">
 											<img src={map} alt="#" />
@@ -295,7 +342,7 @@ export default function Ticket() {
 												100
 											</div>
 										</div>
-										<div className="widget">
+										<div className="widget desktop" id="bottomOfPage">
 											<strong>Filter By Category</strong>
 											<select>
 												<option>SEARCH BY CATEGORY</option>
@@ -304,15 +351,32 @@ export default function Ticket() {
 												<option>Upper Bowl</option>
 											</select>
 										</div>
+										<div className='categories-ticket-wrapper mobile'>
+											<div className='categories-ticket-box'>
+												<span style={{background:'blue'}}></span>
+												<p>B3</p>
+											</div>
+											<div className='categories-ticket-box mobile'>
+												<span></span>
+												<p>Gernal Admission</p>
+											</div>
+											<div className='categories-ticket-box'>
+												<span style={{background:'yellow'}}></span>
+												<p>Gloden Cirlce</p>
+											</div>
+										</div>
 									</aside>
+									<div className='eticket-outer-wrapper' id="targetedSection">
+
 									<ETicket />
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			{showTicketModal && <TicketModal isOpen={true} closeModal={() => setShowTicketModal(false)} />}
+			{showTicketModal && <TicketModal isOpen={true} closeModal={closeModal} />}
 
 
 		</>

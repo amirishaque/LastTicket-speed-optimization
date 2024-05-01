@@ -449,16 +449,16 @@
 
 @media (max-width: 1100px) {
   #sidebar {
-    width: 23%;
+    width: 100%;
   }
   .ticket-list {
     width: 75%;
   }
 }
 @media (max-width: 999px) {
-  #sidebar {
+  /* #sidebar {
     display: none;
-  }
+  } */
   .ticket-list {
     width: 100%;
   }

@@ -74,6 +74,9 @@
     fill: #fff;
 }
 @media screen and (max-width: 767px) {
+  .desktop{
+    display: none !important;
+  }
     .chatwrapper{
         position: fixed;
         bottom: 20px;
@@ -105,6 +108,104 @@
     .date-wrapper-banner span{
         margin-left: 0px !important;
     }
+    .possession-wrapper{
+      span{
+        font-size: 9px !important;
+      }
+    }
+    .eticket-wrapper .eticket-box .right-fragment strong{
+      font-size: 10px !important;
+    }
+    .ribbon-2{
+      font-size: 10px !important;
+      height: 23px !important;
+    }
+    .eticket-wrapper .eticket-box .left-fragment h3{
+      padding: 0px !important;
+    }
+    .filters-holder a {
+      top: 0px !important;
+  }
+  .modal-content.ticket-modal-content{
+    margin-left: 15px;
+    margin-right: 15px;
+    min-height: 315px;
+  }
+  .modal-content.ticket-modal-content .eup-wrapper{
+    gap: 10px;
+  }
+  #sidebar .widget{
+    margin-bottom: 20px;
+  }
+  .eticket-wrapper .eticket-box{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .ribbon-2{
+    left: 6px !important;
+  }
+  #sidebar select {
+    height: 30px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .filter-holder-inner{
+    gap: 20px;
+  }
+  .eticket-wrapper .eticket-box:hover{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .modal-content.ticket-modal-content h2 {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 5px !important;
+  }
+  .modal-content.ticket-modal-content .eup-wrapper svg {
+    width: 45px !important;
+    height: 45px !important;
+  }
+  .modal-content.ticket-modal-content .eup-wrapper img{
+    width: 45px !important;
+    height: 45px !important;
+  }
+
+  .flex.page-wrapper-tickets{
+    flex-direction: column;
+  }
+  .eticket-outer-wrapper {
+    max-width: unset !important;
+    width: unset !important;
+}
+
+.categories-ticket-wrapper{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+.categories-ticket-wrapper .categories-ticket-box span {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  background: red;
+}
+.categories-ticket-wrapper .categories-ticket-box p {
+  font-size: 12px;
+  margin: 0px;
+}
+.categories-ticket-box {
+  border: 1px solid #0080002b;
+  padding: 5px;
+  width: auto;
+  height: auto;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+
 }
 
 
@@ -143,6 +244,9 @@
   
 
   @media screen and (max-width: 767px){
+    .desktop{
+      display: none;
+    }
     .reviews-wrapper-outer .reviews-wrapper h2 {
         font-size: 42px;
     }
@@ -150,7 +254,15 @@
         font-size: 10px;
         height: auto !important;
     }
-
+    aside#sidebar{
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: #fff;
+    }
+    .map-holder{
+      background: #fff;
+    }
   }
   @media screen and (min-width: 767px){
     .header-wrapper a img{
@@ -561,7 +673,24 @@ section.your-section-class{
     gap: 20px;
    
 }
-.eu-wrapper:nth-of-type(2){
+/* .eu-wrapper:nth-of-type(2){
       gap: 0px;
+} */
+
+.modal-content-open{
+  overflow: hidden;
+}
+.flex.page-wrapper-tickets {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.eticket-outer-wrapper{
+  max-width: calc(100% - 398px);
+  width: 100%;
 }
 

@@ -17,6 +17,7 @@ import Checkout from "./pages/checkout/Checkout";
 import ChatIcon from "./components/chat/ChatIcon";
 // import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 // import TawkMessenger from "@tawk.to/tawk-messenger-react";
+import './index.css'
 
 
 function App() {

@@ -20,7 +20,7 @@
 }
 .modal-content.ticket-modal-content .eup-wrapper img {
   width: 75px !important;
-  height: 75px !important;
+  height: auto !important;
 }
 .modal-content.ticket-modal-content .eup-wrapper p {
   text-align: center;
