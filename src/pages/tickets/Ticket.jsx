@@ -227,10 +227,10 @@ export default function Ticket() {
 								</div>
 								<div className="counters flex">
 									<button type="button" className="active" onClick={() => smoothScrollToSection('targetedSection', 2000)}>1</button>
-									<button type="button">2</button>
-									<button type="button">3</button>
-									<button type="button">4</button>
-									<button type="button">5+</button>
+									<button type="button" onClick={() => smoothScrollToSection('targetedSection', 2000)}>2</button>
+									<button type="button" onClick={() => smoothScrollToSection('targetedSection', 2000)}>3</button>
+									<button type="button" onClick={() => smoothScrollToSection('targetedSection', 2000)}>4</button>
+									<button type="button" onClick={() => smoothScrollToSection('targetedSection', 2000)}>5+</button>
 								</div>
 								<form className="filters-form">
 									<div className="selects flex v-center">
@@ -321,7 +321,7 @@ export default function Ticket() {
 							</div>
 
 							<div className="view-area">
-								<header className="header">
+								<header className="header desktop">
 									<h2>Categories:</h2>
 									<div className="colors flex v-center">
 										<div className="color ">
@@ -351,18 +351,21 @@ export default function Ticket() {
 												<option>Upper Bowl</option>
 											</select>
 										</div>
-										<div className='categories-ticket-wrapper mobile'>
-											<div className='categories-ticket-box'>
-												<span style={{background:'blue'}}></span>
-												<p>B3</p>
-											</div>
-											<div className='categories-ticket-box mobile'>
-												<span></span>
-												<p>Gernal Admission</p>
-											</div>
-											<div className='categories-ticket-box'>
-												<span style={{background:'yellow'}}></span>
-												<p>Gloden Cirlce</p>
+										<div className='categories-ticket-wrapper-outer mobile'>
+											<h2>Categories: </h2>
+											<div className='categories-ticket-wrapper'>
+												<div className='categories-ticket-box'>
+													<span style={{background:'blue'}}></span>
+													<p>B3</p>
+												</div>
+												<div className='categories-ticket-box mobile'>
+													<span></span>
+													<p>Gernal Admission</p>
+												</div>
+												<div className='categories-ticket-box'>
+													<span style={{background:'yellow'}}></span>
+													<p>Gloden Cirlce</p>
+												</div>
 											</div>
 										</div>
 									</aside>

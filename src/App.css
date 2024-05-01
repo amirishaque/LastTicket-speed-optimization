@@ -74,6 +74,24 @@
     fill: #fff;
 }
 @media screen and (max-width: 767px) {
+  .map-holder {
+    height: 200px;
+}
+.views {
+
+  width: 81px;
+  height: 29px;
+
+}
+  .map-holder img{
+    max-width: 100%;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px !important;
+    height: 217px;
+    margin-top: -14px;
+  }
   .desktop{
     display: none !important;
   }
@@ -177,7 +195,11 @@
     max-width: unset !important;
     width: unset !important;
 }
-
+.categories-ticket-wrapper-outer h2 {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 0px;
+}
 .categories-ticket-wrapper{
   display: flex;
   gap: 10px;
