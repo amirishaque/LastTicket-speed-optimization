@@ -352,7 +352,7 @@ export default function Ticket() {
 											</select>
 										</div>
 										<div className='categories-ticket-wrapper-outer mobile'>
-											<h2>Categories: </h2>
+											<h2 id="targetedSection">Categories: </h2>
 											<div className='categories-ticket-wrapper'>
 												<div className='categories-ticket-box'>
 													<span style={{background:'blue'}}></span>
@@ -369,7 +369,7 @@ export default function Ticket() {
 											</div>
 										</div>
 									</aside>
-									<div className='eticket-outer-wrapper' id="targetedSection">
+									<div className='eticket-outer-wrapper'>
 
 									<ETicket />
 									</div>
