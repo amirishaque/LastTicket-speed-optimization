@@ -243,7 +243,7 @@ export default function Ticket() {
 								<form className="filters-form">
 									<div className="selects flex v-center">
 										<select>
-											<option>Fill By Ticket Type</option>
+											<option>Filter By Ticket Type</option>
 											<option>All Tickets</option>
 											<option>Paper Ticket</option>
 											<option>E-Ticket</option>
@@ -262,7 +262,7 @@ export default function Ticket() {
 										</select>
 										<select className='mobile'>
 											<option>Sort by</option>
-											<option>Low to Heigh</option>
+											<option>Low to High</option>
 											<option>High to Low</option>
 											{/* <option>Price High to Low</option> */}
 											<option>Best Value</option>
@@ -290,7 +290,7 @@ export default function Ticket() {
 													value="low-to-high"
 													checked={selectedOption === 'low-to-high'}
 													onChange={handleOptionChange}
-												/> PRICE: Low to Heigh
+												/> PRICE: Low to High
 											</label>
 											{/* <label htmlFor="high-to-low" className={selectedOption === 'high-to-low' ? 'checked' : ''}>
 												<input
