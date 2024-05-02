@@ -264,7 +264,7 @@ export default function Ticket() {
 											<option>Sort by</option>
 											<option>Low to Heigh</option>
 											<option>High to Low</option>
-											<option>Price High to Low</option>
+											{/* <option>Price High to Low</option> */}
 											<option>Best Value</option>
 											<option>Newest</option>
 										</select>
