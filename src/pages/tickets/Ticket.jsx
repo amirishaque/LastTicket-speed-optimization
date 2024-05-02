@@ -290,9 +290,9 @@ export default function Ticket() {
 													value="low-to-high"
 													checked={selectedOption === 'low-to-high'}
 													onChange={handleOptionChange}
-												/> PRICE: Low to High
+												/> PRICE: Low to Heigh
 											</label>
-											<label htmlFor="high-to-low" className={selectedOption === 'high-to-low' ? 'checked' : ''}>
+											{/* <label htmlFor="high-to-low" className={selectedOption === 'high-to-low' ? 'checked' : ''}>
 												<input
 													type="radio"
 													id="high-to-low"
@@ -301,7 +301,7 @@ export default function Ticket() {
 													checked={selectedOption === 'high-to-low'}
 													onChange={handleOptionChange}
 												/> PRICE High to Low
-											</label>
+											</label> */}
 											<label htmlFor="best-value" className={selectedOption === 'best-value' ? 'checked' : ''}>
 												<input
 													type="radio"

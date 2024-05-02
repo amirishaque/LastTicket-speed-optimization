@@ -205,8 +205,14 @@
   font-weight: 600;
   padding: 10px 0px;
 }
+.categories-ticket-wrapper-outer{
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
 .categories-ticket-wrapper{
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -230,6 +236,11 @@
   display: flex;
   gap: 4px;
   align-items: center;
+  min-width: 82px !important;
+  width: 100% !important;
+  flex-wrap: wrap;
+  height: 21px;
+  max-width: 131px;
 }
 
 
