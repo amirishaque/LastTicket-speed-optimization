@@ -167,7 +167,7 @@
     border-radius: 5px;
 }
 
-.image-box:hover span:nth-child(1) {
+.image-box span:nth-child(1) {
     position: absolute;
     top: 0;
     left: 0;
@@ -187,7 +187,7 @@
     }
 }
 
-.image-box:hover span:nth-child(2) {
+.image-box span:nth-child(2) {
     position: absolute;
     top: 0;
     right: 0;
@@ -208,7 +208,7 @@
     }
 }
 
-.image-box:hover span:nth-child(3) {
+.image-box span:nth-child(3) {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -228,7 +228,7 @@
     }
 }
 
-.image-box:hover span:nth-child(4) {
+.image-box span:nth-child(4) {
     position: absolute;
     top: 0;
     left: 0;
@@ -363,7 +363,7 @@
         background: rgba(255, 255, 255, 0.05);
     }
 
-    .image-box:hover span:nth-child(1) {
+    .image-box span:nth-child(1) {
         position: absolute;
         top: 0;
         left: 0;
@@ -375,4 +375,10 @@
 
     /* Remaining animation styles for desktop view */
     /* ... */
+}
+.image-box{
+    transition: 0.4s;
+}
+.image-box:hover{
+    transform:scale(1.12);
 }

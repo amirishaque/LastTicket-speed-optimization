@@ -351,7 +351,7 @@
     right: 0;
     width: 1px;
     /* background-color: red; */
-    border-left: 1px dotted red;
+    border-left: 5px dotted red;
     left: 105px;
     height: 171px;
   }
@@ -368,7 +368,7 @@
     border-radius: 0 0 50% 50%;
     border-bottom: 1px solid red;
     border-right: 1px solid red;
-    top: -2px;
+    top: -5px;
     background: #fff;
     overflow: visible;
   }
@@ -618,6 +618,9 @@ section.your-section-class{
 
 .eticket-box-wrapper {
   position:relative;
+}
+.eticket-box-wrapper:nth-of-type(2) .ribbon-2{
+  display: none;
 }
 
 .blur-background {
