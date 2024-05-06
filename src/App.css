@@ -361,7 +361,7 @@
     position: absolute;
     top: -20px;
     left: 106px;
-    height: 167px;
+    height: 140px;
     width: 3px;
     background-image: linear-gradient(to bottom, red 50%, transparent 50%);
     background-size: 6px 15px;
@@ -399,7 +399,7 @@
     border-bottom: 1px solid red;
     border-right: 1px solid red;
     top: auto;
-    bottom: -3px;
+    bottom: -1px;
     background: #fff;
     overflow: visible;
     transform: rotate(180deg);
