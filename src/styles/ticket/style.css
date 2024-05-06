@@ -180,7 +180,7 @@
     margin-bottom: 7px;
     font-weight: 500;
   }
-  .eticket-wrapper .eticket-box .right-fragment button {
+  .eticket-wrapper .eticket-box .right-fragment a {
     padding: 6px 8px;
     width: 90px;
     font-size: 12px;
