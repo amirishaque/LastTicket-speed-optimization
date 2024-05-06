@@ -120,7 +120,7 @@ export default function ETicket() {
                         <div className='right-fragment'>
                             <strong style={{color:'red', fontSize:'12px'}}> Ticket price below face value - Grab it now</strong>
                             <span>${ticket.price}</span>
-                            <button>Buy Now</button>
+                            <Link to='/OrderDetail'>Buy Now</Link>
                         </div>
                       </div>
                     </div>

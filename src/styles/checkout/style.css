@@ -34,6 +34,14 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
+  transition: 0.4s;
+}
+.checkout-page-wrapper .left-fragment .box-payment .box-p:hover {
+  cursor: pointer;
+}
+.checkout-page-wrapper .left-fragment .box-payment .box-p:hover img {
+  transition: 0.4s;
+  transform: scale(1.08);
 }
 .checkout-page-wrapper .left-fragment .box-payment span {
   position: absolute;

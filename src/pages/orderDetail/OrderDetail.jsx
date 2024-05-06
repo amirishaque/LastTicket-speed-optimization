@@ -5,6 +5,7 @@ import '../../styles/orderDetail/style.css';
 import logos from '../../assets/images/logoMain.webp';
 import Guard from '../../assets/images/guard.jpeg';
 import { Link } from 'react-router-dom';
+import LogoMain from '../../assets/images/LCT-LOGO.png'
 
 export default function OrderDetail() {
     return (
@@ -16,7 +17,7 @@ export default function OrderDetail() {
                     <h2>Your Order Details</h2>
                     <div>
                         <figure>
-                            <img src={logos} alt='logo' width={312} />
+                            <img src={LogoMain} alt='logo' width={312} />
                         </figure>
                     </div>
                 </div>

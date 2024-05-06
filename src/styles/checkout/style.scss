@@ -38,6 +38,14 @@
         align-items: center;
         justify-content: center;
         gap: 20px;
+        transition: 0.4s;
+        .box-p:hover{
+          cursor: pointer;
+          img{
+            transition: 0.4s;
+            transform: scale(1.08);
+          }
+        }
         span{
             position: absolute;
             top: -13px;
