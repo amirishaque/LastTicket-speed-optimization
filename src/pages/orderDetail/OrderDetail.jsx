@@ -12,7 +12,8 @@ export default function OrderDetail() {
         <>
             <Slider />
             {/* <Banner  bannerHeading="Order Detail" bannerText="New York Cricket Ground"/> */}
-            <section className='order-detail-wrapper'>
+            <section className='order-detail-wrapper-outer'>
+                <div className='order-detail-wrapper'>
                 <div className='heading-detail'>
                     <h2>Your Order Details</h2>
                     <div>
@@ -99,6 +100,7 @@ export default function OrderDetail() {
                <p>You will get an email with instructions on how to download your tickets to your phone.</p>
                 </div>
                 <Link to='/Checkout'>Proceed to checkout</Link>
+                </div>
             </section>
         </>
     )

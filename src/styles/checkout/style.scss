@@ -41,6 +41,7 @@
         transition: 0.4s;
         .box-p:hover{
           cursor: pointer;
+          
           img{
             transition: 0.4s;
             transform: scale(1.08);
@@ -211,5 +212,83 @@
     span{
         font-size: 35px;
         font-weight: 600;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .order-detail-wrapper .heading-detail{
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+    }
+    section.order-detail-wrapper-outer {
+      padding: 0px 15px;
+      box-sizing: border-box;
+    }
+    .order-detail-wrapper .order-detail-box{
+      flex-direction: column;
+      gap: 20px;
+    }
+    .order-detail-wrapper {
+      padding: 0px 10px;
+    }
+    .order-detail-box ul li {
+      font-size: 14px;
+    }
+    .order-detail-wrapper .order-detail-box ul li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: flex-start;
+    }
+    .order-detail-wrapper .order-detail-box .right-fragment{
+      width: 100%;
+    }
+    .order-detail-box ul li{
+      font-size: 13px;
+    }
+    .order-detail-wrapper .order-detail-box h4 {
+      font-size: 16px;
+      text-align: left;
+    }
+    .order-detail-wrapper .ticket-details h2{
+      font-size: 16px;
+    }
+    .order-detail-wrapper .ticket-details ul li {
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+    }
+    .order-detail-wrapper .ticket-details p {
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .order-detail-wrapper a {
+      display: block;
+      text-align: center;
+      color: #fff;
+      font-size: 16px;
+      padding: 5px 8px;
+      background: #0DCCD7;
+      border-radius: 5px;
+      border: 1px solid #0DCCD7;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out 0s;
+      margin: 0 auto;
+      cursor: pointer;
+      width: 280px !important;
+      margin-bottom: 10px;
+    }
+    .order-detail-wrapper{
+      box-sizing: border-box;
+    }
+    .order-detail-wrapper .heading-detail {
+      padding-top: 15px;
+      font-size: 18px;
+    }
+    .order-detail-wrapper .heading-detail h2{
+      padding-bottom: 5px;
     }
   }
