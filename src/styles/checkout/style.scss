@@ -245,7 +245,7 @@
       width: 100%;
     }
     .order-detail-box ul li{
-      font-size: 13px;
+      font-size: 12px;
     }
     .order-detail-wrapper .order-detail-box h4 {
       font-size: 16px;
@@ -259,7 +259,7 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      font-size: 13px;
+      font-size: 12px;
     }
     .order-detail-wrapper .ticket-details p {
       font-weight: 600;
@@ -290,5 +290,8 @@
     }
     .order-detail-wrapper .heading-detail h2{
       padding-bottom: 5px;
+    }
+    .order-detail-wrapper .order-detail-box .left-fragment{
+      width: 100%;
     }
   }
