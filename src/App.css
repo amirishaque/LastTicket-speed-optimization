@@ -79,13 +79,13 @@
   }
   .map-holder {
     height: 200px;
-}
-.views {
+  }
+  .views {
 
-  width: 81px;
-  height: 29px;
+    width: 81px;
+    height: 29px;
 
-}
+  }
   .map-holder img{
     max-width: 100%;
     width: 200px;
@@ -243,6 +243,9 @@
   max-width: 131px;
 }
 
+.Toastify__toast-container{
+  width: 70vw;
+}
 
 }
 
@@ -344,17 +347,29 @@
 }
 
 .eticket-wrapper .eticket-box .left-fragment::after {
-    content: '';
+    /* content: '';
     position: absolute;
     top: -25px;
     bottom: 0;
     right: 0;
     width: 1px;
-    /* background-color: red; */
     border-left: 5px dotted red;
     left: 105px;
-    height: 171px;
+    height: 171px; */
+    
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 106px;
+    height: 167px;
+    width: 3px;
+    background-image: linear-gradient(to bottom, red 50%, transparent 50%);
+    background-size: 6px 15px;
+    
+    
   }
+
+
 
   .eticket-box::after {
     content: '';
@@ -368,7 +383,7 @@
     border-radius: 0 0 50% 50%;
     border-bottom: 1px solid red;
     border-right: 1px solid red;
-    top: -5px;
+    top: -3px;
     background: #fff;
     overflow: visible;
   }
@@ -384,7 +399,7 @@
     border-bottom: 1px solid red;
     border-right: 1px solid red;
     top: auto;
-    bottom: -2px;
+    bottom: -3px;
     background: #fff;
     overflow: visible;
     transform: rotate(180deg);

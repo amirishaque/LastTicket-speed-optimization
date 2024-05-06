@@ -45,7 +45,7 @@ export default function ETicket() {
                       <div className='eticket-box' key={index}>
                         <div className='left-fragment'>
                             <figure>
-                                <img src='https://w7.pngwing.com/pngs/520/933/png-transparent-barcode-barcode-universal-product-code-qr-code-sticker-barcode-white-angle-label-rectangle-thumbnail.png'  alt='ticket' width={180} />
+                                <img src='https://www.svgrepo.com/show/159737/bar-code.svg'  alt='ticket' width={180} />
                                 {/* <img src='https://lastchanceticket.com/public/assets/images/t1.webp' alt='ticket' width={180} /> */}
                             </figure>
                             <div className='d-wrapper-eticket'>

@@ -40,12 +40,16 @@ export default function Ticket() {
 	const closeModal = () => {
 		setShowTicketModal(false);
 		document.body.classList.remove('modal-content-open');
-	};
-	useEffect(() => {
 
-		toast.info(
-			<div style={{ display: 'flex', gap: '12px', alignItems: 'start' }}>
-				<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+		showInfoToast();
+		
+	};
+
+
+	const showInfoToast = () => {
+        toast.info(
+            <div style={{ display: 'flex', gap: '12px', alignItems: 'start' }}>
+								<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 					width="35px" height="35px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
 					<g>
 						<path fill="#231F20" d="M62.242,47.758l0.014-0.014c-5.847-4.753-12.84-8.137-20.491-9.722C44.374,35.479,46,31.932,46,28
@@ -67,24 +71,53 @@ export default function Ticket() {
 	      C33.866,21.047,34.065,21.609,34.539,21.862z" />
 					</g>
 				</svg>
-				<p>
-					Bought 2 tickets from
-					<img src={USAImg} width={20} alt='flag' style={{ marginRight: '5px', marginLeft: '5px' }} />
-					for this event.
-					<br />
-					10 minutes ago.
-				</p>
-			</div>,
-			{
-				position: "top-center", // Use "top-center" directly as a string
-				autoClose: 700, // Close after 7 seconds
-				hideProgressBar: true,
-				closeOnClick: false,
-				pauseOnHover: true,
-				draggable: true,
-			}
-		);
-	}, []);
+                <p>
+                    Bought 2 tickets from
+                    <img src={USAImg} width={20} alt='flag' style={{ marginRight: '5px', marginLeft: '5px' }} />
+                    for this event.
+                    <br />
+                    10 minutes ago.
+                </p>
+            </div>,
+            {
+                position: "top-center", // Use "top-center" directly as a string
+                autoClose: 15000, // Close after 15 seconds
+                hideProgressBar: true,
+                closeOnClick: false,
+                pauseOnHover: true,
+                draggable: true,
+            }
+        );
+    };
+	
+	// useEffect(() => {
+
+	// 	toast.info(
+	// 		<div style={{ display: 'flex', gap: '12px', alignItems: 'start' }}>
+		
+	// 			<p>
+	// 				Bought 2 tickets from
+	// 				<img src={USAImg} width={20} alt='flag' style={{ marginRight: '5px', marginLeft: '5px' }} />
+	// 				for this event.
+	// 				<br />
+	// 				10 minutes ago.
+	// 			</p>
+	// 		</div>,
+	// 		{
+	// 			position: "top-center", // Use "top-center" directly as a string
+	// 			autoClose: 15000, // Close after 7 seconds
+	// 			hideProgressBar: true,
+	// 			closeOnClick: false,
+	// 			pauseOnHover: true,
+	// 			draggable: true,
+	// 		}
+	// 	);
+	// }, []);
+
+
+
+
+
 
 	const [selectedOption, setSelectedOption] = useState('all'); // State to keep track of the selected option
 
@@ -98,7 +131,7 @@ export default function Ticket() {
 		const loaderTimeout = setTimeout(() => {
 		  setShowLoader(false);
 		  setShowTicketModal(true);
-		}, 3000);
+		}, 15000);
 	
 		return () => clearTimeout(loaderTimeout);
 	  }, []);
