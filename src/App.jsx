@@ -73,11 +73,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/ticket" element={<Ticket />} />
-          <Route path="/TicketDetail" element={<TicketDetail />} />
-          <Route path="/SellTicket" element={<SellTicket />} />
-          <Route path="/RequestEvent" element={<RequestEvent />} />
+          <Route path="/ticket-detail" element={<TicketDetail />} />
+          <Route path="/sell-ticket" element={<SellTicket />} />
+          <Route path="/request-event" element={<RequestEvent />} />
           <Route path="/contact-us" element={<ContactUs />} />
-          <Route path="/Login" element={<Login />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/order-detail" element={<OrderDetail />} />
           <Route path="/checkout" element={<Checkout />} />
         </Routes>
