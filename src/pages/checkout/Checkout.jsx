@@ -7,6 +7,7 @@ import GooglePay from '../../assets/images/google-pay.svg';
 // import useWindowSize from 'react-use/lib/useWindowSize';
 import Confetti from 'react-confetti';
 import Slider from '../../components/slider/Slider';
+import Counter from '../../components/counter/Counter';
 
 
 export default function Checkout() {
@@ -56,7 +57,7 @@ export default function Checkout() {
         setShouldShowConfetti(true);
         const timer = setTimeout(() => {
           setShouldShowConfetti(false);
-        }, 500000);
+        }, 5000);
     
         return () => clearTimeout(timer);
       };
@@ -64,7 +65,7 @@ export default function Checkout() {
 
     return (
         <>
-          {shouldShowConfetti && (
+        {shouldShowConfetti && (
      <Confetti
           width={window.innerWidth}
           height={confettiHeight} // Dynamic height based on window height + scrollY
@@ -76,6 +77,7 @@ export default function Checkout() {
                     <h2>Congratulations
                         An Unforgettable experience is just 1 click away</h2>
                     <div className='timer-wrapper'>
+                        {/* <Counter/> */}
                         <span> {minutes < 10 ? '0' : ''}{minutes} : {remainingSeconds < 10 ? '0' : ''}{remainingSeconds}</span>
                     </div>
                     <div className='box-payment'>
@@ -126,7 +128,7 @@ export default function Checkout() {
                                 <input type='checkbox' />
                                 <label>I agree with the Last Chance Ticket Terms & Conditions</label>
                             </div>
-                            <p className='ext-text'>If you are not 100% satisfied, we will refun you 100% of your order.</p>
+                            <p className='ext-text'>If you are not 100% satisfied, we will refund you 100% of your order.</p>
                             <button onClick={handleClickConfetti}>Buy</button>
 
                         </div>
