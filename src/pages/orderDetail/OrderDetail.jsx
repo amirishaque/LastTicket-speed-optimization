@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Banner from '../../components/banner/Banner';
 import Slider from '../../components/slider/Slider';
 import '../../styles/orderDetail/style.css';
@@ -6,8 +6,22 @@ import logos from '../../assets/images/logoMain.webp';
 import Guard from '../../assets/images/guard.jpeg';
 import { Link } from 'react-router-dom';
 import LogoMain from '../../assets/images/LCT-LOGO.png'
+import LoginGuestModal from '../../components/LoginGuestModal/loginGuest';
 
 export default function OrderDetail() {
+
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => {
+      setIsModalOpen(true);
+    };
+  
+    const closeModal = () => {
+      setIsModalOpen(false);
+    };
+
+
     return (
         <>
             <Slider />
@@ -99,9 +113,11 @@ export default function OrderDetail() {
                     {/* <p>Great! You are logged in successfully. Please proceed to checkout.</p> */}
                <p>You will get an email with instructions on how to download your tickets to your phone.</p>
                 </div>
-                <Link to='/checkout'>Proceed to checkout</Link>
+                <Link onClick={openModal}>Proceed to checkout</Link>
+                {/* <button onClick={openModal}>Open Modal</button> */}
                 </div>
             </section>
+            <LoginGuestModal isOpen={isModalOpen} onClose={closeModal} />
         </>
     )
 }

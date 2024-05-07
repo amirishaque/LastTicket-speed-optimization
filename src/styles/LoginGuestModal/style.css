@@ -1,0 +1,208 @@
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.lg-content-modal {
+  padding-top: 30px;
+}
+.lg-content-modal h2 {
+  color: #0dccd7;
+  font-size: 18px;
+  border-bottom: 4px solid #0dccd7;
+  width: 50%;
+  text-align: center;
+  border-radius: 2px;
+  margin-bottom: 20px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+.lg-content-modal .option-one-wrapper .form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.lg-content-modal .option-one-wrapper .input-wrapper select {
+  border: 0px !important;
+  border-bottom: 1px solid #0dccd7 !important;
+}
+.lg-content-modal .option-one-wrapper .input-wrapper input {
+  width: 100%;
+  margin-bottom: 15px;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 0px;
+  border-bottom: 1px solid #0dccd7;
+}
+.lg-content-modal .option-one-wrapper .input-wrapper input:focus-visible {
+  outline: unset;
+}
+.lg-content-modal .option-one-wrapper .input-wrapper input:focus {
+  outline: unset;
+}
+.lg-content-modal .option-one-wrapper .input-wrapper {
+  display: flex;
+  height: 30px;
+  gap: 10px;
+}
+
+.lg-close {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
+.option-two-wrapper a {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 13px;
+  padding: 0px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #0dccd7;
+  padding: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 20px;
+  display: block;
+  box-sizing: border-box;
+  transition: 0.4s;
+  border: 1px solid #0DCCD7;
+  font-weight: 400;
+}
+.option-two-wrapper a:hover {
+  color: #0dccd7;
+  background: #fff;
+}
+
+.lg-link {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 13px;
+  padding: 0px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #0dccd7;
+  padding: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid #0DCCD7;
+  transition: 0.4s;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.lg-link:hover {
+  color: #0dccd7;
+  background: #fff;
+}
+
+.or-lg {
+  font-size: 25px;
+  text-align: center;
+}
+
+.option-two-wrapper h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.option-one-wrapper h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 90%;
+    box-sizing: border-box;
+  }
+  .lg-content-modal h2 {
+    color: #0dccd7;
+    font-size: 15px;
+    border-bottom: 4px solid #0dccd7;
+    width: 50%;
+    text-align: center;
+    border-radius: 2px;
+    margin-bottom: 10px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+  }
+  .option-one-wrapper h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .lg-content-modal .option-one-wrapper .input-wrapper input {
+    margin-bottom: 10px;
+  }
+  .lg-content-modal .option-one-wrapper .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .lg-link {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .or-lg {
+    font-size: 18px;
+    text-align: center;
+  }
+  .option-two-wrapper a {
+    height: 32px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .option-two-wrapper h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
