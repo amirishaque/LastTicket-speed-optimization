@@ -99,7 +99,7 @@ export default function OrderDetail() {
                     {/* <p>Great! You are logged in successfully. Please proceed to checkout.</p> */}
                <p>You will get an email with instructions on how to download your tickets to your phone.</p>
                 </div>
-                <Link to='/Checkout'>Proceed to checkout</Link>
+                <Link to='/checkout'>Proceed to checkout</Link>
                 </div>
             </section>
         </>

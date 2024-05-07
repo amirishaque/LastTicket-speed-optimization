@@ -25,6 +25,7 @@ body{
   font-family: 'Poppins';
   background-color: transparent;
   /* background: #121212; */
+  overflow-x: hidden;
 }
 ul{
   padding: 0px;
