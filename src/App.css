@@ -74,6 +74,9 @@
     fill: #fff;
 }
 @media screen and (max-width: 767px) {
+  .header-placement{
+    height: 86px !important;
+  }
   .modal-content.ticket-modal-content .eup-wrapper p{
     font-size: 12px;
   }
@@ -750,3 +753,6 @@ section.your-section-class{
   width: 100%;
 }
 
+.page-loader p{
+  text-align: center;
+}

@@ -298,8 +298,8 @@
     //For Checkout Page
     .checkout-page-wrapper{
       box-sizing: border-box;
-      margin-top: 72px;
-      margin-bottom: 72px;
+      margin-top: 15px;
+      margin-bottom: 15px;
       padding: 20px;
       .checkbox{
         label{
@@ -372,7 +372,8 @@
       width: 100%;
     }
     .checkout-page-wrapper{
-      flex-direction: column;
+      // flex-direction: column;
+      flex-direction: column-reverse;
     }
     .checkout-page-wrapper .right-fragment {
       max-width: unset;

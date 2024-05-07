@@ -15,19 +15,30 @@ export default function Checkout() {
     const [timeLeft, setTimeLeft] = useState(initialTime);
 
     const [shouldShowConfetti, setShouldShowConfetti] = useState(false);
+    const [confettiHeight, setConfettiHeight] = useState(window.innerHeight);
 
 
     useEffect(() => {
-        setShouldShowConfetti(true);
-        const timer = setTimeout(() => {
-          setShouldShowConfetti(false);
-        }, 5000);
+        function handleResize() {
+          setConfettiHeight(window.innerHeight);
+        }
     
-        return () => clearTimeout(timer);
+        function handleScroll() {
+          setConfettiHeight(window.innerHeight + window.scrollY);
+        }
+    
+        window.addEventListener('resize', handleResize);
+        window.addEventListener('scroll', handleScroll);
+    
+        return () => {
+          window.removeEventListener('resize', handleResize);
+          window.removeEventListener('scroll', handleScroll);
+        };
       }, []);
 
     useEffect(() => {
         // setShouldShowConfetti(true);
+        window.scrollTo(0, 0); 
         const interval = setInterval(() => {
             setTimeLeft(prevTimeLeft => prevTimeLeft - 1);
 
@@ -40,12 +51,23 @@ export default function Checkout() {
     // Convert total seconds to minutes and remaining seconds
     const minutes = Math.floor(timeLeft / 60);
     const remainingSeconds = timeLeft % 60;
+
+    const handleClickConfetti = () => {
+        setShouldShowConfetti(true);
+        const timer = setTimeout(() => {
+          setShouldShowConfetti(false);
+        }, 500000);
+    
+        return () => clearTimeout(timer);
+      };
+
+
     return (
         <>
           {shouldShowConfetti && (
-        <Confetti
+     <Confetti
           width={window.innerWidth}
-          height={window.innerHeight}
+          height={confettiHeight} // Dynamic height based on window height + scrollY
         />
       )}
       	<Slider />
@@ -104,7 +126,7 @@ export default function Checkout() {
                                 <input type='checkbox' />
                                 <label>I agree with the LCT Terms & Conditions</label>
                             </div>
-                            <button>Pay $500</button>
+                            <button onClick={handleClickConfetti}>Pay $500</button>
 
                         </div>
                     </div>

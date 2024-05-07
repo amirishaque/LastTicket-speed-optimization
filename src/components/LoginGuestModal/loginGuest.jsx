@@ -45,7 +45,7 @@ function LoginGuestModal({ isOpen, onClose }) {
 
                                 />
                             </div>
-                            <Link className='lg-link'>Continue as a guest</Link>
+                            <Link className='lg-link' to='/checkout'>Continue as a guest</Link>
                         </div>
                     </div>
                     <div className='or-lg'>OR</div>
