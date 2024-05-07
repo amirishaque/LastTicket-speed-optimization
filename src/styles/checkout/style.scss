@@ -384,6 +384,7 @@
     }
     .checkout-page-wrapper .right-fragment h2 {
       font-size: 18px;
+      color: #0DCCD7 !important;
     }
     .checkout-page-wrapper .right-fragment .order-detail-b ul li {
       display: flex;
@@ -406,4 +407,11 @@
     .checkout-page-wrapper{
       box-shadow: none;
     }
+  }
+
+
+
+
+  .checkout-page-wrapper .left-fragment h2 {
+    color: #0DCCD7 !important;
   }

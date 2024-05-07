@@ -756,3 +756,28 @@ section.your-section-class{
 .page-loader p{
   text-align: center;
 }
+
+.eticket-wrapper .eticket-box .left-fragment h3 span{
+  margin-left: 10px;
+  height: 19px;
+}
+
+.ext-text{
+  font-size: 18px;
+  font-weight: 600;
+  color: #0DCCD7;
+  margin-bottom: 20px !important;
+}
+.checkout-page-wrapper .left-fragment .contact-info .form-wrapper .checkbox{
+  margin-bottom: 20px;
+}
+
+.order-detail-wrapper .ticket-details ul li span svg{
+  width: 32px;
+  height: 32px;
+}
+.order-detail-wrapper .ticket-details ul li span{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

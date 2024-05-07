@@ -124,9 +124,10 @@ export default function Checkout() {
                             </div>
                             <div className='checkbox'>
                                 <input type='checkbox' />
-                                <label>I agree with the LCT Terms & Conditions</label>
+                                <label>I agree with the Last Chance Ticket Terms & Conditions</label>
                             </div>
-                            <button onClick={handleClickConfetti}>Pay $500</button>
+                            <p className='ext-text'>If you are not 100% satisfied, we will refun you 100% of your order.</p>
+                            <button onClick={handleClickConfetti}>Buy</button>
 
                         </div>
                     </div>
