@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 import Banner from '../../components/banner/Banner';
 import Slider from '../../components/slider/Slider';
 import '../../styles/orderDetail/style.css';
@@ -20,6 +20,10 @@ export default function OrderDetail() {
     const closeModal = () => {
       setIsModalOpen(false);
     };
+
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scrolls to the top of the page when component mounts
+      }, []);
 
 
     return (
