@@ -74,8 +74,8 @@ An Unforgettable experience is just 1 click away</h2>
                     <input placeholder='Card Number' />
                     <div className='cvc-wrapper'>
                         <input placeholder='e.g 415' />
-                        <input placeholder='Expiration Month' />
-                        <input placeholder='Expiration Year' />
+                        <input placeholder='Exp Month' />
+                        <input placeholder='Exp Year' />
                         
                     </div>
                     <div className='checkbox'>

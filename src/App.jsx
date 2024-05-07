@@ -76,10 +76,10 @@ function App() {
           <Route path="/TicketDetail" element={<TicketDetail />} />
           <Route path="/SellTicket" element={<SellTicket />} />
           <Route path="/RequestEvent" element={<RequestEvent />} />
-          <Route path="/ContactUs" element={<ContactUs />} />
+          <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/Login" element={<Login />} />
-          <Route path="/OrderDetail" element={<OrderDetail />} />
-          <Route path="/Checkout" element={<Checkout />} />
+          <Route path="/order-detail" element={<OrderDetail />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Routes>
         <Footer />
         <ScrollToTopButton />
