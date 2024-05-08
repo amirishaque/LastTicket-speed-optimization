@@ -39,7 +39,23 @@ export default function Login() {
                                                 <p><button onClick={toggleForgotPassword}>Forgot Password?</button></p>
                                                 <button type="submit" style={{width:'384px'}}>Login</button>
                                                 <p><span>Don't have an account?</span> <button onClick={toggleForm}>Sign up here</button></p>
-                                            </form>
+                                          
+                                          
+                                                <div className='login-methods'>
+                                                    <Link to='https://www.google.com/'>
+                                                <figure>
+                                                    <img src='https://onymos.com/wp-content/uploads/2020/10/google-signin-button.png' alt='login'  height={36}/>
+                                                </figure>
+                                                </Link>
+                                                <Link to='https://www.google.com/'>
+                                                <figure>
+                                                    <img src='https://i.stack.imgur.com/oL5c2.png' alt='login' />
+                                                </figure>
+                                                </Link>
+                                               
+                                            </div> 
+                                             </form>
+                                            
                                            
                                         </>
                                     ) : (

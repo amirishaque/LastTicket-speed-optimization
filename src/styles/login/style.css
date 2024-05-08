@@ -15,10 +15,10 @@
   justify-content: space-between;
   overflow: hidden;
   border-radius: 10px;
-  height: 700px;
+  height: auto;
 }
 .login-wrapper-outer .login-wrapper-inner .left-fragment {
-  background: url(https://lastchanceticket.com/public/assets/images/LoginGirl.jpg) top left repeat;
+  background: url(https://lastchanceticket.com/public/assets/images/LoginGirl1.jpg) top left repeat;
   background-size: cover;
   top: 0;
   bottom: 0;
@@ -134,6 +134,21 @@
 }
 
 @media screen and (min-width: 360px) and (max-width: 767px) {
+  .login-methods {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.login-wrapper-outer .login-wrapper-inner .login-wrapper .login-inner-wrapper form p span {
+  width: 100%;
+  font-size: 12px;
+}
+.login-wrapper-outer .login-wrapper-inner .login-wrapper .login-inner-wrapper p button{
+  font-size: 12px;
+}
+.login-wrapper-outer .login-wrapper-inner .login-wrapper .login-inner-wrapper form input{
+  font-size: 14px;
+}
   .login-wrapper {
     margin-bottom: 72px;
   }

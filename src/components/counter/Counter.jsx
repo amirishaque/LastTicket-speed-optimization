@@ -56,21 +56,11 @@ const FlipUnitContainer = ({ digit, unit }) => {
 };
 
 const Counter = () => {
-  const initialTime = new Date();
-  initialTime.setMinutes(initialTime.getMinutes() + 5); // Set initial time to 5 minutes from now
-
-  const [time, setTime] = useState(initialTime);
+  const [time, setTime] = useState(new Date(new Date().getTime() + 5 * 60 * 1000));
 
   useEffect(() => {
     const timerID = setInterval(() => {
-      setTime(prevTime => {
-        const newTime = new Date(prevTime.getTime() - 1000);
-        if (newTime.getTime() <= 0) {
-          clearInterval(timerID);
-          return prevTime; // If timer reaches zero, stop decrementing
-        }
-        return newTime;
-      });
+      setTime(prevTime => new Date(prevTime.getTime() - 1000));
     }, 1000);
     return () => clearInterval(timerID);
   }, []);
