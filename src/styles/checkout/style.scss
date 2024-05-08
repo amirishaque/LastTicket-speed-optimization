@@ -259,6 +259,15 @@
       flex-direction: column;
       display: flex;
       align-items: center;
+      flex-direction: column-reverse;
+    }
+    .order-detail-wrapper .ticket-details ul li strong{
+      align-items: center;
+      min-width: 115px;
+    }
+    .order-detail-wrapper .heading-detail h2 span{
+      font-size: 14px;
+      display: block;
     }
     section.order-detail-wrapper-outer {
       padding: 0px 15px;
@@ -302,7 +311,7 @@
     }
     .order-detail-wrapper .ticket-details p {
       font-weight: 600;
-      font-size: 14px;
+      font-size: 12px;
     }
     .order-detail-wrapper a {
       display: block;

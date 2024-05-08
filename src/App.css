@@ -74,6 +74,13 @@
     fill: #fff;
 }
 @media screen and (max-width: 767px) {
+  .t-view-modal-content .detail ul.dropdown-menu-ph li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    padding-left: 0px !important;
+}
   .header-placement{
     height: 86px !important;
   }
@@ -774,8 +781,8 @@ section.your-section-class{
 }
 
 .order-detail-wrapper .ticket-details ul li span svg{
-  width: 32px;
-height: 32px;
+  width: 20px;
+height: 20px;
 }
 .order-detail-wrapper .ticket-details ul li span{
   display: flex;

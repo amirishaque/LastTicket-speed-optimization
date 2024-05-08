@@ -217,6 +217,15 @@
     flex-direction: column;
     display: flex;
     align-items: center;
+    flex-direction: column-reverse;
+  }
+  .order-detail-wrapper .ticket-details ul li strong {
+    align-items: center;
+    min-width: 103px;
+  }
+  .order-detail-wrapper .heading-detail h2 span {
+    font-size: 14px;
+    display: block;
   }
   section.order-detail-wrapper-outer {
     padding: 0px 15px;
@@ -260,7 +269,7 @@
   }
   .order-detail-wrapper .ticket-details p {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
   }
   .order-detail-wrapper a {
     display: block;
@@ -298,7 +307,7 @@
     padding: 20px;
   }
   .checkout-page-wrapper .checkbox label {
-    font-size: 10px;
+    font-size: 12px;
   }
   .checkout-page-wrapper .left-fragment h2 {
     text-align: center;
