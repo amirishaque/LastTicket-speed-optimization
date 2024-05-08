@@ -102,7 +102,7 @@
   }
   .login-wrapper-outer .login-wrapper-inner .left-fragment {
  
-    background: url(https://lastchanceticket.com/public/assets/images/LoginGirl1.jpg) top left repeat;
+    background: url('./assets/images/LoginGirl.jpg') top left repeat;
     background-size: cover;
     top: 0;
     bottom: 0;
@@ -1020,4 +1020,10 @@ height: 20px;
 .login-wrapper-outer .login-wrapper-inner{
   margin-top: 40px !important;
   margin-bottom: 40px !important;
+}
+
+
+.login-wrapper-outer .login-wrapper-inner .left-fragment figure img{
+  width: 100%;
+  height: -webkit-fill-available;
 }

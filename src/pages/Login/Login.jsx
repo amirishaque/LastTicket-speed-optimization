@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'; // Import Link for navigation
 import '../../styles/login/style.css';
 // import Registration from '../../components/registration/Registration';
 import ForgotPassword from '../../components/forgotpassword/ForgotPassword'
-import Registration from '../../components/registration/Registration'
+import Registration from '../../components/registration/Registration';
+import LoginImage from '../../assets/images/LoginGirl.webp'
 
 export default function Login() {
     const [isLogin, setIsLogin] = useState(true); // State to manage login or registration form
@@ -21,7 +22,11 @@ export default function Login() {
         <>
             <section className='login-wrapper-outer'>
                 <div className='login-wrapper-inner'>
-                    <div className='left-fragment'></div>
+                    <div className='left-fragment'>
+                        <figure>
+                            <img src={LoginImage} alt='Login Image' />
+                        </figure>
+                    </div>
                     <div className="login-wrapper">
                         <div className="login-inner-wrapper">
                             {/* Conditional rendering based on login or registration form */}
