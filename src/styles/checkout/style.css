@@ -296,6 +296,7 @@
   }
   .order-detail-wrapper .heading-detail h2 {
     padding-bottom: 5px;
+    text-align: center;
   }
   .order-detail-wrapper .order-detail-box .left-fragment {
     width: 100%;

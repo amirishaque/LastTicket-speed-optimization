@@ -53,23 +53,23 @@ export default function OrderDetail() {
                         <div className='left-fragment'>
                             <ul>
                                 <li>
-                                    <strong>EVENT</strong>
+                                    <strong>EVENT:</strong>
                                     <span>India Vs Pakistan - T20 World Cup 2024</span>
                                 </li>
                                 <li>
-                                    <strong>EVENT TIME </strong>
+                                    <strong>EVENT TIME: </strong>
                                     <span>09:30 AM</span>
                                 </li>
                                 <li>
-                                    <strong>DATE</strong>
-                                    <span>26-06-24</span>
+                                    <strong>DATE:</strong>
+                                    <span>Thursday, 23rd August 2023</span>
                                 </li>
                                 <li>
-                                    <strong>VENUE</strong>
+                                    <strong>VENUE:</strong>
                                     <span>Trinidad and Tobago Cricket Ground</span>
                                 </li>
                                 <li>
-                                    <strong>CATEGORY</strong>
+                                    <strong>CATEGORY:</strong>
                                     <span>Standard</span>
                                 </li>
                             </ul>
@@ -78,7 +78,7 @@ export default function OrderDetail() {
                         <div className='right-fragment'>
                             <ul>
                                 <li>
-                                    <strong>SECTION</strong>
+                                    <strong>SECTION:</strong>
                                     <span>Standard</span>
                                 </li>
                                 {/* <li>
@@ -86,15 +86,15 @@ export default function OrderDetail() {
                                 <span>09:30</span>
                             </li> */}
                                 <li>
-                                    <strong>SEATING AREA </strong>
+                                    <strong>SEATING AREA: </strong>
                                     <span>Seated Tickets</span>
                                 </li>
                                 <li>
-                                    <strong>TICKET</strong>
+                                    <strong>TICKET:</strong>
                                     <span>Mobile Ticket</span>
                                 </li>
                                 <li>
-                                    <strong>SELECTED NO. OF TICKETS </strong>
+                                    <strong>SELECTED NO. OF TICKETS: </strong>
                                     <span>4</span>
                                 </li>
 
@@ -249,8 +249,8 @@ export default function OrderDetail() {
 
 
                             </li>
-                            <li><strong>
-                                <span onClick={openTicketView} style={{cursor:'pointer'}}>
+                            <li onClick={openTicketView} style={{cursor:'pointer'}}><strong>
+                                <span >
                                     <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M14 2C14 2 16.2 2.2 19 5C21.8 7.8 22 10 22 10" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
                                         <path d="M14.207 5.53564C14.207 5.53564 15.197 5.81849 16.6819 7.30341C18.1668 8.78834 18.4497 9.77829 18.4497 9.77829" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />

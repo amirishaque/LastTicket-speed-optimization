@@ -74,6 +74,10 @@
     fill: #fff;
 }
 @media screen and (max-width: 767px) {
+  span.info-icon svg {
+    position: absolute;
+    top: 1px;
+}
   .login-wrapper-outer .login-wrapper-inner .login-wrapper .login-inner-wrapper p button {
     font-size: 14px;
 }
