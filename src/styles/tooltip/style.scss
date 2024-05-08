@@ -30,3 +30,10 @@
     transition: 0.4s;
   }
   
+  @media screen and (max-width: 767px) {
+    .tooltip-container:hover .tooltip{
+      width: 250px;
+      font-size: 9px;
+      white-space: wrap;
+    }
+  }
