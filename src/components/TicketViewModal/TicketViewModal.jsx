@@ -11,7 +11,7 @@ function TicketViewModal({ isTicketViewOpen, onTicketViewClose }) {
                 <div className='t-view-modal-content'>
                     <div className='detail'>
                         {/* <strong>E Ticket</strong> */}
-                        <span>You will soon get an email with instructions on how to download your tickets to your phone.</span>
+                        <ul className="dropdown-menu-ph"><li><img className="country-flag" src="https://www.svgrepo.com/show/508668/flag-us.svg" alt="+1234567890" />+1234567890</li><li><img className="country-flag" src="https://www.svgrepo.com/show/508668/flag-us.svg" alt="+4455667788" />+4455667788</li><li><img className="country-flag" src="https://www.svgrepo.com/show/508668/flag-us.svg" alt="+1234567890" />+1234567890</li><li><img className="country-flag" src="https://www.svgrepo.com/show/508668/flag-us.svg" alt="+6123456789" />+6123456789</li><li><img className="country-flag" src="https://www.svgrepo.com/show/508668/flag-us.svg" alt="+1234567890" />+1234567890</li><li><img className="country-flag" src="https://www.svgrepo.com/show/508668/flag-us.svg" alt="+1234567890" />+1234567890</li><li><img className="country-flag" src="https://www.svgrepo.com/show/508668/flag-us.svg" alt="+1234567890" />+1234567890</li><li><img className="country-flag" src="https://www.svgrepo.com/show/508668/flag-us.svg" alt="+1234567890" />+1234567890</li><li><img className="country-flag" src="https://www.svgrepo.com/show/508668/flag-us.svg" alt="+1234567890" />+1234567890</li></ul>
                     </div>
                     {/* <div className='detail'>
                         <strong>Physical Ticket</strong>

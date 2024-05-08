@@ -51,7 +51,7 @@ function LoginGuestModal({ isOpen, onClose }) {
                     <div className='or-lg'>OR</div>
                     <div className='option-two-wrapper'>
                     <h3>Option 2:</h3>
-                        <Link className='lg-link'>Login/Register</Link>
+                        <Link className='lg-link' to='/login'>Login/Register</Link>
                     </div>
                 </div>
             </div>

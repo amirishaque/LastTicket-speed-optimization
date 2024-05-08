@@ -626,7 +626,7 @@ section.your-section-class{
         calc(100% - var(--r)) calc(50% - var(--f)/2)); /* adjust clip-path for left side */
     background: #0DCCD7;
     /* box-shadow: calc(-1*var(--f)) 0 0 inset #0005; */
-    z-index: 99;
+    z-index: 2;
     color: #fff;
     padding-top: 4px;
     padding-bottom: 6px;
@@ -636,6 +636,7 @@ section.your-section-class{
 
 .eticket-box-wrapper {
   position:relative;
+  transition: 0.4s;
 }
 .eticket-box-wrapper:nth-of-type(2) .ribbon-2{
   display: none;

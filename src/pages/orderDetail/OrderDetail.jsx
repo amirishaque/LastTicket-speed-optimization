@@ -1,18 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import Banner from '../../components/banner/Banner';
 import Slider from '../../components/slider/Slider';
 import '../../styles/orderDetail/style.css';
-import logos from '../../assets/images/logoMain.webp';
-import Guard from '../../assets/images/guard.jpeg';
 import { Link } from 'react-router-dom';
 import LogoMain from '../../assets/images/LCT-LOGO.png'
 import LoginGuestModal from '../../components/LoginGuestModal/loginGuest';
+import TicketViewModal from '../../components/TicketViewModal/TicketViewModal';
 
 export default function OrderDetail() {
 
-
     const [isModalOpen, setIsModalOpen] = useState(false);
-
     const openModal = () => {
         setIsModalOpen(true);
     };
@@ -24,6 +20,17 @@ export default function OrderDetail() {
     useEffect(() => {
         window.scrollTo(0, 0); // Scrolls to the top of the page when component mounts
     }, []);
+
+    //For phone call
+    const [isTicketViewOpen, setIsTicketViewOpen] = useState(false);
+
+    const openTicketView = () => {
+        setIsTicketViewOpen(true);
+    };
+
+    const closeTicketView = () => {
+        setIsTicketViewOpen(false);
+    };
 
 
     return (
@@ -100,13 +107,13 @@ export default function OrderDetail() {
                         <h2>About Your Tickets</h2>
                         <ul>
                             <li><strong>
-                            <span>
+                                <span>
                                     <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M16.24 2H7.76C5 2 4 3 4 5.81V18.19C4 21 5 22 7.76 22H16.23C19 22 20 21 20 18.19V5.81C20 3 19 2 16.24 2ZM12 19.3C11.04 19.3 10.25 18.51 10.25 17.55C10.25 16.59 11.04 15.8 12 15.8C12.96 15.8 13.75 16.59 13.75 17.55C13.75 18.51 12.96 19.3 12 19.3ZM14 6.25H10C9.59 6.25 9.25 5.91 9.25 5.5C9.25 5.09 9.59 4.75 10 4.75H14C14.41 4.75 14.75 5.09 14.75 5.5C14.75 5.91 14.41 6.25 14 6.25Z" fill="#292D32" />
-                                    </svg> 
+                                    </svg>
                                 </span>
                                 Ticket Type : </strong>
-                          
+
                                 Mobile Ticket | you will be seated togather
                             </li>
                             {/* <li>
@@ -115,10 +122,10 @@ export default function OrderDetail() {
                             <li>
 
                                 <strong>
-                                <span>
-                                    <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        viewBox="0 0 64 64" xml:space="preserve">
-                                        <path d="M62.597,28.949c-0.437-0.579-0.889-1.178-0.961-1.643c-0.078-0.495,0.172-1.222,0.414-1.924
+                                    <span>
+                                        <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            viewBox="0 0 64 64" xml:space="preserve">
+                                            <path d="M62.597,28.949c-0.437-0.579-0.889-1.178-0.961-1.643c-0.078-0.495,0.172-1.222,0.414-1.924
 	c0.352-1.018,0.749-2.172,0.392-3.272c-0.363-1.121-1.375-1.828-2.268-2.452c-0.6-0.419-1.219-0.852-1.438-1.28
 	c-0.224-0.438-0.211-1.202-0.199-1.94c0.018-1.082,0.038-2.307-0.647-3.249c-0.688-0.946-1.864-1.305-2.901-1.621
 	c-0.703-0.214-1.431-0.437-1.774-0.78c-0.344-0.344-0.566-1.072-0.78-1.775C52.119,7.976,51.76,6.8,50.813,6.112
@@ -163,7 +170,7 @@ export default function OrderDetail() {
 	c0.438-0.225,1.2-0.213,1.94-0.199c1.075,0.017,2.306,0.038,3.249-0.647c0.945-0.688,1.304-1.863,1.62-2.9
 	c0.215-0.703,0.437-1.432,0.781-1.775c0.344-0.344,1.071-0.566,1.774-0.78c1.037-0.316,2.213-0.676,2.901-1.622l-1.617-1.176
 	C55.977,50.041,55.177,50.284,54.404,50.521z"/>
-                                        <path d="M8,46v-2c0-0.553-0.448-1-1-1H5v2h1v1c0,0.552-0.449,1-1,1s-1-0.448-1-1v-6c0-0.552,0.449-1,1-1s1,0.448,1,1v1h2v-1
+                                            <path d="M8,46v-2c0-0.553-0.448-1-1-1H5v2h1v1c0,0.552-0.449,1-1,1s-1-0.448-1-1v-6c0-0.552,0.449-1,1-1s1,0.448,1,1v1h2v-1
 	c0-1.654-1.346-3-3-3s-3,1.346-3,3v6c0,1.654,1.346,3,3,3S8,47.654,8,46z M9,37v9c0,1.654,1.346,3,3,3s3-1.346,3-3v-9h-2v9
 	c0,0.552-0.449,1-1,1s-1-0.448-1-1v-9H9z M16,40v9h2v-2h2v2h2v-9c0-1.654-1.346-3-3-3S16,38.346,16,40z M20,40v5h-2v-5
 	c0-0.552,0.449-1,1-1S20,39.448,20,40z M30,40v9h2v-2h2v2h2v-9c0-1.654-1.346-3-3-3S30,38.346,30,40z M33,39c0.552,0,1,0.448,1,1v5
@@ -174,37 +181,37 @@ export default function OrderDetail() {
 	C42.66,48.892,43,48.479,43,48V37h-2V42.808z M48,39h2v-2h-6v2h2v10h2V39z M56,39v-2h-4c-0.553,0-1,0.447-1,1v10
 	c0,0.553,0.447,1,1,1h4v-2h-3v-3h3v-2h-3v-3H56z M57,38v10c0,0.553,0.447,1,1,1h4v-2h-3v-3h3v-2h-3v-3h3v-2h-4
 	C57.447,37,57,37.447,57,38z"/>
-                                        <path d="M57,32C57,18.215,45.785,7,32,7S7,18.215,7,32c0,1.007,0.068,2.058,0.201,3.124l1.984-0.248C9.062,33.892,9,32.924,9,32
+                                            <path d="M57,32C57,18.215,45.785,7,32,7S7,18.215,7,32c0,1.007,0.068,2.058,0.201,3.124l1.984-0.248C9.062,33.892,9,32.924,9,32
 	C9,19.318,19.318,9,32,9c12.683,0,23,10.318,23,23c0,0.924-0.062,1.892-0.186,2.876l1.984,0.248C56.933,34.058,57,33.007,57,32z
 	 M47.267,51.791l-1.223-1.582C41.985,53.343,37.13,55,32,55c-5.129,0-9.985-1.657-14.043-4.791l-1.223,1.582
 	C21.146,55.199,26.424,57,32,57S42.855,55.199,47.267,51.791z"/>
-                                        <path d="M22,21h-2v2h1v10h2V22C23,21.448,22.552,21,22,21z M27.5,21c-1.93,0-3.5,1.57-3.5,3.5v5c0,1.93,1.57,3.5,3.5,3.5
+                                            <path d="M22,21h-2v2h1v10h2V22C23,21.448,22.552,21,22,21z M27.5,21c-1.93,0-3.5,1.57-3.5,3.5v5c0,1.93,1.57,3.5,3.5,3.5
 	s3.5-1.57,3.5-3.5v-5C31,22.57,29.43,21,27.5,21z M29,29.5c0,0.827-0.673,1.5-1.5,1.5S26,30.327,26,29.5v-5
 	c0-0.827,0.673-1.5,1.5-1.5s1.5,0.673,1.5,1.5V29.5z M35.5,21c-1.93,0-3.5,1.57-3.5,3.5v5c0,1.93,1.57,3.5,3.5,3.5s3.5-1.57,3.5-3.5
 	v-5C39,22.57,37.43,21,35.5,21z M37,29.5c0,0.827-0.673,1.5-1.5,1.5S34,30.327,34,29.5v-5c0-0.827,0.673-1.5,1.5-1.5
 	s1.5,0.673,1.5,1.5V29.5z"/>
-                                        <path d="M42.104,31.553l4-8l1.789,0.894l-4,8L42.104,31.553z" />
-                                        <rect x="41" y="25" width="2" height="2" />
-                                        <rect x="47" y="29" width="2" height="2" />
-                                    </svg> 
-                                </span>
-                                     BENEFITS :  </strong>
-                      
+                                            <path d="M42.104,31.553l4-8l1.789,0.894l-4,8L42.104,31.553z" />
+                                            <rect x="41" y="25" width="2" height="2" />
+                                            <rect x="47" y="29" width="2" height="2" />
+                                        </svg>
+                                    </span>
+                                    BENEFITS :  </strong>
+
                                 Tickets 100% guaranted
                                 {/* <img src={Guard} width={50} title='gurard'/> */}
 
 
                             </li>
                             <li><strong>
-                            <span>
+                                <span onClick={openTicketView} style={{cursor:'pointer'}}>
                                     <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M14 2C14 2 16.2 2.2 19 5C21.8 7.8 22 10 22 10" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
                                         <path d="M14.207 5.53564C14.207 5.53564 15.197 5.81849 16.6819 7.30341C18.1668 8.78834 18.4497 9.77829 18.4497 9.77829" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
                                         <path d="M4.00655 7.93309C3.93421 9.84122 4.41713 13.0817 7.6677 16.3323C8.45191 17.1165 9.23553 17.7396 10 18.2327M5.53781 4.93723C6.93076 3.54428 9.15317 3.73144 10.0376 5.31617L10.6866 6.4791C11.2723 7.52858 11.0372 8.90532 10.1147 9.8278C10.1147 9.8278 10.1147 9.8278 10.1147 9.8278C10.1146 9.82792 8.99588 10.9468 11.0245 12.9755C13.0525 15.0035 14.1714 13.8861 14.1722 13.8853C14.1722 13.8853 14.1722 13.8853 14.1722 13.8853C15.0947 12.9628 16.4714 12.7277 17.5209 13.3134L18.6838 13.9624C20.2686 14.8468 20.4557 17.0692 19.0628 18.4622C18.2258 19.2992 17.2004 19.9505 16.0669 19.9934C15.2529 20.0243 14.1963 19.9541 13 19.6111" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
-                                    </svg>  
+                                    </svg>
                                 </span>
                                 Customer Support : </strong>
-                        
+
                                 24/7
                             </li>
                             {/* <li>Age Limit 21+</li> */}
@@ -219,6 +226,7 @@ export default function OrderDetail() {
                 </div>
             </section>
             <LoginGuestModal isOpen={isModalOpen} onClose={closeModal} />
+            <TicketViewModal isTicketViewOpen={isTicketViewOpen} onTicketViewClose={closeTicketView} />
         </>
     )
 }

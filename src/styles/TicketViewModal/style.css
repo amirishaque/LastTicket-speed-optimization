@@ -60,4 +60,20 @@ span.close.t-view-close {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+.t-view-modal-content .detail ul.dropdown-menu-ph {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+.t-view-modal-content .detail ul.dropdown-menu-ph li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.t-view-modal-content .detail ul.dropdown-menu-ph li img {
+  width: 20px;
+  height: 20px;
 }/*# sourceMappingURL=style.css.map */

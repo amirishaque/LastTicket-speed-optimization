@@ -42,14 +42,14 @@ export default function Ticket() {
 		document.body.classList.remove('modal-content-open');
 
 		showInfoToast();
-		
+
 	};
 
 
 	const showInfoToast = () => {
-        toast.info(
-            <div style={{ display: 'flex', gap: '12px', alignItems: 'start' }}>
-								<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+		toast.info(
+			<div style={{ display: 'flex', gap: '12px', alignItems: 'start' }}>
+				<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 					width="35px" height="35px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
 					<g>
 						<path fill="#231F20" d="M62.242,47.758l0.014-0.014c-5.847-4.753-12.84-8.137-20.491-9.722C44.374,35.479,46,31.932,46,28
@@ -71,30 +71,30 @@ export default function Ticket() {
 	      C33.866,21.047,34.065,21.609,34.539,21.862z" />
 					</g>
 				</svg>
-                <p>
-                    Bought 2 tickets from
-                    <img src={USAImg} width={20} alt='flag' style={{ marginRight: '5px', marginLeft: '5px' }} />
-                    for this event.
-                    <br />
-                    10 minutes ago.
-                </p>
-            </div>,
-            {
-                position: "top-center", // Use "top-center" directly as a string
-                autoClose: 15000, // Close after 15 seconds
-                hideProgressBar: true,
-                closeOnClick: false,
-                pauseOnHover: true,
-                draggable: true,
-            }
-        );
-    };
-	
+				<p>
+					Bought 2 tickets from
+					<img src={USAImg} width={20} alt='flag' style={{ marginRight: '5px', marginLeft: '5px' }} />
+					for this event.
+					<br />
+					10 minutes ago.
+				</p>
+			</div>,
+			{
+				position: "top-center", // Use "top-center" directly as a string
+				autoClose: 15000, // Close after 15 seconds
+				hideProgressBar: true,
+				closeOnClick: false,
+				pauseOnHover: true,
+				draggable: true,
+			}
+		);
+	};
+
 	// useEffect(() => {
 
 	// 	toast.info(
 	// 		<div style={{ display: 'flex', gap: '12px', alignItems: 'start' }}>
-		
+
 	// 			<p>
 	// 				Bought 2 tickets from
 	// 				<img src={USAImg} width={20} alt='flag' style={{ marginRight: '5px', marginLeft: '5px' }} />
@@ -129,13 +129,12 @@ export default function Ticket() {
 
 	useEffect(() => {
 		const loaderTimeout = setTimeout(() => {
-		  setShowLoader(false);
-		  setShowTicketModal(true);
+			setShowLoader(false);
+			setShowTicketModal(true);
 		}, 15000);
-	
+
 		return () => clearTimeout(loaderTimeout);
-	  }, []);
-	  
+	}, []);
 
 
 
@@ -147,51 +146,52 @@ export default function Ticket() {
 
 
 
-    const smoothScrollToSection = (id, duration) => {
-        const element = document.getElementById(id);
-        if (!element) return;
 
-        const targetPosition = element.getBoundingClientRect().top + window.pageYOffset;
-        const startPosition = window.pageYOffset;
-        const distance = targetPosition - startPosition;
-        let startTime = null;
+	const smoothScrollToSection = (id, duration) => {
+		const element = document.getElementById(id);
+		if (!element) return;
 
-        function animation(currentTime) {
-            if (startTime === null) startTime = currentTime;
-            const timeElapsed = currentTime - startTime;
-            const scrollProgress = Math.min(timeElapsed / duration, 1);
-            const ease = easeInOutQuad(scrollProgress);
-            window.scrollTo(0, startPosition + distance * ease);
+		const targetPosition = element.getBoundingClientRect().top + window.pageYOffset;
+		const startPosition = window.pageYOffset;
+		const distance = targetPosition - startPosition;
+		let startTime = null;
 
-            if (timeElapsed < duration) {
-                requestAnimationFrame(animation);
-            }
-        }
+		function animation(currentTime) {
+			if (startTime === null) startTime = currentTime;
+			const timeElapsed = currentTime - startTime;
+			const scrollProgress = Math.min(timeElapsed / duration, 1);
+			const ease = easeInOutQuad(scrollProgress);
+			window.scrollTo(0, startPosition + distance * ease);
 
-        function easeInOutQuad(t) {
-            return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-        }
+			if (timeElapsed < duration) {
+				requestAnimationFrame(animation);
+			}
+		}
 
-        requestAnimationFrame(animation);
-    };
+		function easeInOutQuad(t) {
+			return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+		}
+
+		requestAnimationFrame(animation);
+	};
 
 
 	useEffect(() => {
-        if (showLoader) {
-            document.body.classList.add('modal-content-open');
-        } else {
-            document.body.classList.remove('modal-content-open');
-        }
-    }, [showLoader]);
+		if (showLoader) {
+			document.body.classList.add('modal-content-open');
+		} else {
+			document.body.classList.remove('modal-content-open');
+		}
+	}, [showLoader]);
 
 	return (
 		<>
 
 			<div className='ticket-page-loader'>
 				{showLoader && <TicketLoader />}
-				
-				</div>
-				{showTicketModal && <TicketModal />}
+
+			</div>
+			{showTicketModal && <TicketModal />}
 			<div className={`ticket-page-content ${showLoader ? 'hidden' : ''}`}>
 				{isPopupOpen && (
 					<div className="popup ticket_booking_popup">
@@ -396,7 +396,7 @@ export default function Ticket() {
 											<h2 id="targetedSection">Categories: </h2>
 											<div className='categories-ticket-wrapper'>
 												<div className='categories-ticket-box'>
-													<span style={{background:'blue'}}></span>
+													<span style={{ background: 'blue' }}></span>
 													<p>B3</p>
 												</div>
 												<div className='categories-ticket-box mobile'>
@@ -404,7 +404,7 @@ export default function Ticket() {
 													<p>Gernal Admission</p>
 												</div>
 												<div className='categories-ticket-box'>
-													<span style={{background:'yellow'}}></span>
+													<span style={{ background: 'yellow' }}></span>
 													<p>Gloden Cirlce</p>
 												</div>
 											</div>
@@ -412,7 +412,7 @@ export default function Ticket() {
 									</aside>
 									<div className='eticket-outer-wrapper'>
 
-									<ETicket />
+										<ETicket />
 									</div>
 								</div>
 							</div>

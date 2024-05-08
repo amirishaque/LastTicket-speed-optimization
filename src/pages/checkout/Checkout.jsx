@@ -78,7 +78,21 @@ export default function Checkout() {
                         An Unforgettable experience is just 1 click away</h2>
                     <div className='timer-wrapper'>
                         {/* <Counter/> */}
-                        <span> {minutes < 10 ? '0' : ''}{minutes} : {remainingSeconds < 10 ? '0' : ''}{remainingSeconds}</span>
+                        <div className='left-fragment-counter'>
+                            <span>100% safe & secure</span>
+                            <span>100% Guaranteed</span>
+                            <span>100% Transparent</span>
+                        </div>
+                        <div className='timer-inner-wrapper'>
+                            <span>Buy now before price go up</span>
+                            <span>{minutes < 10 ? '0' : ''}{minutes} : {remainingSeconds < 10 ? '0' : ''}{remainingSeconds}</span>
+                            <span>Left to complete purchase...!</span>
+                        </div>
+                        <div className='right-fragment-counter'>
+                            <span>Trusted platform</span>
+                            <span>Peace of min</span>
+                            <span>Certified ticketing</span>
+                        </div>
                     </div>
                     <div className='box-payment'>
                         {/* <div className='box-p'>

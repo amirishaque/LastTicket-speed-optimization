@@ -56,5 +56,21 @@
         display: flex;
         align-items: center;
         gap: 8px;
+        ul.dropdown-menu-ph {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: space-between;
+          li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            img{
+              width: 20px;
+              height: 20px;
+            }
+          }
+      }
     }    
 }
