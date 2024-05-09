@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom';
 import LogoMain from '../../assets/images/LCT-LOGO.png'
 import LoginGuestModal from '../../components/LoginGuestModal/loginGuest';
 import TicketViewModal from '../../components/TicketViewModal/TicketViewModal';
+import { TypeAnimation } from 'react-type-animation';
+// import useTypingAnimation from '../typeAnimation/TypeAnimation';
+import useTypingAnimation from '../../components/typeAnimation/TypeAnimation';
 
 export default function OrderDetail() {
 
@@ -31,6 +34,9 @@ export default function OrderDetail() {
     const closeTicketView = () => {
         setIsTicketViewOpen(false);
     };
+
+
+
 
 
     return (

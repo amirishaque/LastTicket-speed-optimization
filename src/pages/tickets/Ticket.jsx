@@ -40,10 +40,12 @@ export default function Ticket() {
 	const closeModal = () => {
 		setShowTicketModal(false);
 		document.body.classList.remove('modal-content-open');
-
-		showInfoToast();
-
+	
+		setTimeout(() => {
+			showInfoToast();
+		}, 10000); // 10000 milliseconds = 10 seconds
 	};
+	
 
 
 	const showInfoToast = () => {

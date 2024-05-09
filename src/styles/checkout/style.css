@@ -13,7 +13,7 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 120px;
+  margin-top: 20px;
   margin-bottom: 120px;
 }
 .checkout-page-wrapper .left-fragment {
@@ -212,7 +212,49 @@
   color: #000 !important;
 }
 
+.timer-wrapper-outer {
+  margin-top: 72px;
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+.timer-wrapper-outer h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px !important;
+  color: #0DCCD7 !important;
+}
+
 @media screen and (max-width: 767px) {
+  .timer-wrapper-outer {
+    margin-top: 20px;
+  }
+  .timer-wrapper-outer h2 {
+    font-size: 16px;
+    height: 70px;
+  }
+  .timer-wrapper .right-fragment-counter span, .timer-wrapper .timer-inner-wrapper span {
+    font-size: 9px;
+  }
+  .timer-wrapper .left-fragment-counter span {
+    font-size: 9px;
+  }
+  .timer-wrapper {
+    margin: 20px 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  .checkout-page-wrapper .timer-wrapper span {
+    font-size: 8px;
+  }
+  .timer-wrapper .timer-inner-wrapper span:nth-of-type(2) {
+    font-size: 22px;
+  }
+  .timer-wrapper .timer-inner-wrapper {
+    gap: 0px;
+  }
   .order-detail-wrapper .heading-detail {
     flex-direction: column;
     display: flex;

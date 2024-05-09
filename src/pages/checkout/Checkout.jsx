@@ -9,6 +9,10 @@ import Confetti from 'react-confetti';
 import Slider from '../../components/slider/Slider';
 import Counter from '../../components/counter/Counter';
 
+import { TypeAnimation } from 'react-type-animation';
+// import useTypingAnimation from '../typeAnimation/TypeAnimation';
+import useTypingAnimation from '../../components/typeAnimation/TypeAnimation';
+
 
 export default function Checkout() {
 
@@ -63,6 +67,38 @@ export default function Checkout() {
       };
 
 
+
+
+      const [animationStyle, setAnimationStyle] = useState({});
+
+      useEffect(() => {
+        // Define the animation properties
+        const animationProperties = {
+          animationName: 'moveText', // Name of the animation defined in CSS
+          animationDuration: '5s', // Duration of the animation
+          animationTimingFunction: 'linear', // Timing function for animation
+          animationIterationCount: 'infinite', // Repeat the animation infinitely
+        };
+    
+        // Update the state with animation properties
+        setAnimationStyle(animationProperties);
+      }, []);
+    
+    
+      const originalText = 'An Unforgettable experience is just 1 click away'; // Text for typing animation
+      const typingSpeed = 100; // Adjust typing speed as needed
+    
+      // Use the custom hook to get the animated text
+      const text = useTypingAnimation(originalText, typingSpeed);
+    
+  
+
+
+
+
+
+
+
     return (
         <>
         {shouldShowConfetti && (
@@ -72,28 +108,50 @@ export default function Checkout() {
         />
       )}
       	<Slider />
-            <section className='checkout-page-wrapper'>
-                <div className='left-fragment'>
-                    <h2>Congratulations
-                        An Unforgettable experience is just 1 click away</h2>
-                    <div className='timer-wrapper'>
-                        {/* <Counter/> */}
-                        <div className='left-fragment-counter'>
-                            <span>100% safe & secure</span>
-                            <span>100% Guaranteed</span>
-                            <span>100% Transparent</span>
-                        </div>
-                        <div className='timer-inner-wrapper'>
-                            <span>Buy now before price go up</span>
-                            <span>{minutes < 10 ? '0' : ''}{minutes} : {remainingSeconds < 10 ? '0' : ''}{remainingSeconds}</span>
-                            <span>Left to complete purchase...!</span>
-                        </div>
-                        <div className='right-fragment-counter'>
-                            <span>Trusted platform</span>
-                            <span>Peace of min</span>
-                            <span>Certified ticketing</span>
+          <div className='timer-wrapper-outer'>
+                        <h2>Congratulations<br/>
+                            {text}</h2>
+                        <div className='timer-wrapper'>
+                            <div className='left-fragment-counter'>
+                                <span>100% safe & secure</span>
+                                <span>100% Guaranteed</span>
+                                <span>100% Transparent</span>
+                            </div>
+                            <div className='timer-inner-wrapper'>
+                                <span>Buy now before price go up</span>
+                                <span>{minutes < 10 ? '0' : ''}{minutes} : {remainingSeconds < 10 ? '0' : ''}{remainingSeconds}</span>
+                                <span>Left to complete purchase...!</span>
+                            </div>
+                            <div className='right-fragment-counter'>
+                                <span>Trusted platform</span>
+                                <span>Peace of min</span>
+                                <span>Certified ticketing</span>
+                            </div>
                         </div>
                     </div>
+            <section className='checkout-page-wrapper'>
+                <div className='left-fragment'>
+                     {/* <div className='timer-wrapper-outer'>
+                        <h2>Congratulations<br/>
+                            An Unforgettable experience is just 1 click away</h2>
+                        <div className='timer-wrapper'>
+                            <div className='left-fragment-counter'>
+                                <span>100% safe & secure</span>
+                                <span>100% Guaranteed</span>
+                                <span>100% Transparent</span>
+                            </div>
+                            <div className='timer-inner-wrapper'>
+                                <span>Buy now before price go up</span>
+                                <span>{minutes < 10 ? '0' : ''}{minutes} : {remainingSeconds < 10 ? '0' : ''}{remainingSeconds}</span>
+                                <span>Left to complete purchase...!</span>
+                            </div>
+                            <div className='right-fragment-counter'>
+                                <span>Trusted platform</span>
+                                <span>Peace of min</span>
+                                <span>Certified ticketing</span>
+                            </div>
+                        </div>
+                    </div>  */}
                     <div className='box-payment'>
                         {/* <div className='box-p'>
                    <figure>
