@@ -20,28 +20,28 @@ export default function FeatureEventsData() {
       image: images[1], // Associate the first image with the first event
       name: "Billy Joel & Stevie Nicks",
       location: "New York, United States",
-      price: "From $80",
+      // price: "From $80",
     },
     {
       id: 2,
       image: images[0], // Associate the second image with the second event
       name: "Billy Joel & Stevie Nicks",
       location: "New York, United States",
-      price: "From $80",
+      // price: "From $80",
     },
     {
       id: 3,
       image: images[1], // Associate the second image with the second event
       name: "Billy Joel & Stevie Nicks",
       location: "New York, United States",
-      price: "From $80",
+      // price: "From $80",
     },
     {
       id: 4,
       image: images[0], // Associate the second image with the second event
       name: "Billy Joel & Stevie Nicks",
       location: "New York, United States",
-      price: "From $80",
+      // price: "From $80",
     },
     {
       id: 5,
@@ -95,7 +95,7 @@ export default function FeatureEventsData() {
                     </svg>
                     {event.location}
                   </span>
-                  <strong className="price">{event.price}</strong>
+                  {/* <strong className="price">{event.price}</strong> */}
                 </div>
               ))}
             </div>

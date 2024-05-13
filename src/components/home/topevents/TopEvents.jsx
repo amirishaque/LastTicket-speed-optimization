@@ -41,6 +41,7 @@ const closeModal = () => {
                 <img src={image} alt="#" width={450} height={327} />
               
               </figure>
+             
               <strong>India Vs Pakistan - T20 World Cup 2024</strong>
             </div>
           ))}

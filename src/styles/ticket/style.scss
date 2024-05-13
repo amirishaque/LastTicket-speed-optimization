@@ -232,6 +232,10 @@
     }
     .seat-ico{
         font-weight: 400;
+        display: inline-flex;
+        width: 100%;
+        flex-wrap: nowrap;
+        display: flex !important;
     }
     .radios label{
         font-weight: 400;

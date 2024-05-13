@@ -21,8 +21,8 @@
 
 .close-button {
   position: absolute;
-  top: 1px;
-  right: 4px;
+  top: -1px;
+  right: -1px;
   cursor: pointer;
   font-size: 22px;
   background: #0dccd7;

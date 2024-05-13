@@ -18,6 +18,7 @@
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 120px;
+    flex-direction: row-reverse;
 
   
     .left-fragment {
@@ -39,6 +40,77 @@
         justify-content: center;
         gap: 20px;
         transition: 0.4s;
+        position: relative;
+        &::after{
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 173px;
+          color: #0dccd7;
+          background: #0dccd7;
+          left: auto;
+          right: 54%;
+        }
+        .paypal-checkout{
+          width: 60px;
+          border: 2.5px solid rgb(226 225 225 / 57%);
+          border-radius: 4px;
+          
+          height: auto !important;
+          padding: 12px;
+      
+        }
+        .box-payment-inner-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 50px;
+          width: 100%;
+          
+          .box-payment-inner{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            transition: 0.4s;
+            // width: 50%;
+            .box-payment-inner-box {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 5px;
+              transition: 0.4s;
+              .box-p{
+                figure{
+                  img{
+                    width: 75px;
+                    height: 75px;
+                  }
+                }
+              }
+            }
+            .qualities-wrapper{
+              display: flex;
+              flex-direction: column;
+              gap: 5px;
+              justify-content: start;
+              div{
+                font-weight: 600;
+                font-size: 20px;
+              }
+            }
+          }
+          .secured-payment-wrapper {
+            flex-direction: column;
+            gap: 0px;
+            justify-content: start;
+            align-items: start;
+            strong{
+              font-size:20px;
+            }
+          }
+        }
+   
         .box-p:hover{
           cursor: pointer;
           
@@ -265,6 +337,12 @@
   color: #0DCCD7 !important;
 }
   @media screen and (max-width: 767px) {
+    .checkout-page-wrapper .left-fragment .box-payment .box-payment-inner-wrapper .box-payment-inner .box-payment-inner-box{
+      flex-wrap: wrap;
+    }
+    .checkout-page-wrapper .left-fragment .box-payment::after{
+      display: none;
+    }
     .timer-wrapper-outer{
       margin-top: 20px;
     }

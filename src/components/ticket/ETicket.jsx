@@ -5,6 +5,7 @@ import Modal from '../modal/Modal';
 import TicketIcon from '../../assets/images/ticketIcon.webp';
 import TicketViewModal from '../TicketViewModal/TicketViewModal';
 import Tooltip from '../Tooltip/Tooltip';
+import SelectionModal from '../SelectionModal/SelectionModal';
 
 export default function ETicket() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -46,6 +47,17 @@ export default function ETicket() {
     const closeTicketView = () => {
         setIsTicketViewOpen(false);
     };
+
+
+    const [showModal, setShowModal] = useState(false);
+
+    const handleCloseModal = () => {
+      setShowModal(false);
+    };
+  
+    const handleOpenModal = () => {
+      setShowModal(true);
+    };
     return (
         <>
 
@@ -67,8 +79,10 @@ export default function ETicket() {
                                     <h3>Mobile Ticket
                                         <Tooltip text="You will soon get an email with instructions on how to download your tickets to your phone.">
                                             <span className='info-icon'>
-                                            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.0294 16.9706 2.99994 12 2.99994C7.0294 2.99994 2.99994 7.0294 2.99994 12C2.99994 16.9706 7.0294 21 12 21Z" stroke="#6f6f6f" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.99991"/><path d="M12 7C12.5523 7 13 7.44772 13 8C13 8.55228 12.5523 9 12 9C11.4477 9 11 8.55228 11 8C11 7.44772 11.4477 7 12 7Z" fill="#000000"/><path d="M12 17V11" stroke="#6f6f6f" stroke-width="2"/></svg>
+                                                <img src='https://www.svgrepo.com/show/24584/info-icon.svg' alt='info' height={20} width={20} />
                                             </span>
+                                            {/* <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.0294 16.9706 2.99994 12 2.99994C7.0294 2.99994 2.99994 7.0294 2.99994 12C2.99994 16.9706 7.0294 21 12 21Z" stroke="#6f6f6f" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.99991"/><path d="M12 7C12.5523 7 13 7.44772 13 8C13 8.55228 12.5523 9 12 9C11.4477 9 11 8.55228 11 8C11 7.44772 11.4477 7 12 7Z" fill="#000000"/><path d="M12 17V11" stroke="#6f6f6f" stroke-width="2"/></svg>
+                                            </span> */}
                                         </Tooltip>
                                   
                                         {/* <img src={TicketIcon} width={25} style={{marginLeft:'5', marginRight:'5'}}/> */}
@@ -141,17 +155,22 @@ export default function ETicket() {
                             <div className='right-fragment'>
                                 <strong style={{ color: 'red', fontSize: '12px' }}> Ticket price below face value - Grab it now</strong>
                                 <span>${ticket.price}</span>
-                                <Link to='/order-detail'>Buy Now</Link>
+                                <Link onClick={handleOpenModal}>Buy Now</Link>
                             </div>
                         </div>
                     </div>
                 ))}
             </div>
             <div className={`overlay ${hoveredIndex !== null ? 'show' : ''}`}></div>
-
+            {/* <button onClick={handleOpenModal}>Open Modal</button> */}
             {/* <TicketViewModal isTicketViewOpen={isTicketViewOpen} onTicketViewClose={closeTicketView} /> */}
             {/* <button onClick={openModal}>Buy Now</button> */}
             {/* <Modal isOpen={isModalOpen} closeModal={closeModal} /> */}
+            {showModal && (
+        <SelectionModal
+          onClose={handleCloseModal}
+        />
+      )}
         </>
     );
 }

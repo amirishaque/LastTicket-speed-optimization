@@ -25,25 +25,25 @@ export default function Checkout() {
 
     useEffect(() => {
         function handleResize() {
-          setConfettiHeight(window.innerHeight);
+            setConfettiHeight(window.innerHeight);
         }
-    
+
         function handleScroll() {
-          setConfettiHeight(window.innerHeight + window.scrollY);
+            setConfettiHeight(window.innerHeight + window.scrollY);
         }
-    
+
         window.addEventListener('resize', handleResize);
         window.addEventListener('scroll', handleScroll);
-    
+
         return () => {
-          window.removeEventListener('resize', handleResize);
-          window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('resize', handleResize);
+            window.removeEventListener('scroll', handleScroll);
         };
-      }, []);
+    }, []);
 
     useEffect(() => {
         // setShouldShowConfetti(true);
-        window.scrollTo(0, 0); 
+        window.scrollTo(0, 0);
         const interval = setInterval(() => {
             setTimeLeft(prevTimeLeft => prevTimeLeft - 1);
 
@@ -60,38 +60,38 @@ export default function Checkout() {
     const handleClickConfetti = () => {
         setShouldShowConfetti(true);
         const timer = setTimeout(() => {
-          setShouldShowConfetti(false);
+            setShouldShowConfetti(false);
         }, 5000);
-    
+
         return () => clearTimeout(timer);
-      };
+    };
 
 
 
 
-      const [animationStyle, setAnimationStyle] = useState({});
+    const [animationStyle, setAnimationStyle] = useState({});
 
-      useEffect(() => {
+    useEffect(() => {
         // Define the animation properties
         const animationProperties = {
-          animationName: 'moveText', // Name of the animation defined in CSS
-          animationDuration: '5s', // Duration of the animation
-          animationTimingFunction: 'linear', // Timing function for animation
-          animationIterationCount: 'infinite', // Repeat the animation infinitely
+            animationName: 'moveText', // Name of the animation defined in CSS
+            animationDuration: '5s', // Duration of the animation
+            animationTimingFunction: 'linear', // Timing function for animation
+            animationIterationCount: 'infinite', // Repeat the animation infinitely
         };
-    
+
         // Update the state with animation properties
         setAnimationStyle(animationProperties);
-      }, []);
-    
-    
-      const originalText = 'An Unforgettable experience is just 1 click away'; // Text for typing animation
-      const typingSpeed = 100; // Adjust typing speed as needed
-    
-      // Use the custom hook to get the animated text
-      const text = useTypingAnimation(originalText, typingSpeed);
-    
-  
+    }, []);
+
+
+    const originalText = 'An Unforgettable experience is just 1 click away'; // Text for typing animation
+    const typingSpeed = 100; // Adjust typing speed as needed
+
+    // Use the custom hook to get the animated text
+    const text = useTypingAnimation(originalText, typingSpeed);
+
+
 
 
 
@@ -101,37 +101,37 @@ export default function Checkout() {
 
     return (
         <>
-        {shouldShowConfetti && (
-     <Confetti
-          width={window.innerWidth}
-          height={confettiHeight} // Dynamic height based on window height + scrollY
-        />
-      )}
-      	<Slider />
-          <div className='timer-wrapper-outer'>
-                        <h2>Congratulations<br/>
-                            {text}</h2>
-                        <div className='timer-wrapper'>
-                            <div className='left-fragment-counter'>
-                                <span>100% safe & secure</span>
-                                <span>100% Guaranteed</span>
-                                <span>100% Transparent</span>
-                            </div>
-                            <div className='timer-inner-wrapper'>
-                                <span>Buy now before price go up</span>
-                                <span>{minutes < 10 ? '0' : ''}{minutes} : {remainingSeconds < 10 ? '0' : ''}{remainingSeconds}</span>
-                                <span>Left to complete purchase...!</span>
-                            </div>
-                            <div className='right-fragment-counter'>
-                                <span>Trusted platform</span>
-                                <span>Peace of min</span>
-                                <span>Certified ticketing</span>
-                            </div>
-                        </div>
+            {shouldShowConfetti && (
+                <Confetti
+                    width={window.innerWidth}
+                    height={confettiHeight} // Dynamic height based on window height + scrollY
+                />
+            )}
+            <Slider />
+            <div className='timer-wrapper-outer'>
+                <h2>Congratulations<br />
+                    {text}</h2>
+                <div className='timer-wrapper'>
+                    <div className='left-fragment-counter mobile'>
+                        <span>100% safe & secure</span>
+                        <span>100% Guaranteed</span>
+                        <span>100% Transparent</span>
                     </div>
+                    <div className='timer-inner-wrapper'>
+                        <span>Buy now before price go up</span>
+                        <span>{minutes < 10 ? '0' : ''}{minutes} : {remainingSeconds < 10 ? '0' : ''}{remainingSeconds}</span>
+                        <span>Left to complete purchase...!</span>
+                    </div>
+                    <div className='right-fragment-counter mobile'>
+                        <span>Trusted platform</span>
+                        <span>Peace of min</span>
+                        <span>Certified ticketing</span>
+                    </div>
+                </div>
+            </div>
             <section className='checkout-page-wrapper'>
                 <div className='left-fragment'>
-                     {/* <div className='timer-wrapper-outer'>
+                    {/* <div className='timer-wrapper-outer'>
                         <h2>Congratulations<br/>
                             An Unforgettable experience is just 1 click away</h2>
                         <div className='timer-wrapper'>
@@ -154,27 +154,50 @@ export default function Checkout() {
                     </div>  */}
                     <div className='box-payment'>
                         {/* <div className='box-p'>
-                   <figure>
-                    <img src={payPal} alt='paypal' width={100} height={100}/>
-                    </figure> 
-                </div> */}
-                        <div className='box-p'>
                             <figure>
-                                <img src={Strip} alt='paypal' width={100} height={100} />
-                            </figure>
-                        </div>
+                                <img src={payPal} alt='paypal' width={100} height={100}/>
+                                </figure> 
+                            </div> */}
+                        <div className='box-payment-inner-wrapper'>
+                            <div className='box-payment-inner desktop'>
+                                <div className='qualities-wrapper'>
+                                    <div>100% safe & secure</div>
+                                    <div>100% Guaranteed</div>
+                                    <div>100% Transparent</div>
+                                </div>
+                            </div>   
+                            <div className='box-payment-inner secured-payment-wrapper'>
+                                <strong>Secured Payment Gateway</strong>
+                                <div className='box-payment-inner-box'>
+                                    <div className='box-p'>
+                                        <figure>
+                                            <img src={Strip} alt='paypal' width={100} height={100} />
+                                        </figure>
+                                    </div>
 
-                        <div className='box-p'>
-                            <figure>
-                                <img src={ApplePay} alt='paypal' width={100} height={100} />
-                            </figure>
+                                    <div className='box-p'>
+                                        <figure>
+                                            <img src={ApplePay} alt='paypal' width={100} height={100} />
+                                        </figure>
+                                    </div>
+
+                                    <div className='box-p'>
+                                        <figure>
+                                            <img src={GooglePay} alt='paypal' width={100} height={100} />
+                                        </figure>
+                                    </div>
+
+                                    <div className='box-p'>
+                                        <figure>
+                                            <img className='paypal-checkout' src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/PayPal_logo.svg/1024px-PayPal_logo.svg.png' alt='paypal' width={100} />
+                                        </figure>
+                                    </div>
+
+                                </div>
+
+                            </div>
                         </div>
-                        <div className='box-p'>
-                            <figure>
-                                <img src={GooglePay} alt='paypal' width={100} height={100} />
-                            </figure>
-                        </div>
-                        <span>Express Checkout</span>
+                        {/* <span>Express Checkout</span> */}
                         {/* <figure>
                     <img src='https://www.lastchanceticket.com/assets/images/Secured%20Payment%20Gateway_LCT_NS.png' alt='images' width={556}/>
                 </figure> */}

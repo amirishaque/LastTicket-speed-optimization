@@ -24,7 +24,7 @@
 }
 .header-wrapper a img {
   width: 300px;
-  height: 54px;
+  height: auto;
   margin-right: 0px;
 }
 
@@ -102,6 +102,9 @@
 }
 
 @media (max-width: 999px) {
+  .header-wrapper a img {
+    margin-top: 8px;
+  }
   #header {
     height: auto;
   }

@@ -155,3 +155,7 @@ $dark-color: #121212;
 li.login-btn{
   border: none !important;
 }
+.disable{
+  cursor: no-drop;
+  filter: blur(1px);
+}

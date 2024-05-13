@@ -43,7 +43,7 @@ export default function Reviews() {
             <h3>Trustpilot</h3>
           </div>
           <Swiper
-            style={{paddingLeft: '15px', paddingRight:'15px', paddingBottom:'30px'}}
+            // style={{paddingLeft: '15px', paddingRight:'15px', paddingBottom:'30px'}}
             navigation
             pagination={false}
             slidesPerView={4}

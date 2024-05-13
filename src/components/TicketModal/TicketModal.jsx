@@ -59,13 +59,13 @@ const TicketModal = ({ isOpen, closeModal }) => {
   return (
     <>
       {isOpen && (
-        <div className="modal-overlay" onClick={handleOutsideClick}>
+        <div className="modal-overlay tickets-demand-overlay" onClick={handleOutsideClick}>
           <div className="modal-content ticket-modal-content">
             <span className="close-button" onClick={closeModal}>
               &times;
             </span>
             <div className='modal-content-wrapper-ticket'>
-              <h2>Tickets are in high demand! Grab yours now before they sell out</h2>
+              <h2>Limited availability! Purchase your tickets before they're all gone</h2>
               <div className='eup-wrapper'>
                 <div className='eu-wrapper'>
                   <span>
