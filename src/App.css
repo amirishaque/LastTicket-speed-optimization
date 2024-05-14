@@ -1129,6 +1129,9 @@ height: 20px;
   font-size: 14px;
 }
 @media screen and (max-width: 767px) {
+  .eticket-wrapper .eticket-box .left-fragment h3 span img {
+    position: absolute;
+  }
   .modal-content .close-button{
     background: #0DCCD7;
     border-radius: 2px;
