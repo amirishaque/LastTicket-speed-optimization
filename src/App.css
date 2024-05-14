@@ -76,7 +76,29 @@
 span.info-icon svg {
   position: absolute !important;
 }
+.cell-ph{
+  display: flex !important;
+  align-items: center !important;
+}
+.cell-ph span{
+  padding: 0px !important;
+
+}
+.opening-hours-text{
+  padding: 10px 10px !important;
+  text-decoration: none;
+  background: #0DCCD7;
+  width: 100%;
+  display: unset;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+}
 @media screen and (max-width: 767px) {
+
+  .header-right-wrapper span{
+    padding: 0px !important;
+  }
   .small-banner{
     height:400px;
     margin: 0 0 80px;
@@ -197,7 +219,26 @@ span.info-icon svg {
         flex-direction: column;
         margin-top: 30px;
         align-content: center;
-        margin-bottom: 15px;
+        margin-bottom: 35px;
+    }
+    .filter-holder-inner strong::after{
+      content: "";
+      position: absolute;
+      width: 165px;
+      height: 21px;
+      content: "";
+          position: absolute;
+          width: 165px;
+          height: 26px;
+          background: url("./assets/images/heading-shape.webp") no-repeat;
+          margin-top: 33px;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 2;
+          margin-top: 21px;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 2;
     }
     .date-wrapper-banner span{
         margin-left: 0px !important;
@@ -1138,4 +1179,17 @@ height: 20px;
 }
 .ticket-page-content .filters-holder {
   margin: -315px 0 0;
+}
+
+.ph-num{
+  display: flex !important;
+    align-items: center !important;
+    gap: 5px;
+}
+.ph-num span{
+  padding: 0px;
+}
+.ph-num span img{
+  width: 20px;
+  height: 20px;
 }

@@ -118,7 +118,19 @@
   border-bottom: 0px solid rgba(255, 255, 255, 0.2);
 }
 
+.ph-num {
+  display: flex !important;
+  align-items: center !important;
+  gap: 5px;
+}
+
 @media screen and (max-width: 767px) {
+  .dropdown-wrapper .dropdown-btn span {
+    display: flex !important;
+    align-items: center !important;
+    gap: 5px;
+    padding: 0px !important;
+  }
   .header-right.active {
     background: rgba(0, 0, 0, 0.5) !important;
     -webkit-backdrop-filter: blur(13.5914px) !important;
