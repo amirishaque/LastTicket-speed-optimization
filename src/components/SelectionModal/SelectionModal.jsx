@@ -27,10 +27,10 @@ const SelectionModal = ({ tickets, onSelect, onClose }) => {
             </select>
             <p>
                 <span>
-                You will be seated togather
+                You will be seated together
                 </span>
                 <span>
-                <img src='https://lastchanceticket.com/public/assets/images/seated.png' alt="#" width={55} height={33}/>
+                <img src='https://lastchanceticket.com/public/assets/images/seated.png' alt="#" width={55}/>
                 </span>
             </p>
         </div>

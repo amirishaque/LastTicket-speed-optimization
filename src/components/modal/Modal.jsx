@@ -28,7 +28,7 @@ const Modal = ({ isOpen, closeModal }) => {
                 <option>5</option>
                 <option>6</option>
                </select>
-               <div className="select-ticket-wrapper"><p><span>You will be seated togather</span><span><img src="https://lastchanceticket.com/public/assets/images/seated.png" alt="#" width="55" height="33" /></span></p></div>
+               {/* <div className="select-ticket-wrapper"><p><span>You will be seated together</span><span><img src="https://lastchanceticket.com/public/assets/images/seated.png" alt="#" width="55" height="33" /></span></p></div> */}
                <div className='btn-wrapper-m'>
                 <Link className='primary-btn' to="/ticket">Confirm</Link>
                 <Link className='secondary-btn' onClick={closeModal}>Skip</Link>

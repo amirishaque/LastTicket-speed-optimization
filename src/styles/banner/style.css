@@ -2,13 +2,13 @@
   height: 400px;
   margin: 0 0 80px;
   text-align: center;
-  background: url("https://lastchanceticket.com/public/uploads/eventListing/poster/1708457350.jpg") no-repeat;
-  background-size: cover;
+  background: url("../../assets/images/small-banners.webp") no-repeat !important;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 120px;
   margin-top: -10px;
+  background-size: cover !important;
 }
 
 .small-banner p {

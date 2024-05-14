@@ -15,7 +15,7 @@
   border-radius: 5px;
   margin: 0 0 35px;
   gap: 20px;
-  border: 1px solid red;
+  border: 7px solid red;
   transition: 0.4s;
 }
 .eticket-wrapper .eticket-box:nth-of-type(1) {
@@ -182,7 +182,7 @@
   }
   .eticket-wrapper .eticket-box .right-fragment a {
     padding: 6px 8px;
-    width: 66px;
+    width: 90px;
     font-size: 12px;
   }
   .eticket-wrapper .eticket-box:nth-of-type(1) .left-fragment h3 {

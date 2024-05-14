@@ -18,7 +18,7 @@
         margin: 0 0 35px;
         // overflow: hidden;
         gap: 20px;
-        border: 1px solid red;
+        border: 7px solid red;
         transition: 0.4s;
       
         &:nth-of-type(1){
@@ -67,6 +67,7 @@
                 display: flex;
                 align-items: start;
                 justify-content: space-between;
+                // gap: 40px;
                 li {
                     font-size: 13px;
                     color: #6f6f6f;

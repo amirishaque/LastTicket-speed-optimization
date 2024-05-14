@@ -142,13 +142,14 @@ export default function ETicket() {
                                             <span>{ticket.category}</span>
                                         </li>
                                         <li>
+                                            <strong>Category</strong>
+                                            <span>Corner Side</span>
+                                        </li>
+                                        <li>
                                             <strong>Section</strong>
                                             <span>{ticket.section}</span>
                                         </li>
-                                        <li>
-                                            <strong>No of Tickets</strong>
-                                            <span>{ticket.numberOfTickets}</span>
-                                        </li>
+                                        
                                     </ul>
                                 </div>
                             </div>

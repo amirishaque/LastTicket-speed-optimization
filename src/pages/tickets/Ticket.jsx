@@ -146,6 +146,31 @@ export default function Ticket() {
 		}
 	}, [showLoader]);
 
+
+
+
+
+	const [viewerCount, setViewerCount] = useState(0);
+
+	useEffect(() => {
+	  // Simulate fetching new viewer count data
+	  const fetchViewerCount = () => {
+		// This is just a placeholder function, replace it with your actual logic to fetch viewer count
+		const newViewerCount = Math.floor(Math.random() * 1000); // Example: generate a random number between 0 and 1000
+		setViewerCount(newViewerCount);
+	  };
+  
+	  // Fetch viewer count initially
+	  fetchViewerCount();
+  
+	  // Schedule fetching viewer count every 10 seconds (adjust this interval as needed)
+	  const interval = setInterval(fetchViewerCount, 10000);
+  
+	  // Clean up interval to prevent memory leaks
+	  return () => clearInterval(interval);
+	}, []);
+
+
 	return (
 		<>
 
@@ -244,11 +269,11 @@ export default function Ticket() {
 									</div>
 								</div>
 								<div className="seat-ico flex v-center">
-									<img src='https://lastchanceticket.com/public/assets/images/seated.png' alt="#" width={55} height={33} />
-									<span>Select number of tickets and you will be seated together.</span>
+									<img src='https://lastchanceticket.com/public/assets/images/seated.png' alt="#" width={55} />
+									<span>Select number of tickets and you will be seated together</span>
 								</div>
 								<div className="counters flex">
-									<button type="button" className="active" onClick={() => smoothScrollToSection('targetedSection', 2000)}>1</button>
+									<button type="button" onClick={() => smoothScrollToSection('targetedSection', 2000)}>1</button>
 									<button type="button" onClick={() => smoothScrollToSection('targetedSection', 2000)}>2</button>
 									<button type="button" onClick={() => smoothScrollToSection('targetedSection', 2000)}>3</button>
 									<button type="button" onClick={() => smoothScrollToSection('targetedSection', 2000)}>4</button>
@@ -283,8 +308,9 @@ export default function Ticket() {
 										</select> */}
 									</div>
 									<div className="sort-row flex v-center sort-by-tickets">
-										<strong>Sort by:</strong>
+										{/* <strong>Sort by:</strong> */}
 										<div className="radios">
+										<strong>Sort by:</strong>
 											<label htmlFor="all" className={selectedOption === 'all' ? 'checked' : ''}>
 												<input
 													type="radio"
@@ -402,7 +428,9 @@ export default function Ticket() {
 </g>
 </svg>
 												{/* <i className="fa-solid fa-eye" style={{color: '#22b3c1', fontSize: '18px'}}></i> */}
-												<span id="viewerCount" style={{fontWeight: 'bold'}}>103 viewers</span> looking Now
+												<span id="viewerCount" style={{ fontWeight: 'bold' }}>
+      {viewerCount} viewers
+    </span> looking Now
 										</div>
 										<div className="widget desktop" id="bottomOfPage">
 											<strong>Filter By Category</strong>

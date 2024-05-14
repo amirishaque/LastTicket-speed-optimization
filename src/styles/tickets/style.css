@@ -178,11 +178,13 @@
   border-radius: 4px;
   cursor: pointer;
   transition: 0.4s;
+  background: #0DCCD7;
+  color: #fff;
 }
 
 .counters button.active,
 .counters button:hover {
-  background: #22B3C1;
+  background: #212529;
   color: #fff;
 }
 
@@ -258,7 +260,7 @@
   border: 1px solid #0dccd7;
   padding: 20px 10px;
   border-radius: 4px;
-  margin: 30px 0 0;
+  margin: 10px 0 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -539,9 +541,6 @@
   .radios label {
     height: auto;
     text-align: center;
-  }
-  .seat-ico img {
-    display: none;
   }
   .view-area .header h2 {
     font-size: 20px;
