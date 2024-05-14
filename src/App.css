@@ -339,7 +339,7 @@ span.info-icon svg {
 .categories-ticket-wrapper .categories-ticket-box span {
   width: 20px;
   height: 20px;
-  border-radius: 2px;
+  border-radius: 50%;
   background: red;
 }
 .categories-ticket-wrapper .categories-ticket-box p {
