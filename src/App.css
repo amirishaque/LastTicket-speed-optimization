@@ -73,6 +73,9 @@
 .chatwrapper svg{
     fill: #fff;
 }
+span.info-icon svg {
+  position: absolute !important;
+}
 @media screen and (max-width: 767px) {
   span.info-icon svg {
     position: absolute;
@@ -176,7 +179,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin-top: 15px;
+        margin-top: 30px;
         align-content: center;
         margin-bottom: 15px;
     }
@@ -631,6 +634,7 @@ section.your-section-class{
     display: flex;
     align-items: center;
     gap: 5px;
+    margin-left: 0px !important;
 
 }
 
@@ -1072,4 +1076,41 @@ height: 20px;
     margin-bottom: 20px !important;
     font-size: 12px;
   }
+}
+
+
+.primary-btn{
+
+}
+.primary-btn:hover{
+  background-color: #0DCCD7 !important;
+  color: #fff !important;
+}
+.secondary-btn{
+  border: 1px solid #0DCCD7;
+  background-color: #fff !important;
+  color: #0DCCD7 !important;
+  font-weight: 400;
+  transition: 0.4s;
+}
+.secondary-btn:hover{
+  background-color: #0DCCD7 !important;
+  color: #fff !important;
+}
+.btn-wrapper-m {
+  display: flex;
+  gap: 25px;
+}
+.modal-content-wrapper strong{
+ font-weight: 400;
+}
+
+.views-count-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px;
+  align-items: center;
+}
+.views-count-wrapper span{
+  margin-right: 10px;
 }

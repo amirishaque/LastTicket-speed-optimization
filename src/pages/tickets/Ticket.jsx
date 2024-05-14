@@ -92,60 +92,20 @@ export default function Ticket() {
 		);
 	};
 
-	// useEffect(() => {
-
-	// 	toast.info(
-	// 		<div style={{ display: 'flex', gap: '12px', alignItems: 'start' }}>
-
-	// 			<p>
-	// 				Bought 2 tickets from
-	// 				<img src={USAImg} width={20} alt='flag' style={{ marginRight: '5px', marginLeft: '5px' }} />
-	// 				for this event.
-	// 				<br />
-	// 				10 minutes ago.
-	// 			</p>
-	// 		</div>,
-	// 		{
-	// 			position: "top-center", // Use "top-center" directly as a string
-	// 			autoClose: 15000, // Close after 7 seconds
-	// 			hideProgressBar: true,
-	// 			closeOnClick: false,
-	// 			pauseOnHover: true,
-	// 			draggable: true,
-	// 		}
-	// 	);
-	// }, []);
-
-
-
-
-
-
 	const [selectedOption, setSelectedOption] = useState('all'); // State to keep track of the selected option
 
 	const handleOptionChange = (e) => {
 		setSelectedOption(e.target.value); // Update the state with the value of the selected radio button
 	};
 
-	console.log('selected option:', selectedOption)
-
 	useEffect(() => {
 		const loaderTimeout = setTimeout(() => {
 			setShowLoader(false);
 			setShowTicketModal(true);
-		}, 15000);
+		}, 7500);
 
 		return () => clearTimeout(loaderTimeout);
 	}, []);
-
-
-
-
-
-
-
-
-
 
 
 
@@ -395,24 +355,7 @@ export default function Ticket() {
 										</div>
 									</div>
 								</header>
-								<div id="content" className="flex page-wrapper-tickets">
-									<aside id="sidebar">
-										<div className="map-holder">
-											<img src={map} alt="#" />
-											<div className="views">
-												100
-											</div>
-										</div>
-										<div className="widget desktop" id="bottomOfPage">
-											<strong>Filter By Category</strong>
-											<select>
-												<option>SEARCH BY CATEGORY</option>
-												<option>All Tickets</option>
-												<option>Golden Circle - GC</option>
-												<option>Upper Bowl</option>
-											</select>
-										</div>
-										<div className='categories-ticket-wrapper-outer mobile'>
+								<div className='categories-ticket-wrapper-outer mobile'>
 											<h2 id="targetedSection">Categories: </h2>
 											<div className='categories-ticket-wrapper'>
 												<div className='categories-ticket-box'>
@@ -429,6 +372,48 @@ export default function Ticket() {
 												</div>
 											</div>
 										</div>
+								<div id="content" className="flex page-wrapper-tickets">
+									<aside id="sidebar">
+										<div className="map-holder">
+											<img src={map} alt="#" />
+											<div className="views">
+												100
+											</div>
+										</div>
+										<div class="views-count-wrapper">
+										<svg style={{marginRight:'10px'}} fill="#0DCCD7" height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 511.999 511.999" xml:space="preserve">
+<g>
+	<g>
+		<path d="M509.361,249.401c-0.771-1.927-19.335-47.719-59.326-93.862C396.198,93.42,329.101,60.585,255.999,60.585
+			S115.802,93.42,61.964,155.54c-39.99,46.143-58.555,91.935-59.326,93.862L0,255.999l2.639,6.598
+			c0.771,1.927,19.335,47.719,59.326,93.862c53.837,62.119,120.933,94.955,194.035,94.955s140.198-32.836,194.035-94.955
+			c39.99-46.143,58.555-91.935,59.326-93.862l2.639-6.598L509.361,249.401z M255.999,380.354
+			c-68.569,0-124.355-55.786-124.355-124.355s55.786-124.355,124.355-124.355s124.355,55.786,124.355,124.355
+			S324.569,380.354,255.999,380.354z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M255.999,167.174c-48.978,0-88.825,39.847-88.825,88.825c0,48.978,39.847,88.825,88.825,88.825
+			c48.978,0,88.825-39.847,88.825-88.825S304.977,167.174,255.999,167.174z M255.999,238.234c-9.796,0-17.765,7.969-17.765,17.765
+			h-35.53c0-29.387,23.908-53.295,53.295-53.295V238.234z"/>
+	</g>
+</g>
+</svg>
+												{/* <i className="fa-solid fa-eye" style={{color: '#22b3c1', fontSize: '18px'}}></i> */}
+												<span id="viewerCount" style={{fontWeight: 'bold'}}>103 viewers</span> looking Now
+										</div>
+										<div className="widget desktop" id="bottomOfPage">
+											<strong>Filter By Category</strong>
+											<select>
+												<option>SEARCH BY CATEGORY</option>
+												<option>All Tickets</option>
+												<option>Golden Circle - GC</option>
+												<option>Upper Bowl</option>
+											</select>
+										</div>
+							
 									</aside>
 									<div className='eticket-outer-wrapper'>
 

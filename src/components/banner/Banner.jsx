@@ -65,7 +65,7 @@ export default function Banner({ bannerHeading, bannerText }) {
                     <p>{bannerText}</p>
                     <div className='date-wrapper-banner'>
                         {/* <span><strong>Start Date : </strong>Thursday, 23rd December 2023</span> */}
-                        <span><strong>End Date : </strong>Thursday, 23rd December 2024</span>
+                        <span><strong></strong>Thursday, 23rd December 2024</span>
                     </div>
                     {/* <form class="search-form">
                             <input type="text" placeholder="Search For An Event" />

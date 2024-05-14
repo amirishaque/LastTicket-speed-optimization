@@ -67,13 +67,29 @@
 }
 
 .selects select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    
     flex: 1;
-    height: 35px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 0 10px;
+    // height: 35px;
+    // border: 1px solid #ccc;
+    // border-radius: 4px;
+    // padding: 0 10px;
     font-weight: 600;
-    font-size: 14px;
+    // font-size: 14px;
+
+    height: 45px;
+    border: 2px dashed #dddddd75;
+    padding: 10px 22px;
+    font-size: 13px;
+    &:focus{
+        background-color: #fff;
+        border: 2px dashed #22b3c1;
+        outline: none;
+        box-shadow: none;
+    }
 }
 
 .sort-row input[type="radio"] {
@@ -92,6 +108,7 @@
 .radios {
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .radios input[type="radio"]:checked+label {
@@ -136,15 +153,15 @@
     margin-top: 10px;
 }
 
-.selects select {
-    flex: 1;
-    height: 35px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 0 10px;
-    font-weight: 600;
-    font-size: 13px;
-}
+// .selects select {
+//     flex: 1;
+//     height: 35px;
+//     border: 1px solid #ccc;
+//     border-radius: 4px;
+//     padding: 0 10px;
+//     font-weight: 600;
+//     font-size: 13px;
+// }
 
 .sort-row input[type="radio"] {
     display: none;

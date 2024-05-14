@@ -59,13 +59,21 @@
 }
 
 .selects select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   flex: 1;
-  height: 35px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 0 10px;
   font-weight: 600;
-  font-size: 14px;
+  height: 45px;
+  border: 2px dashed rgba(221, 221, 221, 0.4588235294);
+  padding: 10px 22px;
+  font-size: 13px;
+}
+.selects select:focus {
+  background-color: #fff;
+  border: 2px dashed #22b3c1;
+  outline: none;
+  box-shadow: none;
 }
 
 .sort-row input[type=radio] {
@@ -84,6 +92,7 @@
 .radios {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .radios input[type=radio]:checked + label {
@@ -126,16 +135,6 @@
 .selects {
   gap: 20px;
   margin-top: 10px;
-}
-
-.selects select {
-  flex: 1;
-  height: 35px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 0 10px;
-  font-weight: 600;
-  font-size: 13px;
 }
 
 .sort-row input[type=radio] {
@@ -468,7 +467,7 @@
 }
 @media (max-width: 999px) {
   #sidebar {
-    width: 100% !important;
+    width: 100%;
   }
   .ticket-list {
     width: 100%;
