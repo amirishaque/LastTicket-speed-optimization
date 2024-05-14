@@ -77,6 +77,22 @@ span.info-icon svg {
   position: absolute !important;
 }
 @media screen and (max-width: 767px) {
+  .small-banner{
+    height:400px;
+    margin: 0 0 80px;
+    text-align: center;
+    background:url("./assets/images/small-banners.webp") no-repeat !important;
+    /* background:url("") no-repeat !important; */
+    background-size: cover !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 120px;
+    margin-top: -10px;
+}
+  .ticket-page-content .filters-holder {
+    margin: -300px 0 0 !important;
+}
   span.info-icon svg {
     position: absolute;
     top: 1px;
@@ -1113,4 +1129,13 @@ height: 20px;
 }
 .views-count-wrapper span{
   margin-right: 10px;
+}
+.ticket-page-content .small-banner{
+ 
+  padding: 0px 0 130px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ticket-page-content .filters-holder {
+  margin: -315px 0 0;
 }
