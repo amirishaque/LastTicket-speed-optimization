@@ -1129,9 +1129,17 @@ height: 20px;
   font-size: 14px;
 }
 @media screen and (max-width: 767px) {
+  .modal-content .close-button{
+    background: #0DCCD7;
+    border-radius: 2px;
+    color: #fff;
+  }
   .top-p{
     margin-bottom: 20px !important;
     font-size: 12px;
+  }
+  .your-section-class{
+    margin-bottom: 20px;
   }
 }
 
