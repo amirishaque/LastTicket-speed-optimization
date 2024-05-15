@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../../styles/ticket/style.css';
 import Modal from '../modal/Modal';
@@ -6,6 +6,9 @@ import TicketIcon from '../../assets/images/ticketIcon.webp';
 import TicketViewModal from '../TicketViewModal/TicketViewModal';
 import Tooltip from '../Tooltip/Tooltip';
 import SelectionModal from '../SelectionModal/SelectionModal';
+import InfoIcon from '../../assets/images/info.png';
+import fastDelivery from '../../assets/images/quickTransfer.png';
+import barCode from '../../assets/images/barCode.png';
 
 export default function ETicket() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -25,15 +28,31 @@ export default function ETicket() {
     // const closeModal = () => {
     //     setIsModalOpen(false);
     // };
-    const [hoveredIndex, setHoveredIndex] = React.useState(null);
+    const [hoveredIndex, setHoveredIndex] = useState(null);
 
     const handleMouseEnter = (index) => {
-        setHoveredIndex(index);
+      setHoveredIndex(index);
     };
-
+  
     const handleMouseLeave = () => {
-        setHoveredIndex(null);
+      setHoveredIndex(null);
     };
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        // Remove hovered class when scrolling
+        setHoveredIndex(null);
+      };
+  
+      // Add scroll event listener when component mounts
+      window.addEventListener('scroll', handleScroll);
+  
+      // Remove scroll event listener when component unmounts
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []); // Empty dependency array ensures this effect runs only once after component mounts
+  
 
 
 
@@ -72,14 +91,14 @@ export default function ETicket() {
                         <div className='eticket-box' key={index}>
                             <div className='left-fragment'>
                                 <figure>
-                                    <img src='https://www.svgrepo.com/show/159737/bar-code.svg' alt='ticket' width={180} />
+                                    <img src={barCode} alt='ticket' width={180} />
                                     {/* <img src='https://lastchanceticket.com/public/assets/images/t1.webp' alt='ticket' width={180} /> */}
                                 </figure>
                                 <div className='d-wrapper-eticket'>
                                     <h3>Mobile Ticket
                                         <Tooltip text="You will soon get an email with instructions on how to download your tickets to your phone.">
                                             <span className='info-icon'>
-                                                <img src='https://www.svgrepo.com/show/24584/info-icon.svg' alt='info' height={20} width={20} />
+                                            <img src={InfoIcon} alt='info' width={20} height={20} />
                                             </span>
                                             {/* <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.0294 16.9706 2.99994 12 2.99994C7.0294 2.99994 2.99994 7.0294 2.99994 12C2.99994 16.9706 7.0294 21 12 21Z" stroke="#6f6f6f" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.99991"/><path d="M12 7C12.5523 7 13 7.44772 13 8C13 8.55228 12.5523 9 12 9C11.4477 9 11 8.55228 11 8C11 7.44772 11.4477 7 12 7Z" fill="#000000"/><path d="M12 17V11" stroke="#6f6f6f" stroke-width="2"/></svg>
                                             </span> */}
@@ -87,7 +106,8 @@ export default function ETicket() {
                                   
                                         {/* <img src={TicketIcon} width={25} style={{marginLeft:'5', marginRight:'5'}}/> */}
                                         <div className='possession-wrapper'>
-                                            <span >
+                                            <span className="blinking">
+                                          
                                                 <svg width="17px" height="17px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M6.25993 21.3884H6C5.05719 21.3884 4.58579 21.3884 4.29289 21.0955C4 20.8026 4 20.3312 4 19.3884V18.2764C4 17.7579 4 17.4987 4.13318 17.2672C4.26636 17.0356 4.46727 16.9188 4.8691 16.6851C7.51457 15.1464 11.2715 14.2803 13.7791 15.7759C13.9475 15.8764 14.0991 15.9977 14.2285 16.1431C14.7866 16.77 14.746 17.7161 14.1028 18.2775C13.9669 18.396 13.8222 18.486 13.6764 18.5172C13.7962 18.5033 13.911 18.4874 14.0206 18.4699C14.932 18.3245 15.697 17.8375 16.3974 17.3084L18.2046 15.9433C18.8417 15.462 19.7873 15.4619 20.4245 15.943C20.9982 16.3762 21.1736 17.0894 20.8109 17.6707C20.388 18.3487 19.7921 19.216 19.2199 19.7459C18.6469 20.2766 17.7939 20.7504 17.0975 21.0865C16.326 21.4589 15.4738 21.6734 14.6069 21.8138C12.8488 22.0983 11.0166 22.0549 9.27633 21.6964C8.29253 21.4937 7.27079 21.3884 6.25993 21.3884Z" fill="#1C274C" />
                                                     <path d="M6.58579 2.58579C6.21901 2.95256 6.08188 3.4593 6.03061 4.2498C7.24895 4.23355 8.23355 3.24896 8.2498 2.03061C7.4593 2.08188 6.95256 2.21901 6.58579 2.58579Z" fill="#1C274C" />
@@ -98,7 +118,8 @@ export default function ETicket() {
                                                 </svg>
                                                 Ticket in hand</span>
                                             <span>
-                                                <svg fill="#6f6f6f" height="17px" width="17px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                <img src={fastDelivery} alt='Fast Delivery' width={17} height='auto' />
+                                                {/* <svg fill="#6f6f6f" height="17px" width="17px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                                     viewBox="0 0 612 612" xml:space="preserve">
                                                     <g>
                                                         <g>
@@ -132,7 +153,7 @@ export default function ETicket() {
 			c0-18.608-7.246-36.101-20.403-49.258C341.839,388.001,324.344,380.755,305.737,380.755z"/>
                                                         </g>
                                                     </g>
-                                                </svg>
+                                                </svg> */}
                                                 Quick Transfer</span>
                                         </div>
                                </h3>

@@ -44,6 +44,7 @@ export default function Banner({ bannerHeading, bannerText }) {
                           <img src={TrustImg} alt="img" width={25} height={11}/>
                           </div>
                           <div className="star">
+                            {/* <img src={TrustImg} alt="img" width={25} height={11}/> */}
                           <img src={HTrustImg} alt="img" width={8} height={11} style={{marginLeft:'-3px'}}/>
                           </div>
                         </div>

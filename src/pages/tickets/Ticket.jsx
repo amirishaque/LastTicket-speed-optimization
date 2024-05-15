@@ -252,6 +252,7 @@ export default function Ticket() {
 															<img src={TrustImg} alt="img" width={25} height={11} className='st-img' />
 														</div>
 														<div className="star">
+															{/* <img src={TrustImg} alt="img" width={25} height={11} className='st-img' /> */}
 															<img src={HTrustImg} alt="img" width={25} height={11} className='st-img st-half' />
 														</div>
 													</div>
