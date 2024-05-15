@@ -1249,3 +1249,23 @@ select{
 .blinking {
   animation: blink 1s infinite;
 }
+.Toastify__toast {
+  transition-duration: 3.5s; /* Adjust duration as needed */
+  transition-property: opacity, transform;
+  transition-duration: 0.5s; /* Adjust duration as needed */
+  transition-timing-function: ease-in-out; /* Adjust timing function as needed */
+}
+
+@media screen and (max-width: 767px) {
+  .Toastify__toast-container--top-center{
+    top:65px !important;
+    transition-property: opacity, transform;
+    transition-duration: 0.5s; /* Adjust duration as needed */
+    transition-timing-function: ease-in-out; /* Adjust timing function as needed */
+  }
+}
+.Toastify {
+  transition-property: opacity, transform;
+  transition-duration: 0.5s; /* Adjust duration as needed */
+  transition-timing-function: ease-in-out; /* Adjust timing function as needed */
+}
