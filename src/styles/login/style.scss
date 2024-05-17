@@ -191,7 +191,13 @@
 .register-wrapper{
     padding-left: 0px !important;
 }
-
+.login-wrapper-outer .login-wrapper-inner .login-wrapper .login-inner-wrapper form p{
+    padding-left: 0px;
+}
+.login-wrapper-outer .login-wrapper-inner .login-wrapper .login-inner-wrapper form p span {
+    width: 100%;
+    min-width: 277px;
+}
 @media screen and (min-width: 360px) and (max-width: 767px) {
     .login-wrapper {
         margin-bottom: 72px;
@@ -249,4 +255,33 @@
         text-align: left;
         padding-left: 10px;
     }
+    .login-wrapper-outer{
+        height: auto;
+    }
+    .login-wrapper-outer .login-wrapper-inner .login-wrapper .login-inner-wrapper form p{
+        font-size: 12px;
+    }
+    .login-wrapper-outer .login-wrapper-inner .login-wrapper .login-inner-wrapper form p button{
+        font-size: 12px;
+    }
+    .login-wrapper-outer .login-wrapper-inner .login-wrapper .login-inner-wrapper form p span {
+        width: 100%;
+        min-width: 222px;
+    }
+    section.login-wrapper-outer{
+        margin-top: 0px;
+    }
+    .register-wrapper{
+        span,button{
+            font-size: 12px !important;
+        }
+    }
+    .login-wrapper-outer .login-wrapper-inner .login-wrapper .login-inner-wrapper form input{
+        // width: 50% !important;
+        font-size: 11px !important;
+        &::placeholder{
+            font-size: 11px !important; 
+        }
+    }
+
 }
