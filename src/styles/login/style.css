@@ -240,4 +240,7 @@
   .login-wrapper-outer .login-wrapper-inner .login-wrapper .login-inner-wrapper form input::placeholder {
     font-size: 11px !important;
   }
+  .login-wrapper-outer {
+    min-height: 70vh;
+  }
 }/*# sourceMappingURL=style.css.map */
