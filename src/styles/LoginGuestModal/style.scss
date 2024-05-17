@@ -39,6 +39,7 @@
   
   .lg-content-modal{
     padding-top: 30px;
+    margin-top: 50px;
     h2{
         color: #0dccd7;
         font-size: 18px;
@@ -92,9 +93,15 @@
     }
   }
   .lg-close{
+    padding: 8px 12px;
+    margin: 4px 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #22b3c1;
+    color: #fff;
+    border-color: #22b3c1;
+    box-shadow: 0px 0 2px 0 #22b3c1;
     position: absolute;
-    top: 0px;
-    left: 10px;
+    font-size: 18px;
   }
   .option-two-wrapper{
     a{
@@ -145,9 +152,20 @@
     }
 }
 .or-lg{
-    font-size: 25px;
+    // font-size: 25px;
     // margin: 10px 0px;
+    // text-align: center;
+
+    position: relative;
+    span{
+        position: absolute;
+    top: -11px;
     text-align: center;
+    width: 30%;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    }
 }
 .option-two-wrapper{
     h3{
@@ -175,21 +193,23 @@
     }
     .lg-content-modal h2 {
         color: #0dccd7;
-        font-size: 15px;
+        font-size: 22px;
         border-bottom: 4px solid #0dccd7;
         width: 50%;
         text-align: center;
         border-radius: 2px;
-        margin-bottom: 10px !important;
+        margin-bottom: 40px !important;
         margin-left: auto !important;
         margin-right: auto !important;
         font-weight: 500;
         display: flex;
         justify-content: center;
+        width:  242px;
     }
     .option-one-wrapper h3 {
-        font-size: 14px;
-        margin-bottom: 5px;
+        font-size: 16px;
+        margin-bottom: 6px;
+        font-weight: bolder;
     }
     .lg-content-modal .option-one-wrapper .input-wrapper input{
         margin-bottom: 10px;
@@ -201,7 +221,10 @@
     }
     .lg-link{
         margin-top: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 26px;
+    }
+    .option-two-wrapper{
+        margin-top:26px;
     }
     .or-lg {
         font-size: 18px;
@@ -215,7 +238,8 @@
         justify-content: center;
     }
     .option-two-wrapper h3 {
-        font-size: 14px;
-        margin-bottom: 10px;
+        font-size: 16px;
+        margin-bottom: 12px;
+        font-weight: 600;
     }
 }
