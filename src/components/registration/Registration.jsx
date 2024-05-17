@@ -41,23 +41,23 @@ export default function Registration({ toggleForm }) {
     return (
         <>
             <div className="login-inner-wrapper">
-                <h1>Sign up</h1>
+                <h1 className='sign-up-heading'>Sign up</h1>
                 <form onSubmit={handleSubmit} style={{padding:'30px'}}>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                        <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} placeholder="First Name" style={{ maxWidth: '44%' }} />
-                        <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} placeholder="Last Name" style={{ maxWidth: '44%' }} />
+                        <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} placeholder="First Name" style={{ maxWidth: '48%' }} />
+                        <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} placeholder="Last Name" style={{ maxWidth: '48%' }} />
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                        <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email Address" style={{ maxWidth: '44%' }} />
-                        <input type="email" name="reEnterEmail" value={formData.reEnterEmail} onChange={handleChange} placeholder="Re-Enter Email Address" style={{ maxWidth: '44%' }} />
+                        <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email Address" style={{ maxWidth: '48%' }} />
+                        <input type="email" name="reEnterEmail" value={formData.reEnterEmail} onChange={handleChange} placeholder="Re-Enter Email Address" style={{ maxWidth: '48%' }} />
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                        <input type="password" name="password" value={formData.password} onChange={handleChange} placeholder="Enter Password" style={{ maxWidth: '44%' }} />
-                        <input type="password" name="reEnterPassword" value={formData.reEnterPassword} onChange={handleChange} placeholder="Re-enter Password" style={{ maxWidth: '44%' }} />
+                        <input type="password" name="password" value={formData.password} onChange={handleChange} placeholder="Enter Password" style={{ maxWidth: '48%' }} />
+                        <input type="password" name="reEnterPassword" value={formData.reEnterPassword} onChange={handleChange} placeholder="Re-enter Password" style={{ maxWidth: '48%' }} />
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                        <input type="tel" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} placeholder="Phone Number (with country code)" style={{ maxWidth: '44%' }} />
-                        <input type="text" name="nationality" value={formData.nationality} onChange={handleChange} placeholder="Nationality" style={{ maxWidth: '44%' }} />
+                        <input type="tel" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} placeholder="Phone Number (with country code)" style={{ maxWidth: '48%' }} />
+                        <input type="text" name="nationality" value={formData.nationality} onChange={handleChange} placeholder="Nationality" style={{ maxWidth: '48%' }} />
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                         <input type="text" name="countryOfResidence" value={formData.countryOfResidence} onChange={handleChange} placeholder="Country of residence" style={{ maxWidth: '100%', width:'100%' }} />

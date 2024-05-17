@@ -67,6 +67,29 @@
   padding-bottom: 10px;
   text-align: left;
   padding-left: 30px;
+  margin-bottom: 15px !important;
+}
+.login-wrapper-outer .login-wrapper-inner .login-wrapper .login-inner-wrapper h1::after {
+  width: 165px;
+  height: 26px;
+  position: absolute;
+  content: "";
+  right: auto;
+  bottom: auto;
+  background: url(../../assets/images/heading-shape.webp) no-repeat;
+  z-index: 2;
+  margin: 28px 0px 0px -165px;
+}
+.login-wrapper-outer .login-wrapper-inner .login-wrapper .login-inner-wrapper .sign-up-heading::after {
+  width: 165px;
+  height: 26px;
+  position: absolute;
+  content: "";
+  right: auto;
+  bottom: auto;
+  background: url(../../assets/images/heading-shape.webp) no-repeat;
+  z-index: 2;
+  margin: 28px 0px 0px -88px;
 }
 .login-wrapper-outer .login-wrapper-inner .login-wrapper .login-inner-wrapper p {
   padding-left: 30px;
