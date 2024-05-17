@@ -36,14 +36,16 @@ export default function Login() {
                                 <>
                                     {isLogin ? (
                                         <>
-                                            <h1>Login</h1>
-                                            <form style={{maxWidth:'358px', margin:'0 auto', padding:'30px'}}>
+                                            <h1>Last Chance Ticket</h1>
+                                            <p>Sign into your account</p>
+                                            <form style={{maxWidth:'358px', margin:'0 auto 0 0', padding:'30px'}}>
                                                 <input type="text" placeholder="User Name or Email" style={{ maxWidth: '385px' }} />
                                                 <input type="password" placeholder="Password" style={{ maxWidth: '385px' }} />
                                                 {/* Show forgot password only in login form */}
-                                                <p><button onClick={toggleForgotPassword}>Forgot Password?</button></p>
-                                                <button type="submit" style={{width:'384px'}}>Login</button>
-                                                <p><span>Don't have an account?</span> <button onClick={toggleForm}>Sign up here</button></p>
+                                                <button type="submit" style={{width:'66px'}}>Login</button>
+                                                <p className='fotgot-btn' onClick={toggleForgotPassword}>Forgot Password?</p>
+                                               
+                                                <p className='register-wrapper'><span>Don't have an account?</span> <button onClick={toggleForm} style={{fontWeight: '600'}}>Registere here</button></p>
                                           
                                           
                                                 <div className='login-methods'>

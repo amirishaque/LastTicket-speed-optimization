@@ -12,13 +12,16 @@
     .login-wrapper-inner{
         background: #fff;
         margin: 0 auto;
-        box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+        // box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
         display: flex;
         align-items: center;
         justify-content: space-between;
         overflow: hidden;
         border-radius: 10px;
         height: 700px;
+        border: 1px solid rgba(0, 0, 0, 0.175);
+        max-width: 1067px;
+        width: 100%;
     
 
     .left-fragment{
@@ -91,8 +94,14 @@
             h1 {
                 font-size: 24px;
                 font-weight: 600;
-                padding-bottom: 30px;
-                text-align: center;
+                padding-bottom: 10px;
+                text-align: left;
+                padding-left: 30px;
+
+            }
+            p{
+                padding-left: 30px;
+                margin-bottom: 10px;
             }
     
             form {
@@ -122,10 +131,11 @@
     span{
         width: 100%;
     }
+ 
     button{
         margin: 0px;
         padding: 0px;
-        text-align: right;
+        text-align: left;
         &:hover{
             color:#0DCCD7;
             cursor: pointer;
@@ -174,7 +184,13 @@
     }
 }
 }
-
+.fotgot-btn{
+    padding-left: 0px !important;
+    font-weight: 600;
+}
+.register-wrapper{
+    padding-left: 0px !important;
+}
 
 @media screen and (min-width: 360px) and (max-width: 767px) {
     .login-wrapper {
@@ -188,6 +204,7 @@
                 position: relative;
                 top: 50%;
                 transform: translateY(-50%);
+                display: none;
 
                 img {
                     display: inline-block;
@@ -195,5 +212,41 @@
                 }
             }
         }
+    }
+    .login-wrapper-outer .login-wrapper-inner .left-fragment{
+        display: none !important;
+    }
+    .login-wrapper-outer .login-wrapper-inner{
+        height: auto;
+    }
+    .login-wrapper-outer .login-wrapper-inner{
+        padding: 20px 0px;
+    }
+    .login-methods {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .login-wrapper-outer .login-wrapper-inner .login-wrapper{
+        margin-bottom: 0px;
+    }
+    .register-wrapper{
+        font-size: 12px;
+        justify-content: space-between;
+        span{
+            font-size: 12px;
+        }
+        button{
+            font-size: 12px !important;
+            text-align: left !important;
+        }
+    }
+    .login-wrapper-outer .login-wrapper-inner .login-wrapper .login-inner-wrapper h1{
+        text-align: left;
+        padding-left: 10px;
+    }
+    .login-wrapper-outer .login-wrapper-inner .login-wrapper .login-inner-wrapper p{
+        text-align: left;
+        padding-left: 10px;
     }
 }
