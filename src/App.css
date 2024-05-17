@@ -1269,3 +1269,23 @@ select{
   transition-duration: 0.5s; /* Adjust duration as needed */
   transition-timing-function: ease-in-out; /* Adjust timing function as needed */
 }
+select{
+  background: #fff;
+}
+.paper-plan svg{
+    height: 15px;
+    width: 15px;
+    margin-left: 13px;
+}
+.lg-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paper-plan svg path{
+  fill: #fff;
+}
+.lg-mail-wrapper{
+  position: absolute;
+  top: 7px;
+}
