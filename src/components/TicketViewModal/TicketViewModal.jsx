@@ -5,9 +5,9 @@ function TicketViewModal({ isTicketViewOpen, onTicketViewClose }) {
     if (!isTicketViewOpen) return null;
 
     return (
-        <div className="modal t-view-modal-wrapper-outer">
-            <div className="modal-content t-view-modal-wrapper">
-                <span className="close t-view-close" onClick={onTicketViewClose}>&times;</span>
+        <div className="modal12 t-view-modal-wrapper-outer">
+            <div className="modal-content12 t-view-modal-wrapper">
+                <span className="close12 t-view-close" onClick={onTicketViewClose}>&times;</span>
                 <div className='t-view-modal-content'>
                     <div className='detail'>
                         {/* <strong>E Ticket</strong> */}

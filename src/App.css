@@ -28,13 +28,13 @@
     display: flex;
     justify-content: center;
     font-size: 14px;
-    max-width: 130px;
+    max-width: 145px;
     gap: 5px;
     width: 100%;
     align-items: center;
 
     transition: 0.4s;
-    background: #fff;
+    background: transparent;
     color: #22B3C1;
     border: 1px solid #fff;
     border: 1px solid #22B3C1;
@@ -811,7 +811,7 @@ section.your-section-class{
     /* box-shadow: calc(-1*var(--f)) 0 0 inset #0005; */
     z-index: 2;
     color: #fff;
-    padding-top: 4px;
+    padding-top: 0px;
     padding-bottom: 6px;
     height: 33px;
   }
@@ -1213,7 +1213,7 @@ height: 20px;
   background-size: cover;
 }
 .ticket-page-content .filters-holder {
-  margin: -315px 0 0;
+  margin: -280px 0 0;
 }
 
 .ph-num{
@@ -1288,4 +1288,14 @@ select{
 .lg-mail-wrapper{
   position: absolute;
   top: 7px;
+}
+
+
+
+.modal-content{
+  background: #fff !important;
+}
+
+.slider-wrapper{
+  margin-top: 10px;
 }

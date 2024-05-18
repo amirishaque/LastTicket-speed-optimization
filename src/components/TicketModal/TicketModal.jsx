@@ -60,7 +60,7 @@ const TicketModal = ({ isOpen, closeModal }) => {
     <>
       {isOpen && (
         <div className="modal-overlay tickets-demand-overlay" onClick={handleOutsideClick}>
-          <div className="modal-content ticket-modal-content">
+          <div className="modal-content ticket-modal-content" style={{background:'#fff'}}>
             <span className="close-button" onClick={closeModal}>
               &times;
             </span>

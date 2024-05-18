@@ -57,4 +57,14 @@
   transform: translate(-50%, -50%); /* Center the percentage horizontally and vertically */
   font-size: 12px;
   color: #333;
+}
+
+.modal-content12 {
+  position: relative;
+}
+
+.close12 {
+  position: absolute;
+  top: 0px;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

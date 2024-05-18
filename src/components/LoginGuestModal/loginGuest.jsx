@@ -17,8 +17,8 @@ function LoginGuestModal({ isOpen, onClose }) {
     if (!isOpen) return null;
 
     return (
-        <div className="modal">
-            <div className="modal-content">
+        <div className="modal13">
+            <div className="modal-content13">
                 <span className="close lg-close" onClick={onClose}>&times;</span>
                 <div className='lg-content-modal'>
                     <h2>Select Login Option</h2>
