@@ -16,7 +16,7 @@
   border-radius: 5px;
   margin: 0 0 35px;
   gap: 20px;
-  border: 7px solid red;
+  border: 3px solid red;
   transition: 0.4s;
 }
 .eticket-wrapper .eticket-box:nth-of-type(1) {

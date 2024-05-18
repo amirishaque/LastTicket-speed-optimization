@@ -573,7 +573,7 @@ span.info-icon svg {
     border-radius: 0 0 50% 50%;
     border-bottom: 1px solid red;
     border-right: 1px solid red;
-    top: -6px;
+    top: -2px;
     background: #fff;
     overflow: visible;
   }
@@ -583,7 +583,7 @@ span.info-icon svg {
     width: 22px;
     height: 19px;
     border-left: 1px solid red;
-    bottom: -7px;
+    bottom: -3px;
     left: 113px;/* Apply skew transformation */
     border-radius: 0 0 50% 50%;
     border-bottom: 1px solid red;

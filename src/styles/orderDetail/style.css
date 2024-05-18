@@ -150,11 +150,9 @@ button {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 0px;
 }
 .ticket-details ul li strong {
-  max-width: 210px;
-  width: 100%;
   display: flex;
   align-items: center;
   gap: 7px;
@@ -179,6 +177,9 @@ h3.lct-head {
 }
 
 @media screen and (max-width: 767px) {
+  .card-body {
+    padding: 10px !important;
+  }
   span.mb-version {
     display: flex;
     font-size: 12px;
@@ -190,18 +191,17 @@ h3.lct-head {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 12px;
+    gap: 0px;
+    font-size: 10px;
   }
   .card.p-3.shadow-sm.br-10.mb-5 {
     padding: 5px !important;
   }
   .ticket-details ul li strong {
-    max-width: 90px;
-    width: 100%;
+    width: unset;
     display: flex;
-    align-items: center;
-    gap: 7px;
+    gap: 5px;
+    align-items: flex-start;
   }
   .ticket-details p {
     font-weight: 600;
