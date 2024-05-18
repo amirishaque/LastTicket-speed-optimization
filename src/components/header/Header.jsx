@@ -30,13 +30,13 @@ const Header = () => {
       <div className="header-placement"></div>
       <header id="header">
         <div className={`header-wrapper ${isActive ? "your-class" : ""}`}>
-          <Link to='/'>
+          <Link to='/' className="">
             <img src={LogoMain} alt="logo" width={231} height={48}  className="main-image"/>
           </Link>
           <div className={`header-right ${isActive ? "active" : ""}`}>
-            <figure className="desktop">
+            <figure>
               <Link to='/'>
-                <img src={LogoMain} alt="logo" width={231} height={48} />
+                <img src={LogoMain} alt="logo" width={231} height={48} style={{width: '-webkit-fill-available'}}/>
               </Link>
             </figure>
             <nav id="nav">

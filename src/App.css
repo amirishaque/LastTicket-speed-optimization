@@ -352,14 +352,14 @@ span.info-icon svg {
   background: red;
 }
 .categories-ticket-wrapper .categories-ticket-box p {
-  font-size: 12px;
+  font-size: 10px;
   margin: 0px;
 }
 .categories-ticket-box {
   border: 1px solid #0080002b;
   padding: 5px;
-  width: auto;
-  height: auto;
+  width: auto !important;
+  height: auto !important; 
   display: flex;
   gap: 4px;
   align-items: center;
@@ -1300,4 +1300,8 @@ select{
 
 .slider-wrapper{
   margin-top: 10px;
+}
+
+button{
+  box-shadow: none !important;
 }
