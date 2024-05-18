@@ -94,7 +94,9 @@ span.info-icon svg {
   font-size: 12px;
 }
 @media screen and (max-width: 767px) {
-
+  .lg-mail-wrapper{
+    top: 0px !important;
+  }
   .header-right-wrapper span{
     padding: 0px !important;
   }

@@ -34,7 +34,7 @@ const Header = () => {
             <img src={LogoMain} alt="logo" width={231} height={48}  className="main-image"/>
           </Link>
           <div className={`header-right ${isActive ? "active" : ""}`}>
-            <figure>
+            <figure className="desktop">
               <Link to='/'>
                 <img src={LogoMain} alt="logo" width={231} height={48} />
               </Link>

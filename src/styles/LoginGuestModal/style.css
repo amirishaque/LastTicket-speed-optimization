@@ -34,6 +34,9 @@
   border: 1px solid #888;
   max-width: 500px;
   width: 100%; /* Could be more or less, depending on screen size */
+  margin-left: 15px;
+  margin-right: 15px;
+  box-sizing: border-box;
 }
 
 /* Close Button */
@@ -100,7 +103,7 @@
 }
 
 .lg-close {
-  padding: 8px 12px;
+  padding: 2px 9px;
   margin: 4px 0;
   font-family: "Montserrat", sans-serif;
   background: #22b3c1;
