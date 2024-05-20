@@ -316,4 +316,8 @@
 
 .image-box:hover {
   transform: scale(1.12);
+}
+
+body {
+  background: #fff !important;
 }/*# sourceMappingURL=style.css.map */

@@ -190,7 +190,6 @@
 
 .view-area {
   width: 100%;
-  margin-bottom: 120px;
 }
 
 .view-area .header h2 {
@@ -211,6 +210,7 @@
   height: 25px;
   border-radius: 100%;
   background: red;
+  position: relative;
 }
 
 .dot.yellow {
@@ -272,6 +272,7 @@
   border-radius: 6px;
   font-weight: 600;
   border: 1px solid #c8c6c6;
+  background: transparent;
 }
 
 .ticket-holder img {
@@ -627,4 +628,15 @@
 .counters button:focus {
   background: #212529;
   color: #fff;
+}
+
+.big-dot {
+  height: 25px !important;
+  width: 25px !important;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  background-color: #61c3e3;
+  border-radius: 50%;
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */

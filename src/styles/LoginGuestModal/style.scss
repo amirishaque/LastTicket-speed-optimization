@@ -166,6 +166,9 @@
     &:hover{
         color: #0dccd7;
         background: #fff;
+        svg path {
+            fill: #0dccd7;
+        }
     }
 }
 .or-lg{

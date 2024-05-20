@@ -574,7 +574,7 @@ span.info-icon svg {
     border-bottom: 1px solid red;
     border-right: 1px solid red;
     top: -2px;
-    background: #fff;
+    background: #f2f2f2;
     overflow: visible;
   }
   .eticket-box::before {
@@ -590,7 +590,7 @@ span.info-icon svg {
     border-right: 1px solid red;
     top: auto;
     /* bottom: -1px; */
-    background: #fff;
+    background: #f2f2f2;
     overflow: visible;
     transform: rotate(180deg);
     z-index: 999;
@@ -1292,7 +1292,7 @@ select{
 }
 .lg-mail-wrapper{
   position: absolute;
-  top: 7px;
+  top: 0px;
 }
 
 
@@ -1307,4 +1307,23 @@ select{
 
 button{
   box-shadow: none !important;
+}
+
+.ticket-page-content{
+  background-color: #f2f2f2;
+  padding-bottom: 120px;
+}
+
+.tickk{
+  width: 13px !important;
+  height: 18px !important;
+  position: absolute;
+  top: 4px;
+  padding: 1px;
+  left: auto;
+  right: 7px;
+}
+
+.lg-content-modal .option-one-wrapper .input-wrapper{
+  position: relative;
 }

@@ -25,7 +25,7 @@ function LoginGuestModal({ isOpen, onClose }) {
                     <div className='option-one-wrapper'>
                         <h3>Option 1:</h3>
                         <div className='form-wrapper'>
-                            <div className='input-wrapper'>
+                            <div className='input-wrapper'  style={{position:'relatvie'}}>
                                 <span className='lg-mail-wrapper'>
                                 <svg fill="#0dccd7" height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	 viewBox="0 0 512 512" xml:space="preserve">
@@ -43,7 +43,7 @@ function LoginGuestModal({ isOpen, onClose }) {
 </g>
 </svg>
                                 </span>
-                                <input placeholder='Email Address' type='email' />
+                                <input placeholder='Email Address' type='email'  style={{paddingLeft:'30px'}}/>
                             </div>
                             {/* Country Code Dropdown */}
                             {/* Phone Number Input */}

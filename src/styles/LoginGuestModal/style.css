@@ -160,6 +160,9 @@
   color: #0dccd7;
   background: #fff;
 }
+.lg-link:hover svg path {
+  fill: #0dccd7;
+}
 
 .or-lg {
   position: relative;

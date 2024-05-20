@@ -286,7 +286,7 @@ export default function Checkout() {
                                         </div>
                                         <div className="card-body">
                                             <div className="">
-                                                <p>We care about your security, No credit card information is stored on our website. Our site utilizes an internationally certified, encrypted payment gateway.<br /><br /></p>
+                                                <p style={{fontWeight:'600'}}>We care about your security, No credit card information is stored on our website. Our site utilizes an internationally certified, encrypted payment gateway.<br /><br /></p>
                                                 <h4 className="">Payment Details </h4>
                                                 <hr />
                                             </div>

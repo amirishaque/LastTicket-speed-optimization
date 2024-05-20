@@ -192,7 +192,7 @@ h3.lct-head {
         margin-bottom: 10px;
         display: flex;
         align-items: center;
-        gap: 0px;
+        gap: 2px;
         font-size: 10px;
     }
     .card.p-3.shadow-sm.br-10.mb-5 {
@@ -270,12 +270,9 @@ ol, ul {
     padding-left: 0;
 }
 
-
-
-
-
-
-
+.container.py-5{
+    background: #f2f2f2;
+}
 
 
 
