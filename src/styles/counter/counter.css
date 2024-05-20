@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+.counter-wrapper-inner {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+  font-family: "Poppins";
+}
+
+.timer-wrapperz {
+  padding: 10px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  font-family: "Poppins";
+}
+
+.main-content-checkout {
+  margin-bottom: 30px;
+}
+
+.timer-wrapper-outer {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.timer-wrapper-outer {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@media screen and (max-width: 767px) {
+  .timer-wrapperz {
+    padding: 5px;
+  }
+  .counter-wrapper span {
+    font-size: 12px !important;
+    display: flex;
+    align-items: center;
+  }
+  .timer-wrapper .left-fragment-counter, .timer-wrapper .right-fragment-counter {
+    justify-content: center;
+  }
+  .timer-wrapper-outer h2 {
+    font-size: 16px;
+    height: 20px;
+  }
+}/*# sourceMappingURL=counter.css.map */

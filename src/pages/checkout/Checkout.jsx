@@ -87,20 +87,11 @@ export default function Checkout() {
     }, []);
 
 
-    const originalText = 'An Unforgettable experience is just 1 click away'; // Text for typing animation
-    const typingSpeed = 100; // Adjust typing speed as needed
+    const originalText = 'Congratulations\n An Unforgettable experience is just 1 click away'; // Text for typing animation
+    const typingSpeed = 50; // Adjust typing speed as needed
 
     // Use the custom hook to get the animated text
     const text = useTypingAnimation(originalText, typingSpeed);
-
-
-
-
-
-
-
-
-
     return (
         <>
             {shouldShowConfetti && (
@@ -111,7 +102,7 @@ export default function Checkout() {
             )}
             <Slider />
             <div className='timer-wrapper-outer'>
-                <h2>Congratulations<br />
+                <h2>
                     {text}</h2>
                 <div className='timer-wrapper'>
                     <div className='left-fragment-counter mobile'>
@@ -119,11 +110,12 @@ export default function Checkout() {
                         <span>100% Guaranteed</span>
                         <span>100% Transparent</span>
                     </div>
-                    <div className='timer-inner-wrapper'>
+                    <Counter/>
+                    {/* <div className='timer-inner-wrapper'>
                         <span>Buy now before price go up</span>
                         <span>{minutes < 10 ? '0' : ''}{minutes} : {remainingSeconds < 10 ? '0' : ''}{remainingSeconds}</span>
                         <span>Left to complete purchase...!</span>
-                    </div>
+                    </div> */}
                     <div className='right-fragment-counter mobile'>
                         <span>Trusted platform</span>
                         <span>Peace of min</span>
@@ -131,7 +123,7 @@ export default function Checkout() {
                     </div>
                 </div>
             </div>
-            <div className='container'>
+            <div className='container main-content-checkout'>
                 <div className="row">
 
 
@@ -201,75 +193,72 @@ export default function Checkout() {
                                     <div className="order-total-dt">
                                         <div className="order-text">Service Charges</div>
                                         <div className="order-number">+ $49.9</div>
-
                                     </div>
                                     <div className="divider-line"></div>
                                     <div className="order-total-dt">
-                                        <div className="order-text" style={{fontSize: '18px'}}><b>Total</b></div>
-                                        <div className="order-number ttl-clr" style={{fontSize: '18px'}}><b>$2544.9</b></div>
+                                        <div className="order-text" style={{ fontSize: '18px' }}><b>Total</b></div>
+                                        <div className="order-number ttl-clr" style={{ fontSize: '18px' }}><b>$2544.9</b></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <div className="col-lg-8 ">
-
                         <div className="checkout-block">
-                        <section className='checkout-page-wrapper'>
-                        <div className='left-fragment'>
-                        <div className='box-payment'>
-                        {/* <div className='box-p'>
+                            <section className='checkout-page-wrapper'>
+                                <div className='left-fragment'>
+                                    <div className='box-payment'>
+                                        {/* <div className='box-p'>
                             <figure>
                                 <img src={payPal} alt='paypal' width={100} height={100}/>
                                 </figure> 
                             </div> */}
-                        <div className='box-payment-inner-wrapper'>
-                            <div className='box-payment-inner desktop'>
-                                <div className='qualities-wrapper'>
-                                    <div>100% safe & secure</div>
-                                    <div>100% Guaranteed</div>
-                                    <div>100% Transparent</div>
-                                </div>
-                            </div>   
-                            <div className='box-payment-inner secured-payment-wrapper'>
-                                <strong>Secured Payment Gateway</strong>
-                                <div className='box-payment-inner-box'>
-                                    <div className='box-p'>
-                                        <figure>
-                                            <img src={Strip} alt='paypal' width={100} height={100} />
-                                        </figure>
-                                    </div>
+                                        <div className='box-payment-inner-wrapper'>
+                                            <div className='box-payment-inner desktop'>
+                                                <div className='qualities-wrapper'>
+                                                    <div>100% safe & secure</div>
+                                                    <div>100% Guaranteed</div>
+                                                    <div>100% Transparent</div>
+                                                </div>
+                                            </div>
+                                            <div className='box-payment-inner secured-payment-wrapper'>
+                                                <strong>Secured Payment Gateway</strong>
+                                                <div className='box-payment-inner-box'>
+                                                    <div className='box-p'>
+                                                        <figure>
+                                                            <img src={Strip} alt='paypal' width={100} height={100} />
+                                                        </figure>
+                                                    </div>
 
-                                    <div className='box-p'>
-                                        <figure>
-                                            <img src={ApplePay} alt='paypal' width={100} height={100} />
-                                        </figure>
-                                    </div>
+                                                    <div className='box-p'>
+                                                        <figure>
+                                                            <img src={ApplePay} alt='paypal' width={100} height={100} />
+                                                        </figure>
+                                                    </div>
 
-                                    <div className='box-p'>
-                                        <figure>
-                                            <img src={GooglePay} alt='paypal' width={100} height={100} />
-                                        </figure>
-                                    </div>
+                                                    <div className='box-p'>
+                                                        <figure>
+                                                            <img src={GooglePay} alt='paypal' width={100} height={100} />
+                                                        </figure>
+                                                    </div>
 
-                                    <div className='box-p'>
-                                        <figure>
-                                            <img className='paypal-checkout' src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/PayPal_logo.svg/1024px-PayPal_logo.svg.png' alt='paypal' width={100} />
-                                        </figure>
-                                    </div>
+                                                    <div className='box-p'>
+                                                        <figure>
+                                                            <img className='paypal-checkout' src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/PayPal_logo.svg/1024px-PayPal_logo.svg.png' alt='paypal' width={100} />
+                                                        </figure>
+                                                    </div>
 
-                                </div>
+                                                </div>
 
-                            </div>
-                        </div>
-                        {/* <span>Express Checkout</span> */}
-                        {/* <figure>
+                                            </div>
+                                        </div>
+                                        {/* <span>Express Checkout</span> */}
+                                        {/* <figure>
                     <img src='https://www.lastchanceticket.com/assets/images/Secured%20Payment%20Gateway_LCT_NS.png' alt='images' width={556}/>
                 </figure> */}
-                    </div>
-                    </div>
-                    </section>
+                                    </div>
+                                </div>
+                            </section>
                             {/* <div className="row" style={{width:'100%', marginLeft:'1px'}}>
                                 <div className="col-md-6 border 1px " style={{marginBottom:'10px', backgroundColor : '#fff'}}>
                                     <div className="card-body">
@@ -291,16 +280,13 @@ export default function Checkout() {
                             </div> */}
                             <div className="row">
                                 <div className="col-md-12 ">
-
-                                    <div className="card" style={{padding: '13px'}}>
+                                    <div className="card" style={{ padding: '13px' }}>
                                         <div className="panel-heading">
-                                            <div className="row text-center">
-
-                                            </div>
+                                            <div className="row text-center"></div>
                                         </div>
-
                                         <div className="card-body">
                                             <div className="">
+                                                <p>We care about your security, No credit card information is stored on our website. Our site utilizes an internationally certified, encrypted payment gateway.<br /><br /></p>
                                                 <h4 className="">Payment Details </h4>
                                                 <hr />
                                             </div>
@@ -308,62 +294,54 @@ export default function Checkout() {
                                                 <h4>Total Payable Amount : $2544.9</h4>
                                             </div>
                                             <form method="post" action="https://www.lastchanceticket.com/ticket/5076/10434/64/ProceedToCheckout " role="form" className="validation" data-cc-on-file="false" data-stripe-publishable-key="pk_live_51MgNaXAHwTZuNeMcwffVynctVDmfHs1Td9IveHyH64CvNKDoWEItjvkBVjMQGftxdNWDRqJ58VyffacFmuC2mni300XrkzvPkm" id="payment-form">
-                                                <input type="hidden" name="_token" value="6q7GEgfGiGFWKFOsDC5HC76LoSPm8zxDdCdrMPn5"/>                                            <input type="hidden" name="ticketid" value="10434"/>
-                                                    <input type="hidden" name="country_id" value="" />
-                                                        <input type="hidden" name="quantity" value="1" />
-                                                            <input type="hidden" name="shipingCharges" value="" />
-
-                                                                <div className="form-row row">
-                                                                    <div className="col-xs-12 form-group required p-4">
-                                                                        <label className="control-label">Name on Card</label> <input className="form-control h_50" style={{outline:'thick', size:'4'}} type="text" />
-                                                                    </div>
-                                                                </div>
-                                                                <div className="form-row row">
-                                                                    <div className="col-xs-12 form-group  required p-4">
-                                                                        <label className="control-label">Card Number</label> <input autocomplete="off" className="form-control card-num h_50" size="20" type="text" />
-                                                                    </div>
-                                                                </div>
-                                                                <div className="form-row row">
-                                                                    <div className="col-xs-12 col-md-4 form-group cvc required p-4">
-                                                                        <label className="control-label">CVC</label>
-                                                                        <input autocomplete="off" className="form-control card-cvc h_50" placeholder="e.g 415" size="4" type="text" />
-                                                                    </div>
-                                                                    <div className="col-xs-12 col-md-4 form-group expiration required p-4">
-                                                                        <label className="control-label">Expiration Month</label> <input className="form-control card-expiry-month h_50" placeholder="MM" size="2" type="text"/>
-                                                                    </div>
-                                                                    <div className="col-xs-12 col-md-4 form-group expiration required p-4">
-                                                                        <label className="control-label">Expiration Year</label> <input className="form-control card-expiry-year h_50" placeholder="YYYY" size="4" type="text"/>
-                                                                    </div>
-                                                                    <div className="col-lg-12 form-group p-4">
-                                                                        <label className="m-2 "><input className="" type="checkbox" name="" value="" id="" required="" />&nbsp; I agree with the LCT Terms &amp;
-                                                                            Conditions</label>
-
-                                                                    </div>
-                                                                </div>
-                                                                <div className="form-row row">
-                                                                    <div className="col-md-12 hide error form-group">
-                                                                    </div>
-                                                                </div>
-                                                                <div className="row">
-                                                                    <div className="col-xs-12 mt-4">
-                                                                        <button type="submit" id="submit_button" className=" main-btn btn-hover h_50 w-100 ">Pay
-                                                                            $2544.9</button>
-                                                                    </div>
-
-                                                                </div>
-
-
-                                                            </form>
-                                                        </div>
+                                                <input type="hidden" name="_token" value="6q7GEgfGiGFWKFOsDC5HC76LoSPm8zxDdCdrMPn5" />                                            <input type="hidden" name="ticketid" value="10434" />
+                                                <input type="hidden" name="country_id" value="" />
+                                                <input type="hidden" name="quantity" value="1" />
+                                                <input type="hidden" name="shipingCharges" value="" />
+                                                <div className="form-row row">
+                                                    <div className="col-xs-12 form-group required p-4">
+                                                        <label className="control-label">Name on Card</label> <input className="form-control h_50" style={{ outline: 'thick', size: '4' }} type="text" />
                                                     </div>
                                                 </div>
+                                                <div className="form-row row">
+                                                    <div className="col-xs-12 form-group  required p-4">
+                                                        <label className="control-label">Card Number</label> <input autocomplete="off" className="form-control card-num h_50" size="20" type="text" />
+                                                    </div>
                                                 </div>
-
+                                                <div className="form-row row">
+                                                    <div className="col-xs-12 col-md-4 form-group cvc required p-4">
+                                                        <label className="control-label">CVC</label>
+                                                        <input autocomplete="off" className="form-control card-cvc h_50" placeholder="e.g 415" size="4" type="text" />
+                                                    </div>
+                                                    <div className="col-xs-12 col-md-4 form-group expiration required p-4">
+                                                        <label className="control-label">Expiration Month</label> <input className="form-control card-expiry-month h_50" placeholder="MM" size="2" type="text" />
+                                                    </div>
+                                                    <div className="col-xs-12 col-md-4 form-group expiration required p-4">
+                                                        <label className="control-label">Expiration Year</label> <input className="form-control card-expiry-year h_50" placeholder="YYYY" size="4" type="text" />
+                                                    </div>
+                                                    <div className="col-lg-12 form-group p-4">
+                                                        <label className="m-2 "><input className="" type="checkbox" name="" value="" id="" required="" />&nbsp; I agree with the LCT Terms &amp;
+                                                            Conditions</label>
+                                                    </div>
+                                                </div>
+                                                <div className="form-row row">
+                                                    <div className="col-md-12 hide error form-group">
+                                                    </div>
+                                                </div>
+                                                <div className="row">
+                                                    <div className="col-xs-12 mt-4">
+                                                        <button type="submit" id="submit_button" className=" main-btn btn-hover h_50 w-100 ">Pay</button>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
-                        </>
-                        )
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    )
 }

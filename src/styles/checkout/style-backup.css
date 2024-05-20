@@ -285,6 +285,10 @@
 }
 
 .timer-wrapper-outer h2 {
+  height: 15px;
+}
+
+.timer-wrapper-outer h2 {
   text-align: center;
   font-size: 22px;
   margin-bottom: 20px !important;

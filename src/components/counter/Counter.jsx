@@ -1,79 +1,61 @@
-import React, { useState, useEffect } from 'react';
-import '../../index.css';
+import React, { useState, useEffect } from "react";
+import FlipNumbers from "react-flip-numbers";
+import '../../styles/counter/counter.css'
 
-const AnimatedCard = ({ digit }) => {
-  const [folded, setFolded] = useState(true);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setFolded(prevFolded => !prevFolded);
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  const animationClass = folded ? 'fold' : 'unfold';
-
-  return (
-    <div className={`flipCard ${animationClass}`}>
-      <span>{digit}</span>
-    </div>
-  );
-};
-
-const StaticCard = ({ position, digit }) => {
-  return (
-    <div className={position}>
-      <span>{digit}</span>
-    </div>
-  );
-};
-
-const FlipUnitContainer = ({ digit, unit }) => {
-  let currentDigit = digit;
-  let previousDigit = digit - 1;
-
-  if (unit !== 'hours') {
-    previousDigit = previousDigit === -1 ? 59 : previousDigit;
-  } else {
-    previousDigit = previousDigit === -1 ? 23 : previousDigit;
-  }
-
-  if (currentDigit < 10) {
-    currentDigit = `0${currentDigit}`;
-  }
-  if (previousDigit < 10) {
-    previousDigit = `0${previousDigit}`;
-  }
-
-  return (
-    <div className={'flipUnitContainer'}>
-      <StaticCard position={'upperCard'} digit={currentDigit} />
-      <StaticCard position={'lowerCard'} digit={previousDigit} />
-      {unit === 'minutes' && <AnimatedCard digit={currentDigit} />}
-    </div>
-  );
-};
 
 const Counter = () => {
-  const [time, setTime] = useState(new Date(new Date().getTime() + 5 * 60 * 1000));
+  const [timeRemaining, setTimeRemaining] = useState(300); // 5 minutes in seconds
 
   useEffect(() => {
-    const timerID = setInterval(() => {
-      setTime(prevTime => new Date(prevTime.getTime() - 1000));
+    const timer = setInterval(() => {
+      setTimeRemaining(prevTime => {
+        if (prevTime > 0) {
+          return prevTime - 1;
+        } else {
+          clearInterval(timer); // Stop the timer when time reaches zero
+          return 0;
+        }
+      });
     }, 1000);
-    return () => clearInterval(timerID);
+    
+    return () => {
+      clearInterval(timer);
+    };
   }, []);
+  
 
-  const hours = time.getHours();
-  const minutes = time.getMinutes();
-  const seconds = time.getSeconds();
+  const minutes = Math.floor(timeRemaining / 60);
+  const seconds = timeRemaining % 60;
 
   return (
-    <div className={'flipClock'}>
-      <FlipUnitContainer unit={'hours'} digit={hours} />
-      <FlipUnitContainer unit={'minutes'} digit={minutes} />
-      <FlipUnitContainer unit={'seconds'} digit={seconds} />
+    <div className="counter-wrapper">
+      <div className="counter-wrapper-inner">
+        <div className="timer-wrapperz">
+          <FlipNumbers
+            play
+            color="#000"
+            background="rgba(0, 0, 0, 0)"
+            width={window.innerWidth < 600 ? 35 : 50} // Adjust width based on screen size
+            height={window.innerWidth < 600 ? 35 : 50} // Adjust height based on screen size
+            numbers={`${minutes}`}
+          />
+        </div>
+        <span>:</span>
+        <div className="timer-wrapperz">
+          <FlipNumbers
+            play
+            color="#000"
+            background="rgba(0, 0, 0, 0)"
+            width={window.innerWidth < 600 ? 25 : 50} // Adjust width based on screen size
+            height={window.innerWidth < 600 ? 25 : 50} // Adjust height based on screen size
+            numbers={`${seconds}`}
+          />
+        </div>
+        <span></span>
+        {/* <div>
+          <Milliseconds milliseconds={milliseconds} />
+        </div> */}
+      </div>
     </div>
   );
 };
