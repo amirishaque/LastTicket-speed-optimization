@@ -36,7 +36,7 @@ const Counter = () => {
             color="#000"
             background="rgba(0, 0, 0, 0)"
             width={window.innerWidth < 600 ? 35 : 50} // Adjust width based on screen size
-            height={window.innerWidth < 600 ? 35 : 50} // Adjust height based on screen size
+            height={window.innerWidth < 600 ? 25 : 50} // Adjust height based on screen size
             numbers={`${minutes}`}
           />
         </div>

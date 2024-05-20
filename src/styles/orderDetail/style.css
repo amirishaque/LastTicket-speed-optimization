@@ -190,7 +190,7 @@ h3.lct-head {
   .ticket-details ul li {
     margin-bottom: 10px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 2px;
     font-size: 10px;
   }
