@@ -63,7 +63,7 @@ export default function OrderDetail() {
                                     </div>
                                     <hr className="my-4" />
 
-                                    <div className="d-flex flex-row justify-content-between align-items-center align-content-center">
+                                    <div className="d-flex flex-row justify-content-between align-items-center align-content-center dots-wrapperi">
                                         <span className="dot"></span>
                                         <hr className="flex-fill track-line" /><span className="dot"></span>
                                         <hr className="flex-fill track-line" /><span className="dot"></span>
