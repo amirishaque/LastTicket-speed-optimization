@@ -265,6 +265,7 @@ span.text-muted.small {
 
 .aligs {
   align-items: start !important;
+  max-height: 42px !important;
 }
 
 @media screen and (max-width: 767px) {

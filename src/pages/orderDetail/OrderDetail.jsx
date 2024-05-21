@@ -75,7 +75,7 @@ export default function OrderDetail() {
                                             </svg>
                                         </span>
                                     </div>
-                                    <div className="row d-flex flex-row justify-content-between align-items-center aligs">
+                                    <div className="row d-flex flex-row justify-content-between aligs">
 
                                         <div className="col-md-2 d-flex flex-column align-items-start"><span className='mb-version'><b>EVENT : </b>
                                             <br />India Vs Pakistan - T20 World Cup 2024</span></div>
