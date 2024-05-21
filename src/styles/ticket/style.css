@@ -17,7 +17,16 @@
   margin: 0 0 35px;
   gap: 20px;
   border: 3px solid red;
+  position: relative;
   transition: 0.4s;
+}
+.eticket-wrapper .eticket-box .red-tt {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  left: 256px;
+  right: 0;
+  top: 3px;
 }
 .eticket-wrapper .eticket-box:nth-of-type(1) {
   border: 1px solid yellow;

@@ -1295,7 +1295,7 @@ select{
 }
 
 .blinking {
-  animation: blink 1s infinite;
+  animation: blink 2s infinite;
 }
 .Toastify__toast {
   transition-duration: 3.5s; /* Adjust duration as needed */

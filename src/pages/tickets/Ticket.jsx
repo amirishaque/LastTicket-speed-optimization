@@ -122,7 +122,7 @@ export default function Ticket() {
 					document.body.classList.remove('modal-content-open');
 				}, 7000); // Close modal after 7 seconds
 				return () => clearTimeout(closeModalTimeout); // Cleanup
-			}, 30000); // Show setShowTicketModal(true) after 30 seconds
+			}, 40000); // Show setShowTicketModal(true) after 30 seconds
 			return () => clearTimeout(modalTimeout); // Cleanup
 		}, 10000); // Show toast after 10 seconds
 	

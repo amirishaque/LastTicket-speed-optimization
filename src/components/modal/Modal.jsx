@@ -19,7 +19,7 @@ const Modal = ({ isOpen, closeModal }) => {
               </span> */}
               <div className='modal-content-wrapper'>
                 <h3>Please select how many tickets you would like to purchase</h3>
-               <strong>Select The Number Of Tickets</strong>
+               {/* <strong>Select The Number Of Tickets</strong> */}
                <select>
                 <option>1</option>
                 <option>2</option>
