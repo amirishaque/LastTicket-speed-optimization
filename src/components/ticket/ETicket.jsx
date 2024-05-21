@@ -88,9 +88,7 @@ export default function ETicket() {
                         onMouseLeave={handleMouseLeave}
                     >
                         <div class="ribbon-2">Lowest Price in the category</div>
-                        
                         <div className='eticket-box' key={index}>
-                        <strong style={{ color: 'red', fontSize: '12px' }} className='red-tt'> Ticket price below face value - Grab it now</strong>
                             <div className='left-fragment'>
                                 <figure>
                                     <img src={barCode} alt='ticket' width={180} />
@@ -177,10 +175,7 @@ export default function ETicket() {
                                 </div>
                             </div>
                             <div className='right-fragment'>
-                                <span className='btn-numbr'>
-                                    <input type='number' placeholder='1' style={{maxWidth:'40px', maxHeight:'40px', padding:'0px 0px 0px 10px '}}/>
-                                </span>
-                                {/* <strong style={{ color: 'red', fontSize: '12px' }} className='red-tt'> Ticket price below face value - Grab it now</strong> */}
+                                <strong style={{ color: 'red', fontSize: '12px' }}> Ticket price below face value - Grab it now</strong>
                                 <span>${ticket.price}</span>
                                 <Link to='/order-detail'>Buy Now</Link>
                             </div>
