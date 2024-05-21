@@ -15,6 +15,9 @@ import Login from "./pages/Login/Login";
 import OrderDetail from "./pages/orderDetail/OrderDetail";
 import Checkout from "./pages/checkout/Checkout";
 import ChatIcon from "./components/chat/ChatIcon";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 // import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 // import TawkMessenger from "@tawk.to/tawk-messenger-react";
 import './index.css'

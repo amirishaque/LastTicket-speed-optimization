@@ -150,7 +150,7 @@ button {
             margin-bottom: 10px;
             display: flex;
             align-items: center;
-            gap: 0px;
+            gap: 2px;
             strong{
                 // max-width: 210px;
                 // width: 100%;
@@ -177,6 +177,66 @@ button {
 h3.lct-head {
     font-weight: 600;
 }
+.row.d-flex.flex-row.justify-content-between.align-items-center {
+    font-size: 12px;
+}
+.my-4 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+.col-md-2.d-flex.flex-column {
+    font-size: 12px;
+}
+span.lead.fw-normal {
+    font-size: 15px;
+}
+span.text-muted.small {
+    font-size: 14px;
+}
+h3.lct-head {
+    font-size: 21px;
+}
+.card.card-stepper {
+    height: 235px;
+}
+hr.my-4 {
+    margin-top: 9px !important;
+    margin-bottom: 9px !important;
+}
+hr.flex-fill.track-line {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.row.d-flex.flex-row.justify-content-between.align-items-center {
+    max-height: 44px;
+}
+.d-flex.justify-content-between.align-items-center.main-tcp {
+    max-height: 38px;
+}
+h4.fw-700.m-0.text-white {
+    height: 21px;
+}
+.ticket-details ul li{
+    font-size: 14px;
+}
+.ticket-details p{
+    font-size: 14px !important;
+}
+.toast-pr{
+    margin-top: 20px;
+}
+.ticket-details{
+    margin-bottom: 0px !important;
+}
+.card.p-3.shadow-sm.br-10.mb-5 {
+    margin-bottom: 10px !important;
+}
+.container.py-5 {
+    padding-top: 36px !important;
+}
+h3.lct-head {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 @media screen and (max-width: 767px) {
     .card-body {
         padding: 10px !important;
@@ -186,7 +246,7 @@ h3.lct-head {
         font-size: 12px;
         flex-wrap: wrap;
         align-items: flex-end;
-        gap: 10px;
+        gap: 4px;
     }
     .ticket-details ul li {
         margin-bottom: 10px;
@@ -207,8 +267,18 @@ h3.lct-head {
     }
     .ticket-details p {
         font-weight: 600;
-        font-size: 12px;
+        font-size: 12px !important;
     }
+    .toast-pr{
+        font-size: 12px !important;
+    }
+    button.main-btn.btn-hover.h_50.w-100 {
+        height: 30px;
+        font-size: 12px;
+        padding: 0px !important;
+        line-height: normal;
+    }
+        
     .toast-pr {
         color: #0dccd7;
         font-size: 18px;
@@ -225,7 +295,7 @@ h3.lct-head {
         font-size: 12px;
         flex-wrap: wrap;
         align-items: flex-end;
-        gap: 10px;
+        gap: 4px;
         height: 15px;
     }
     .fw-normal {
@@ -256,6 +326,16 @@ h3.lct-head {
     br.sert {
         display: none;
         margin-top: -5px !important;
+    }
+
+    .d-flex.justify-content-between.align-items-center.main-tcp {
+        max-height: max-content;
+    }
+    .row.d-flex.flex-row.justify-content-between.align-items-center {
+        max-height: max-content;
+    }
+    .card.card-stepper {
+        height: auto;
     }
 }
 

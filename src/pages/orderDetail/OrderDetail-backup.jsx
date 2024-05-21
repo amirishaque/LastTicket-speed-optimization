@@ -157,7 +157,7 @@ export default function OrderDetail() {
                                         </g>
                                     </svg>
                                 </span>
-                                Ticket <span className='desktop'>Type</span> : </strong>
+                                Ticket <span className='desktop'>Type :</span></strong>
 
                                 Mobile Ticket | you will be seated togather
                             </li>

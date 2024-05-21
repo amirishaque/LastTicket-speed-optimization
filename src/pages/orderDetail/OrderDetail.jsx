@@ -167,7 +167,7 @@ export default function OrderDetail() {
                                                             <span>
                                                                 <img src={PhoneCall} alt='phone call' width={20} height={20} />
                                                             </span>
-                                                            Ticket <span className='desktop'>Type</span> : </strong>
+                                                            Ticket <span className='desktop'>Type</span>:</strong>
 
                                                             Mobile Ticket | you will be seated togather
                                                         </li>
@@ -180,7 +180,7 @@ export default function OrderDetail() {
                                                                 <span>
                                                                     <img src={TickIcon} alt='Tick Icon' width={20} height={20} />
                                                                 </span>
-                                                                Benefits :  </strong>
+                                                                Benefits :</strong>
 
                                                             Tickets 100% guaranteed to be next to it.
                                                             {/* <img src={Guard} width={50} title='gurard'/> */}
@@ -221,7 +221,7 @@ export default function OrderDetail() {
                                                                 </svg>
                                                                 {/* <img src={PhoneIcon} alt='Phone Icon' width={20} height={20} /> */}
                                                             </span>
-                                                            Customer Support : </strong>
+                                                            Customer Support :</strong>
 
                                                             24/7
                                                         </li>
