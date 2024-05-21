@@ -3,3 +3,8 @@
   src: url('./assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
   /* Add other font formats (e.g., woff, woff2) as necessary */
 }
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+}

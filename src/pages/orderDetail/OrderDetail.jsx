@@ -107,7 +107,7 @@ export default function OrderDetail() {
                                             :</b><br />Seated Tickets</span></div>
                                         <div className="col-md-2 d-flex flex-column "><span className='mb-version'><b>TICKET :
                                         </b><br />Mobile Ticket</span></div>
-                                        <div className="col-md-2 d-flex flex-column "><span className='mb-version' id="noticket"><b>SELECTED TICKETS:
+                                        <div className="col-md-2 d-flex flex-column "><span className='mb-version' id="noticket"><b>SELECTED TICKETS :
                                         </b><br />4</span></div>
                                         <div className="col-md-2 d-flex flex-column "><span className='mb-version'><b>Total Ticket Price
                                             :</b><br />$2495.00</span></div>

@@ -255,6 +255,10 @@ h3.lct-head {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+span.text-muted.small {
+  font-size: 10px;
+}
+
 @media screen and (max-width: 767px) {
   .card-body {
     padding: 10px !important;
