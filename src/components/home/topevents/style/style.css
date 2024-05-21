@@ -12,6 +12,7 @@
     text-align: center;
     padding-bottom: 55px;
     position: relative;
+    margin-top: 50px !important;
   }
   .top-events-wrapper h2::after {
     width: 165px;
@@ -78,6 +79,9 @@
     padding-bottom: 0px;
     margin-bottom: 120px;
     margin-top: 0px;
+  }
+  .top-events-wrapper h2 {
+    margin-top: 0px !important;
   }
   .top-events-wrapper h2::after {
     margin: 27px 0px 0px -60px;

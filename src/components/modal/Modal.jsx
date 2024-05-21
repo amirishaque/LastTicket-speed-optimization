@@ -18,7 +18,7 @@ const Modal = ({ isOpen, closeModal }) => {
                 &times;
               </span> */}
               <div className='modal-content-wrapper'>
-                <h3>Please confirm how many tickets you would like to purchase</h3>
+                <h3>Please select how many tickets you would like to purchase</h3>
                <strong>Select The Number Of Tickets</strong>
                <select>
                 <option>1</option>
@@ -28,6 +28,14 @@ const Modal = ({ isOpen, closeModal }) => {
                 <option>5+</option>
                 {/* <option>6</option> */}
                </select>
+               <p>
+                <span>
+                You will be seated together
+                </span>
+                <span>
+                <img src='https://lastchanceticket.com/public/assets/images/seated.png' alt="#" width={55}/>
+                </span>
+            </p>
                {/* <div className="select-ticket-wrapper"><p><span>You will be seated together</span><span><img src="https://lastchanceticket.com/public/assets/images/seated.png" alt="#" width="55" height="33" /></span></p></div> */}
                <div className='btn-wrapper-m'>
                 <Link className='primary-btn' to="/ticket">Confirm</Link>

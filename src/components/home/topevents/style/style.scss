@@ -12,6 +12,7 @@
             text-align: center;
             padding-bottom: 55px;
             position: relative;
+            margin-top: 50px !important;
 
             &::after {
                 width: 165px;
@@ -108,7 +109,7 @@
         margin-top: 0px;
 
         h2 {
-
+            margin-top: 0px !important;
             &::after {
                 margin: 27px 0px 0px -60px;
             }
