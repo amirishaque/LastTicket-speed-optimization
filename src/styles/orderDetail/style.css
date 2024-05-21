@@ -312,7 +312,7 @@ h3.lct-head {
     flex-wrap: wrap;
     align-items: flex-end;
     gap: 4px;
-    height: 15px;
+    height: 7px;
   }
   .fw-normal {
     font-weight: 400 !important;
