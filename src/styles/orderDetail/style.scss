@@ -250,6 +250,7 @@ span.text-muted.small {
 @media screen and (max-width: 767px) {
     .aligs {
         align-items: center !important;
+        max-height: unset !important;
     }
     .d-flex.flex-row.justify-content-between.align-items-center.align-content-center{
         align-items: center !important; 
