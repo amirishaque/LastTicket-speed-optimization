@@ -107,7 +107,7 @@
     display: flex;
   }
   .header-wrapper a img {
-    margin-top: 8px;
+    margin-top: 6px;
   }
   #header {
     height: auto;
@@ -160,7 +160,7 @@
     transform: translate(0, 0);
     -webkit-transform: translate(0, 0);
     -moz-transform: translate(0, 0);
-    height: 48vh;
+    height: 61vh;
   }
   .header-right #nav ul {
     flex-direction: column;

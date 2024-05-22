@@ -235,7 +235,7 @@ export default function Ticket() {
 				<div className="login-page">
 					<ToastContainer />
 					<div className="contact-cols login-cols">
-						<div className="container">
+						<div className="containerr">
 							<div className="filters-holder">
 								<div className='filter-holder-inner'>
 									<Link to='/'>
@@ -308,21 +308,21 @@ export default function Ticket() {
 								</div>
 								<form className="filters-form">
 									<div className="selects flex v-center">
-										<select>
+										<select className='desktop'>
 											<option>Filter By Ticket Type</option>
 											<option>All Tickets</option>
 											<option>Paper Ticket</option>
 											<option>E-Ticket</option>
 											<option>Mobile Ticket</option>
 										</select>
-										<select>
+										<select className='desktop'>
 											<option>Filter by Restrictions</option>
 											<option>Age Limit 14+</option>
 											<option>Age Limit 21+</option>
 											<option>No Restrictions</option>
 											<option>All Tickets</option>
 										</select>
-										<select>
+										<select className='desktop'>
 											<option>No. of Tickets in Listing</option>
 											<option>All Tickets</option>
 										</select>
@@ -346,7 +346,7 @@ export default function Ticket() {
 													value="all"
 													checked={selectedOption === 'all'}
 													onChange={handleOptionChange}
-												/> ALL
+												/> All
 											</label>
 											<label htmlFor="low-to-high" className={selectedOption === 'low-to-high' ? 'checked' : ''}>
 												<input
@@ -356,7 +356,7 @@ export default function Ticket() {
 													value="low-to-high"
 													checked={selectedOption === 'low-to-high'}
 													onChange={handleOptionChange}
-												/> PRICE: Low to High
+												/> Price: Low to High
 											</label>
 											{/* <label htmlFor="high-to-low" className={selectedOption === 'high-to-low' ? 'checked' : ''}>
 												<input
@@ -378,7 +378,7 @@ export default function Ticket() {
 													onChange={handleOptionChange}
 												/> Best Value
 											</label>
-											<label htmlFor="newest" className={selectedOption === 'newest' ? 'checked' : ''}>
+											<label htmlFor="newest"  className={`${selectedOption === 'newest' ? 'checked' : ''} desktop`}>
 												<input
 													type="radio"
 													id="newest"
@@ -386,6 +386,7 @@ export default function Ticket() {
 													value="newest"
 													checked={selectedOption === 'newest'}
 													onChange={handleOptionChange}
+												
 												/> Newest
 											</label>
 										</div>
@@ -470,7 +471,7 @@ export default function Ticket() {
 										</div>
 							
 									</aside>
-									<div className='eticket-outer-wrapper'>
+									<div className='eticket-outer-wrapper containerz'>
 
 										<ETicket />
 									</div>

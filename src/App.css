@@ -94,6 +94,9 @@ span.info-icon svg {
   font-size: 12px;
 }
 @media screen and (max-width: 767px) {
+  .seat-ico.flex.v-center span {
+    font-weight: 600;
+  }
   .lg-mail-wrapper{
     top: 0px !important;
   }
@@ -436,6 +439,21 @@ span.info-icon svg {
 
 }
   @media screen and (max-width: 767px){
+    .eticket-wrapper .eticket-box .red-tt{
+      position: absolute;
+      left: 164px;
+      right: 0;
+      top: 1px;
+      color: red;
+      font-size: 5px !important;
+    }
+    .btn-numbr{
+      width: auto !important;
+    }
+    .counter-box {
+      width: 29px !important;
+      height: 29px !important;
+    }
         .login-wrapper-outer .login-wrapper-inner .login-wrapper .login-inner-wrapper form p button {
         font-size: 10px !important;
     }
@@ -451,7 +469,7 @@ span.info-icon svg {
       flex-direction: row;
       align-items: center;
       flex-wrap: wrap;
-      column-gap: 39px !important;
+      column-gap: 10px !important;
   }
     .slide-item-heading p {
  
@@ -488,7 +506,8 @@ span.info-icon svg {
     aside#sidebar{
       position: sticky;
       top: 0;
-      z-index: 999;
+      /* z-index: 999; */
+      z-index: 3;
       background: #fff;
     }
     .map-holder{
@@ -1244,7 +1263,11 @@ height: 20px;
 .modal-content-wrapper strong{
  font-weight: 400;
 }
-
+.modal-content-wrapper p{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
 .views-count-wrapper {
   display: flex;
   justify-content: center;
@@ -1382,4 +1405,64 @@ button{
 
 b, strong {
   font-weight: 600 !important;
+}
+
+.numbr-count{
+  max-width: 48px;
+  padding: 6px 0px 6px 10px !important;
+  max-height: 40px;
+  font-size: 14px;
+  max-width: 40px;
+  max-height: 40px;
+  border: 1px solid #0DCCD7;
+}
+
+
+.counter-box {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 2px;
+  border: 1px solid #0DCCD7;
+  max-width: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  padding: 7px;
+}
+.incremant-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.btn-numbr {
+  width: 190px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+span.arrow-button {
+  width: 24px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0px !important;
+  height: 12px !important;
+  font-size: 12px;
+}
+span.count {
+  font-size: 14px !important;
+  padding-left: 7px;
+}
+.downers {
+  transform: rotate(270deg);
+}
+.uppers {
+  transform: rotate(90deg);
+}
+.containerz{
+  padding-left: 10px;
+  padding-right: 10px;
 }
