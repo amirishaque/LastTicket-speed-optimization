@@ -1457,10 +1457,10 @@ span.count {
   padding-left: 7px;
 }
 .downers {
-  transform: rotate(270deg);
+  transform: rotate(90deg);
 }
 .uppers {
-  transform: rotate(90deg);
+  transform: rotate(270deg);
 }
 .containerz{
   padding-left: 10px;
