@@ -8,7 +8,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './style/style.css';
 import TrustPilot from '../../../assets/images/trustpilot.png'
-import TrustPilotSingle from '../../../assets/images/trustpilotSingle.svg'
+import TrustPilotSingle from '../../../assets/images/trustpilotSingle.svg';
+import starHalf from '../../../assets/images/starHalf.jpg';
 
 export default function Reviews() {
   return (
@@ -32,8 +33,8 @@ export default function Reviews() {
             <div className="star">
             <img src={TrustPilot} alt="star" width={35} height={35}/>
             </div>
-            <div className="star">
-            <img src={TrustPilot} alt="star" width={35} height={35}/>
+            <div className="star" style={{background:'transparent'}}>
+            <img src={starHalf} alt="star" width={43} height={43}/>
             </div>
   
           </div>
