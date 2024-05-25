@@ -1265,8 +1265,10 @@ height: 20px;
 }
 .modal-content-wrapper p{
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
 }
 .views-count-wrapper {
   display: flex;

@@ -145,10 +145,10 @@ export default function ETicket() {
                                             <strong>Category</strong>
                                             <span>{ticket.category}</span>
                                         </li>
-                                        <li>
+                                        {/* <li>
                                             <strong>Category</strong>
                                             <span>Corner Side</span>
-                                        </li>
+                                        </li> */}
                                         <li>
                                             <strong>Section</strong>
                                             <span>{ticket.section}</span>

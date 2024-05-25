@@ -45,7 +45,7 @@ export default function Ticket() {
 
 		setTimeout(() => {
 			showInfoToast();
-		}, 10000); // 10000 milliseconds = 10 seconds
+		}, 15000); // 10000 milliseconds = 10 seconds
 	};
 
 
@@ -300,11 +300,11 @@ export default function Ticket() {
 									<span>Select number of tickets and you will be seated together</span>
 								</div>
 								<div className="counters flex">
-									<button type="button" onClick={() => smoothScrollToSection('targetedSection', 2000)}>1</button>
-									<button type="button" onClick={() => smoothScrollToSection('targetedSection', 2000)}>2</button>
-									<button type="button" onClick={() => smoothScrollToSection('targetedSection', 2000)}>3</button>
-									<button type="button" onClick={() => smoothScrollToSection('targetedSection', 2000)}>4</button>
-									<button type="button" onClick={() => smoothScrollToSection('targetedSection', 2000)}>5+</button>
+									<button type="button" onClick={() => smoothScrollToSection('targetedSection', 500)}>1</button>
+									<button type="button" onClick={() => smoothScrollToSection('targetedSection', 500)}>2</button>
+									<button type="button" onClick={() => smoothScrollToSection('targetedSection', 500)}>3</button>
+									<button type="button" onClick={() => smoothScrollToSection('targetedSection', 500)}>4</button>
+									<button type="button" onClick={() => smoothScrollToSection('targetedSection', 500)}>5+</button>
 								</div>
 								<form className="filters-form">
 									<div className="selects flex v-center">
@@ -460,7 +460,7 @@ export default function Ticket() {
       {viewerCount} viewers
     </span> looking Now
 										</div>
-										<div className="widget desktop" id="bottomOfPage">
+										<div className="widget" id="bottomOfPage">
 											<strong>Filter By Category</strong>
 											<select>
 												<option>SEARCH BY CATEGORY</option>

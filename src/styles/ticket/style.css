@@ -61,15 +61,13 @@
 .eticket-wrapper .eticket-box .left-fragment h3 {
   font-size: 18px;
   color: #6f6f6f;
-  padding: 0 0 7px;
   margin: 0 0 7px;
-  border-bottom: 1px solid red;
   margin-top: 10px !important;
 }
 .eticket-wrapper .eticket-box .left-fragment ul {
   display: flex;
   align-items: start;
-  justify-content: space-between;
+  gap: 120px;
 }
 .eticket-wrapper .eticket-box .left-fragment ul li {
   font-size: 13px;
@@ -155,7 +153,6 @@
     display: none;
   }
   .eticket-wrapper .eticket-box .left-fragment h3 {
-    padding: 0 0 10px;
     margin: 0px 0 10px;
     font-size: 14px;
   }
