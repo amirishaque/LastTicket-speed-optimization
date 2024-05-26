@@ -20,7 +20,7 @@ import TicketLoader from '../../components/loader copy/TicketLoader';
 import { TypeAnimation } from 'react-type-animation';
 import TicketModal from '../../components/TicketModal/TicketModal';
 import { animateScroll as scroll } from 'react-scroll';
-import ToastUserMale from '../../assets/images/toastUserF.png'
+import ToastUserMale from '../../assets/images/toastUserF.png';
 import ToastUserFMale from '../../assets/images/toastUserM.svg'
 
 
@@ -52,19 +52,16 @@ export default function Ticket() {
 	const showInfoToast = (userImage, message, imageUrl, timeAgo) => {
 		toast.info(
 		  <div style={{ display: 'flex', gap: '12px', alignItems: 'start' }}>
-			<img src={ToastUserFMale} width={20} alt='flag' style={{ marginRight: '5px', marginLeft: '5px' }}/>
-			<p>
-			  {/* {message} */}
-			  Bought 2 tickets from
-			  <img src={USAImg} width={20} alt='flag' style={{ marginRight: '5px', marginLeft: '5px' }} />
-			  for this event.
-			  <br />
-			  {timeAgo}.
-			</p>
+			<img src={ToastUserMale} width={20} alt='flag' style={{ marginRight: '5px', marginLeft: '5px' }}/>
+			<p> 
+			{userImage}
+			<img src={message} width={20} alt='flag' style={{ marginRight: '5px', marginLeft: '5px' }} />
+				 {timeAgo}. for this event</p>
+			
 		  </div>,
 		  {
 			position: 'top-center',
-			autoClose: 7000,
+			autoClose: 700000,
 			hideProgressBar: true,
 			closeOnClick: false,
 			pauseOnHover: true,
@@ -75,22 +72,27 @@ export default function Ticket() {
 
 	  const toastData = [
 		{
-		  
+
+		  userImage: ToastUserMale,
+		  imageUrl: USAImg,
 		  message: 'Bought 2 tickets from',
-	
 		  timeAgo: '10 minutes ago',
+
 		},
 		{
-		 
+		  userImage: ToastUserFMale,
+		  imageUrl: USAImg,
 		  message: 'Sold 1 ticket to',
 		  timeAgo: '20 minutes ago',
 		},
 		{
-		  
+		  userImage: ToastUserFMale,
+		  imageUrl: USAImg,
 		  message: 'Reserved 3 tickets for',
 		  timeAgo: '15 minutes ago',
 		},
 	  ];
+	  
 
 	  const showRandomToast = () => {
 		const randomIndex = Math.floor(Math.random() * toastData.length);
@@ -109,7 +111,7 @@ export default function Ticket() {
 		const loaderTimeout = setTimeout(() => {
 			setShowLoader(false);
 			setShowTicketModal(false);
-		}, 7500);
+		}, 4500);
 	
 		const toastTimeout = setTimeout(() => {
 			showRandomToast();

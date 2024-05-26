@@ -56,12 +56,14 @@
             width: 100%;
             display: flex;
             align-items: center;
-            gap: 32px;
+            gap: 45px;
             figure{
                 transform: rotate(90deg);
                 img{
-                    width: 100px;
-                    margin-left: -5px;
+                    width: 80px;
+                    width: 80px;
+                    margin-left: -23px;
+                    margin-top: 14px;
                 }
             }
             .d-wrapper-eticket{
@@ -158,26 +160,53 @@
         }
     }
 }
+.eticket-wrapper .eticket-box .left-fragment figure img{
+    width: 100px;
+    margin-left: -23px;
+    margin-top: 0px;
+}
 
 @media screen and (max-width: 767px) {
+    .eticket-wrapper .eticket-box .left-fragment figure img {
+        width: 80px !important;
+        width: 80px !important;
+        margin-left: -23px !important;
+        margin-top: 14px !important;
+      }
+
+    .eticket-wrapper .eticket-box .left-fragment::after{
+        left: 45px !important;
+        width: 5px;
+        height: 107px !important;
+        top: 0px !important;
+    }
+    .eticket-wrapper .eticket-box .left-fragment{
+        gap: 7px;
+    }
+    // .eticket-wrapper .eticket-box .right-fragment p{
+    //     font-size: 8px !important;
+    // }
+    .no-of-tickets{
+        font-size: 8px !important;
+    }
     .eticket-wrapper{
         .eticket-box{
             padding: 7px;
             margin: 0 0 20px;
             align-items: center;
-            gap: 10px;
+            gap: 0px;
             &::after{
-                display: none;
+                left: 56px;
             }
             &::before{
-                display: none;
+               left: 45px;
             }
             .left-fragment{
                 padding-left: 0px;
                 padding-right: 0px;
-                figure{
-                    display: none;
-                }
+                // figure{
+                //     display: none;
+                // }
                 h3{
                     // padding: 0 0 10px;
                     margin: 0px 0 10px;
@@ -197,12 +226,12 @@
                         }
                     }
                 }
-                &::after{
-                    display: none;
-                }
-                &::before{
-                    display: none;
-                }
+                // &::after{
+                //     display: none;
+                // }
+                // &::before{
+                //     display: none;
+                // }
             }
             .right-fragment{
                 max-width: 100px;
@@ -218,8 +247,8 @@
                 }
                 a{
                     padding: 6px 8px;
-                    width: 90px;
-                    font-size: 12px;
+                    width: 54px;
+                    font-size: 8px;
                 }
             }
             &:nth-of-type(1){

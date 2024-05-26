@@ -13,10 +13,18 @@ const Header = () => {
   };
 
   const closeMenu = (event) => {
-    if (isActive && !event.target.closest(".nav-container") && !event.target.closest(".header-right")) {
+    const navContainer = document.querySelector(".nav-container");
+    const headerRight = document.querySelector(".header-right");
+    const navUl = document.querySelector("nav ul li");
+  
+    if (isActive && 
+        !event.target.closest(navContainer) && 
+        !event.target.closest(headerRight)) {
       setIsActive(false);
+      navUl.classList.remove("active");
     }
   };
+  
 
   useEffect(() => {
     document.body.addEventListener("click", closeMenu);
