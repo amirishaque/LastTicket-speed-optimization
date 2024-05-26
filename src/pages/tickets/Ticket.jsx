@@ -61,7 +61,7 @@ export default function Ticket() {
 		  </div>,
 		  {
 			position: 'top-center',
-			autoClose: 700000,
+			autoClose: 7000,
 			hideProgressBar: true,
 			closeOnClick: false,
 			pauseOnHover: true,
@@ -429,7 +429,7 @@ export default function Ticket() {
 											</div>
 										</div>
 								<div id="content" className="flex page-wrapper-tickets">
-								<div id="sidebarz">
+								<div id="sidebarz mobile">
 									<div className="widget mobile" style={{background:'#fff'}}>
 												<strong>Filter By Category</strong>
 												<select>
