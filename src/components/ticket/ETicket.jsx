@@ -177,12 +177,12 @@ export default function ETicket() {
                             <div className='right-fragment'>
                                 <p className='no-of-tickets' style={{textAlign:'center', paddingBottom:'5px'}}>No of Tickets</p>
                                 <div className='btn-numbr'>
-                                    <div className="counter-box">
+                                    <div  className="counter-box">
                                         <div className='incremant-wrapper'>
-                                            <span onClick={increment} className="arrow-button downers">
+                                            <span onClick={increment} className="arrow-button downers" disabled>
                                             <svg fill="#000000" width="12px" height="12px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 19h18a1.002 1.002 0 0 0 .823-1.569l-9-13c-.373-.539-1.271-.539-1.645 0l-9 13A.999.999 0 0 0 3 19z"/></svg>
                                             </span>
-                                            <span onClick={decrement} className="arrow-button uppers">
+                                            <span onClick={decrement} className="arrow-button uppers" disabled>
                                             <svg fill="#000000" width="12px" height="12px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 19h18a1.002 1.002 0 0 0 .823-1.569l-9-13c-.373-.539-1.271-.539-1.645 0l-9 13A.999.999 0 0 0 3 19z"/></svg>
                                             </span>
                                         </div>

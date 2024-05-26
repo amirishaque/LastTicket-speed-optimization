@@ -429,6 +429,17 @@ export default function Ticket() {
 											</div>
 										</div>
 								<div id="content" className="flex page-wrapper-tickets">
+								<div id="sidebarz">
+									<div className="widget mobile" style={{background:'#fff'}}>
+												<strong>Filter By Category</strong>
+												<select>
+													<option>SEARCH BY CATEGORY</option>
+													<option>All Tickets</option>
+													<option>Golden Circle - GC</option>
+													<option>Upper Bowl</option>
+												</select>
+											</div>
+								</div>
 									<aside id="sidebar">
 										<div className="map-holder">
 											<img src={map} alt="#" />
@@ -462,7 +473,7 @@ export default function Ticket() {
       {viewerCount} viewers
     </span> looking Now
 										</div>
-										<div className="widget" id="bottomOfPage">
+										<div className="widget desktop" id="bottomOfPage" style={{background:'#fff'}}>
 											<strong>Filter By Category</strong>
 											<select>
 												<option>SEARCH BY CATEGORY</option>
