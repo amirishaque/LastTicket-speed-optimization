@@ -1,15 +1,15 @@
 import React from "react";
 // import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from "swiper/react";
 // import Swiper and modules styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import './style/style.css';
 import TrustPilot from '../../../assets/images/trustpilot.png'
 import TrustPilotSingle from '../../../assets/images/trustpilotSingle.svg';
 import starHalf from '../../../assets/images/starHalf.jpg';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
 
 export default function Reviews() {
   return (
@@ -45,7 +45,8 @@ export default function Reviews() {
           </div>
           <Swiper
             // style={{paddingLeft: '15px', paddingRight:'15px', paddingBottom:'30px'}}
-            navigation
+            navigation={true} // Enable navigation arrows
+            modules={[Navigation]} // Import and use Swiper Navigation module
             pagination={false}
             slidesPerView={4}
             autoplay={{

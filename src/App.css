@@ -1493,3 +1493,21 @@ span.count {
   padding-left: 10px;
   padding-right: 10px;
 }
+
+
+
+
+
+
+
+.swiper-button-next, .swiper-button-prev {
+  margin-top: 10px;
+  position: absolute;
+  color: #22B3C1;
+}
+/* .swiper-button-prev {
+  left: -30px;
+} */
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled{
+  opacity: 0;
+}
