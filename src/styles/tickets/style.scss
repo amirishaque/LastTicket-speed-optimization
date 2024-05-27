@@ -298,7 +298,15 @@
     flex-direction: column;
     gap: 10px;
 }
-
+ #sidebarz .widget {
+   border: 1px solid #0dccd7;
+    padding: 20px 10px;
+    border-radius: 4px;
+    margin: 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 #sidebar select {
     height: 40px;
     padding: 0 10px;
@@ -315,6 +323,15 @@
     border: 1px solid #c8c6c6;
     background: transparent;
 }
+ #sidebarz .widget select {
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    border: 1px solid #c8c6c6;
+    background: transparent;
+}
+
 
 .ticket-holder img {
     max-width: 100%;

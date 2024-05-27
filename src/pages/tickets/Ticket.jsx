@@ -429,7 +429,7 @@ export default function Ticket() {
 											</div>
 										</div>
 								<div id="content" className="flex page-wrapper-tickets">
-								<div id="sidebarz mobile">
+								<div id="sidebarz" className='mobile'>
 									<div className="widget mobile" style={{background:'#fff'}}>
 												<strong>Filter By Category</strong>
 												<select>
